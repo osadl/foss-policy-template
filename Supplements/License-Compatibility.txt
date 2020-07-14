@@ -1,0 +1,16 @@
+%###########################################################################
+%
+% Annex to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Caren Kresse 
+% 
+%###########################################################################
+
+License compatibility
+
+
+========================================
+This document will explain the concept of license compatibility an what aspects 
+must be considered when evaluating compatibility of FOSS licenses.
+========================================

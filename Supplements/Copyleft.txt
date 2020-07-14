@@ -1,0 +1,201 @@
+%###########################################################################
+%
+% Supplement to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde, Caren Kresse 
+% 
+%###########################################################################
+
+What is copyleft?
+
+
+1 Background
+
+The coinage copyleft was introduced by Richard Stallman in the 1980s. It is not, 
+as may be suggested by the alleged dichotomy, the opposite of copyright, but 
+rather is based on and enforced by copyright law. This annex explains the 
+various aspects of copyleft and the reasons why a company should define an 
+individual policy on how to deal with it.
+
+1.1 What is copyright in an adaption?
+Whenever an author adapts the work of another author with permission of the 
+latter, he or she gains a copyright in the adaption, i.e. an own copyright in 
+the adaptation that is dependent on the copyright in the original work. Thus, 
+neither the original author nor the author of the derivative work has the legal 
+power to decide independently how to license the adaptation. All license 
+obligations must be fulfilled together whenever the derivative work is made 
+publicly available or copied and distributed. The positive aspect of the 
+copyright in an adaption is that the individual creative contribution of the 
+adapter is honored and that the adapter has the right to be remunerated for his 
+or her work. A potential difficulty however is that an adapter – as long as he 
+or she stays within the permissions of the original license – may impose license 
+obligations that contradict the existing ones. In that case, the two license 
+obligations are incompatible, and the common work may never be copied and 
+distributed throughout the entire legal protection period (The Berne Convention 
+for the Protection of Literary and Artistic Works stipulates that national law 
+of member countries must grant copyright protection during the entire life of 
+the author plus at least 50 years, if the author is known. If the author is 
+unknown, the date of the creation or the first publication is used as reference, 
+but national law differs considerably how this is further ruled.) unless holders 
+of rights reach an agreement later on. Nevertheless, it certainly is possible 
+that the license obligations are different, but compatible. But there remains 
+the fact that it may become difficult, if not impossible, to evaluate the 
+various licenses of a work for compatibility, if a rather large number of 
+adapters have modified or expanded the original work and are imposing individual 
+and different obligations.
+
+1.2 What is copyleft?
+
+The origin
+While Free and Open Source software existed before the concept of copyleft was 
+invented, and the freedoms that such licenses granted were appreciated by users 
+and adapters of such software, there always remained the risk that adapters 
+would not license their contributions as FOSS and thereby reproprietarize the 
+work. The concept of copyleft aims to counteract this threat to FOSS: A 
+copyright license may contain a clause that denies the right of adapters to add 
+own license obligations or to modify existing ones, but forces the adapter to 
+always use the original copyright license. Such a clause is called copyleft.
+Some might see this obligation to always use the original license as a 
+restriction of their freedom (”I may not reproprietarize”) while others see it 
+as an increase in their freedom (”my adaption is protected from being 
+reproprietarized”). Either way, copyleft certainly has simplified licensing 
+works with a large number of different adapters as only one license needs to be 
+considered.
+
+The dilemma
+As an advantage of copyleft, the work will always be licensed under the same 
+single license and questions never arise whether individual obligations of 
+different licenses are compatible or not. But copyleft also has an important 
+downside: An adapter may be forced to use unacceptable license conditions and, 
+thus, cannot adapt the work, although these adaptations would improve the work 
+or otherwise be welcome. The latter is particularly relevant in the case of 
+software licenses, if the original license imposes strict obligations, for 
+example, with respect to source code disclosure and implicit patent licensing. 
+Since frequently used FOSS licenses such as the GNU Public Licenses precisely 
+contain not only a copyleft clause, but also impose strict disclosure 
+obligations and an explicit patent license, lawyers and legal departments tend 
+to recommend avoiding copyleft licenses altogether. This recommendation is based 
+on the fear that, due to a inadvertent lack of attention, proprietary and 
+patented code may be combined with copyleft licensed software and, thus, the 
+company’s intellectual property would get lost. This fear has led to pejorative 
+labeling of the copyleft effect as ”viral”, ”infectious”, or even as 
+”cancerous”. Such vocabulary is not only inappropriate, but simply wrong as far 
+as the meaning is concerned and shall never be used in this context: Licensing a 
+software under a particular license is always an active decision – mostly 
+because of the compelling properties of a particular software, while a person 
+may contract an infection or develop cancer completely unwillingly. Anyway, to 
+generally avoid software under a copyleft license may be difficult, if not 
+impossible, since important and indispensable software such as the Linux kernel 
+or the GNU C library are distributed under a copyleft license.
+
+The potential
+From the adapter’s view – as opposed to the view of a user – the copyleft clause 
+has an important advantage: It ensures that a work that once is free and open 
+will stay so forever. Material that is licensed under a non-copyleft license, in 
+contrast, may be improved and used in proprietary software by others, but the 
+improvements may remain hidden, effectively leading to a re-proprietarization of 
+the code. This may make it easier for a company’s management to permit an 
+employed engineer contributing to a project that is licensed under a copyleft 
+license than if it were licensed differently.
+
+The policy
+Based on the above arguments pro and contra copyleft licenses, a company is well 
+advised to introduce a general policy how and under what conditions to deal with 
+copyleft – not only with respect to using and distributing FOSS, but also with 
+respect to contributing to FOSS projects and to selecting a suitable license in 
+case the company decides to establish own FOSS projects. Decisions on how 
+unclear copyleft clauses in particular licenses are interpreted for a company 
+should also be documented in such a policy.
+
+1.3 Strong vs. weak copyleft
+The normal copyleft relates to any kind of derivative works (for an explanation 
+of a derivative work refer to Supplement -> ”What is a derivative work”), 
+irrespective of whether the various components of the derivative work can be 
+individually separated and replaced or not. This normal copyleft is also called 
+”strong copyleft”. In contrast, a copyleft clause may contain an exception from 
+the strong obligations that allows components that can be separated and replaced 
+at a later date – for example because they consist of separate files – not to 
+fall under the copyleft. For such a clause that alleviates considerably the 
+license obligations of normal copyleft the term ”weak copyleft” has prevailed. 
+It must, however, be noted that the copyleft for adaptions of the original work 
+is just as strong as normal copyleft and the restriction is only valid for 
+separable components. Therefore, weak copyleft is also called ”restricted 
+copyleft”. Furthermore, licenses that impose restricted copyleft conditions may 
+impose other obligations on the components that are exempted from copyleft. The 
+latter applies, for example, to the GNU C library that is licensed under the 
+Lesser General Public License version 2.1 that only imposes a weak copyleft and, 
+thus, permits to use another license for a work to which it is linked, but 
+requires that the terms of the other license ”permit modification of the work 
+for the customer’s own use and reverse engineering for debugging such 
+modifications”.
+
+2 Criteria for a copyleft policy
+
+A template for a copyleft policy is given in -> ”Copyleft policy”.
+
+2.1 Using FOSS in-house
+The very generous licensing conditions of FOSS permit unrestricted use which 
+even includes unrestricted copying within the organization of a legal person 
+such as an incorporated or a limited liability company. This aspect is not 
+different among the various FOSS license conditions and includes without 
+exception even licenses with weak or strong copyleft. Insofar, a special policy 
+is probably not needed that rules the in-house use of FOSS with respect to 
+copyleft or not. Please consider that there might be a specific situation for 
+SaaS (for details refer to the FOSS policy annex -> ”SaaS licenses”).
+
+2.2 Modifying in-house used FOSS
+If FOSS that is used in-house shall be modified, it is important to consider 
+whether the particular software, the software department or even the entire 
+company might be sold in the near or even far future, since this means that 
+license obligation must be fulfilled at the time of the sale or other 
+distribution. If this is the case, the copyleft policy should rule whether a 
+copyleft license of in-house software is acceptable in case such software is 
+adapted to the company’s requirements.
+
+2.3 Copying and distributing FOSS in products
+Copying and distributing FOSS in products requires that the related license 
+conditions are fulfilled - including the obligations imposed by a copyleft 
+clause, if any. Thus, the copyleft policy should first provide information which 
+licenses are
+- considered not to have a copyleft clause
+- considered to have a weak copyleft clause
+- considered to have a strong copyleft clause
+- unclear with respect to copyleft
+
+and should give recommendations for what kind of software which type of copyleft 
+is acceptable. The -> ”OSADL Open Source License Obligations Checklists” may be 
+consulted when writing this part of the copyleft policy. Declaring a particular 
+copyleft license unacceptable is of course only relevant if the copyleft is 
+triggered in a particular scenario. The approval process outlined in the FOSS 
+policy takes the technical constellation into account.
+
+2.4 Contributing to external FOSS projects
+Whenever an employed software engineer is creating a software work, he or she 
+enjoys the exclusive exploitation rights granted by copyright law only for a 
+non-measurable small amount of time, since these rights are automatically 
+transferred to the employer according to, for example, § 69b UrhG (German 
+copyright law). In addition, most companies’ work contracts stipulate an 
+equivalent rule including the work of freelancers and other non-employed 
+contributors, since the transferal of copyright of the latter is not part of the 
+legal provision. A software engineer, therefore, needs the permission of the 
+company’s management, before he or she may contribute to an external FOSS 
+project (see -> ”Contribution permission”), and a policy is needed with respect 
+to which licenses are acceptable for what kind of work. As already mentioned 
+above, copyleft licenses may be preferable, since they protect the contributed 
+code from being usurped by others, particularly by competitors.
+
+2.5 Establishing own FOSS projects
+The above mentioned considerations for contributing to external FOSS projects 
+apply just as much for own FOSS projects. In addition, the company has the 
+choice which FOSS license to use. This requires that the copyleft policy must 
+contain directions which licenses and particularly which copyleft conditions are 
+mandatory, desirable, acceptable or unacceptable when own FOSS projects are 
+established.
+As a general rule, for software that is mostly feature-complete, has little 
+architecture and system dependencies, does not await further evolution and is 
+hoped to be used by many in all kind of projects (such as, for example, a 
+network protocol) a non-copyleft license probably is best suitable. In contrast, 
+for a software that only is in its first stage, awaits a long evolution and can 
+run stand-alone (such as, for example, the Linux kernel), a copyleft license is 
+normally recommended.

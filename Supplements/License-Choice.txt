@@ -1,0 +1,143 @@
+%###########################################################################
+%
+% Supplement to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Till Jaeger, Caren Kresse 
+% 
+%###########################################################################
+
+Selecting a FOSS license
+
+
+This document gives some selection criteria and the outline of a selection 
+process for choosing a Free and Open Source Software (FOSS) license for a 
+software project. The flowchart at the end of this document displays the 
+sequence of steps that are described herein.
+
+Selection Criteria
+
+0. Eligible FOSS licenses
+It is generally recommended to use established and well-known FOSS licenses to 
+further acceptance and facilitate subsequent use. While many popular choices 
+have become outdated, the following licenses have proven to be widely accepted 
+and known standard licenses and are therefore considered eligible (they are 
+grouped in the following according to the extent of copyleft (for details see 
+-> ”What is copyleft?”):
+
+a) Licenses with a strong copyleft
+- GNU General Public License v2.0 (GPL-2.0)
+- GNU General Public License v3.0 (GPL-3.0)
+- GNU Affero General Public License v3.0 (AGPL-3.0)
+
+b) Licenses with a weak (”restricted”) copyleft
+- Mozilla Public License 2.0 (MPL-2.0)
+- Eclipse Public License 2.0 (EPL-2.0)
+- GNU Lesser General Public License v3.0 (LGPL-3.0)
+- GNU Lesser General Public License v2.1 (LGPL-2.1)
+
+c) Permissive licenses (licenses without a copyleft)
+- MIT License (MIT)
+- Apache License 2.0 (Apache-2.0)
+
+1. Are there enough rights of use on the code that is to be licensed as FOSS?
+As a rule, the worlwide, perpetual and unrevocable unrestricted rights of use 
+are required for copying, distribution, public reproduction and modification 
+(e.g. acquired through Art. 69b UrhG (German Copyright Act) or through a license 
+agreement). In some cases non-exclusive and sublicensable rights can be 
+sufficient.
+
+2. Does the code contain pre-existing proprietary third-party components?
+If the code contains proprietary third-party components (e.g. .NET libraries), 
+licensing it under a strong copyleft license is generally not possible, unless 
+all proprietary third-party components are removed.
+
+3. Does the code contain pre-existing FOSS components?
+If the code contains third-party FOSS components, it must be checked
+
+a) whether these existing components are licensed under a copyleft license that 
+determines the license for the entire code or that requires a compatibility 
+check, or
+b) whether these existing components are licensed under a permissive license and 
+the compatibility with the final project license must be checked.
+
+4. Should users be required to license their modifications as FOSS by selecting 
+a copyleft license?
+The essential question when selecting a license is the decision whether it 
+should have a copyleft clause and thereby prevent modifications and continuous 
+development to become proprietary, or whether it is acceptable that 
+modifications and continuous development may be licensed proprietarily. This 
+question is in close context with question 5.
+
+5. Is the software meant to be used in close connection (static or dynamic 
+linking or substantial integration) with other programs that may be proprietary 
+as well as FOSS?
+The typical context in which the software is meant to be used is to be 
+determined. If linking (or similar integration) with other programs under 
+arbitrary licenses shall be allowed, the final license of choice may only have a 
+weak copyleft clause or must be permissive; licenses with a strong copyleft 
+clause are generally not possible in such cases. Is the software meant to be 
+used exclusively in a FOSS context, the relevant selection criterion is license 
+compatibility.
+
+6. If a copyleft clause is desired, should it also be valid when the software is 
+not copied and distributed but offered as Software as a Service (SaaS) or as a 
+cloud service?
+- AGPL-3.0 requires modifications to be disclosed also when the software is used 
+interactively via network (e.g. cloud service).
+- GPL-3.0, LGPL-3.0, MPL-2.0 and EPL-2.0 do not extend their copyleft clause to 
+this type of use.
+- GPL-2.0 and LGPL-2.1: unclear
+
+Additional considerations
+
+The following questions do not influence the selection of the final FOSS 
+license but are nonetheless important to consider when planning to license a 
+project under a FOSS license.
+
+g) Are there own patents and are these to be licensed royalty-free with the 
+software?
+All FOSS licenses require licensing implemented patents. Some licenses rule this 
+explicitly others do not. For the sake of clarity, it is recommended to select a 
+license that explicitly rules the extent of the patent license for one’s own 
+patents.
+
+h) Do own patents that are not (yet) implemented in the software remain 
+unaffected?
+
+All FOSS licenses restrict the patent license to the particular licensed software.
+
+i) Can own liability and warranty be excluded?
+With regard to liability and warranty exclusion there are no significant 
+differences between the eligible FOSS licenses under German contract law. 
+Liability and warranty depend on the form of distribution and not on the choice 
+of license.
+
+j) Does subsequent use require to reference the software’s origin?
+All eligible FOSS licenses require to deliver the respective license text and 
+possible copyright notices and thereby implicitly create the obligation to 
+disclose the software’s origin to the user.
+
+k) Does the license allow third parties (companies or developers) to contribute 
+to the continuous development of the software?
+All FOSS licenses grant sufficient rights of use to allow every interested party 
+to contribute.
+
+l) Can the software quality be assured?
+Quality assurance does not depend on the choice of license but on the control of 
+the FOSS development process. Controlling the ”official” development process 
+(e.g. on a development or version control platform such as Eclipse or GitHub) 
+can also influence the software quality, e.g. by accepting or declining 
+third-party contributions. Although a fork from the ”official” project cannot be 
+prevented, transferring a negative reputation can be constrained by controlling 
+the project name (work title, trademark).
+
+m) Must the license be compatible with GPL-2.0 and/or GPL-3.0 or AGPL-3.0?
+- MPL-2.0 is by default compatible, but compatibility can be explicitly 
+excluded as per Exhibit B of the MPL-2.0.
+- EPL-2.0 is by default not compatible, but compatibility can be created 
+explicitly as per Exhibit A of the EPL-2.0.
+- MIT is compatible with all eligible FOSS licenses listed in section 0.
+- Apache-2.0 is compatible with GPL-3.0 and AGPL-3.0 but not with GPL-2.0.
+
+Image: License-Choice-Flowchart.svg

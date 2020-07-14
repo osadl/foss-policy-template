@@ -1,0 +1,122 @@
+%###########################################################################
+%
+% Annex to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Caren Kresse 
+% 
+%###########################################################################
+
+Approval process
+
+
+This document details the process that third-party software needs to go through 
+before being entered into our company’s repository to make sure that it can be 
+licensed correctly. The flowchart at the end of this document displays the 
+sequence of steps as provided below.
+
+- Candidate for Use: A third-party software component that has been successfully 
+tested in a first technical assessment and is now considered for inclusion into 
+our company’s repository.
+
+========================================
+- Intended use: In-house or product? The FOSS policy rules if and how software 
+for in-house use is treated differently from software that is intended to be 
+copied and distributed. The Flowchart must be adapted accordingly.
+========================================
+########################################
+Option 1: If all Open Source Software is treated as equal, this step is omitted 
+and the approval process continues with Collect license information.
+########################################
+Option 2: Otherwise, the approval process continues with Collect license 
+information for software that is to be distributed, but concludes positively for 
+in-house software.
+########################################
+
+- Obtain complete corresponding source code: The complete corresponding source 
+code (CCSC) is needed to extract license information, for potential bug fixes 
+and other modifications and to be able to fulfill license obligations. It must 
+be downloaded from the original project repository along with the download link.
+========================================
+NOTE: Binary-only repositories (e.g. Maven) that do not contain any source code 
+make it practically impossible to fulfill many license obligations.
+========================================
+
+- Collect license information: The license of the Candidate for Use has to be 
+determined. Either there is a license notice included in the software, or a 
+default license is given in the imprint of a website or the supplier provides a 
+BOM containing license information. Our company maintains a -> ”List of known 
+licenses” that contains all licenses that have been evaluated previously (e.g. 
+based on SPDX list, OSI list, OSADL OSLOC). When an unknown license has gone 
+through an approval request it is added to this list.
+
+- Black listed? If the license of the Candidate for Use is listed on the 
+project-specific or on the company-wide -> ”Black List”, the Candidate for Use 
+must be discarded.
+========================================
+The company might maintain a Black List of licenses (e.g. licenses with an 
+advertising clause) that must not be used for a particular project 
+(project-specific Black List) or that must never be used at all (company-wide 
+Black List).
+========================================
+
+- White listed? If the license of the Candidate for Use is listed on the 
+company-wide or on the project-specific -> ”White List”, the Candidate for Use 
+is automatically approved.
+========================================
+The company might maintain a White List of licenses (e.g. permissive licenses 
+without any particularities) that may always be used (company-wide White-List) 
+or that may always be used for a particular project (project-specific White 
+List).
+========================================
+
+- Intended type of integration? Will the Candidate of Use form a derivative work 
+with any other software in the project, i.e. is it linked to anything, or will 
+it be a stand-alone component within the project? In case it is a derivative 
+work, can the components be separated again? For further reading see Supplement 
+-> ”What is a derivative work?”.
+
+- Derivative work with other FOSS? Derivative work with proprietary software? It 
+is differentiated whether a combined work is formed with other FOSS or with 
+proprietary software as this might have different implications on license 
+compatibility and obligations.
+
+- Check compatibility: When the Candidate for Use forms a derivative work with 
+other FOSS, the involved licenses have to be checked for compatibility if 
+necessary (i.e. the copyleft is triggered in the concrete use case). To do so, 
+our company’s instance of the -> ”OSADL Compatibility Matrix” is to be 
+consulted. The final license of the combined work denotes the row of the 
+matrix. Compatibility between two licenses is indicated with green color, 
+incompatibility with red color and cases that need to be decided individually 
+with gray color.
+========================================
+When the respective authority (e.g. M, LD or PL) has decided on how to interpret 
+an unclear compatibility, this may be displayed in the company’s individual 
+version of the compatibility matrix.
+========================================
+
+- Check compatibility with proprietary license: When the Candidate for Use forms 
+a derivative work with third-party or in-house developed software under a 
+proprietary license, the compatibility of the Candidate’s license with the final 
+proprietary license of the combined work must be checked. To do so, the 
+appropriate row at the bottom of the company’s instance of the -> ”OSADL 
+Compatibility Matrix” is to be consulted.
+========================================
+There are five additional rows at the bottom of the OSADL Compatibility Matrix 
+that use the color code described above. These rows (license name, 
+compatibilities) can be customized by the company according to their 
+requirements.
+========================================
+
+- Other constraints: A particular license might contain other constraints e.g. 
+setting the place of jurisdiction. Such additional constraints must be evaluated 
+individually based on the license text.
+
+If the approval process concludes positively, the Candidate for Use may be 
+entered into the company’s software repository. The process of how to do so is 
+outlined in our company’s FOSS policy. If the approval process concludes 
+negatively, the Candidate for Use must be discarded. If the approval process 
+concludes that an individual approval request must be made, the process as 
+outlined in -> ”Approval Request” must be followed.
+
+Image: Approval-Process-Flowchart.svg

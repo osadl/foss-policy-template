@@ -1,0 +1,962 @@
+%###########################################################################
+%
+% Supplement to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde, Till Jaeger, Caren Kresse 
+% 
+%###########################################################################
+
+What is a derivative work?
+
+
+1 Background
+
+1.1 Relevance
+The term ”derivative work” plays an important role in particular in the context 
+of copyleft clauses in FOSS licenses such as the GPL. The reason is that 
+derivative works need to be made subject to the original license conditions when 
+distributed. This can have significant consequences in the following two use 
+cases:
+(a) obligation to release proprietary developments as open source software, and
+(b) eligibility to use code under different FOSS licenses within a derivative work (license compatibility).
+
+1.2 Goal of this document
+The assessment of what constitutes a derivative work in software law requires 
+special legal and technical expertise. First of all, this document is intended 
+to shed light on the legal background, and then to explain for typical technical 
+scenarios whether independent programs exist in these scenarios, or whether they 
+constitute a derivative work, or in cases of doubt, the arguments and pros and 
+cons should be presented. The main focus is on the use of the term derivative 
+work in GPL-2.0, and it will be necessary to check in each individual case to 
+what extent the findings can be applied to other FOSS licenses as well.
+
+1.3 Term
+The term ”derivative work” originates from the US Copyright Act (17 U.S.C. § 
+101) and GPL-2.0 obviously refers to this understanding of the term. It reads as 
+follows: ”A ’derivative work’ is a work based upon one or more preexisting 
+works, such as a translation, musical arrangement, dramatization, 
+fictionalization, motion picture version, sound recording, art reproduction, 
+abridgment, condensation, or any other form in which a work may be recast, 
+transformed, or adapted. A work consisting of editorial revisions, annotations, 
+elaborations, or other modifications which, as a whole, represent an original 
+work of authorship, is a ’derivative work’.“
+The provision shows two aspects: first, the term is not used specifically for 
+software, and second, not every modification of a preexisting work results in a 
+derivative work, but only if the new work itself is original and copyrightable. 
+Accordingly, although most modifications require the permission of the author of 
+the preexisting work, not every modification leads to a distinct copyright of 
+the person who made the modification. Only if a derivative work is created it 
+can be licensed to third parties in turn.
+In international treaties such as the Berne Convention, the term ”derivative 
+work” is not used, but rather the terms ”adaptation” and ”alteration”: 
+”Translations, adaptations, arrangements of music and other alterations of a 
+literary or artistic work shall be protected as original works without prejudice 
+to the copyright in the original work.”
+In European law, Directive 2009/24/EC accordingly states: ”The translation, 
+adaptation, arrangement and any other alteration of a computer program and the 
+reproduction of the results thereof, without prejudice to the rights of the 
+person who alters the program”. The equivalent in German and Austrian copyright 
+law is ”Bearbeitung” and ”Werk zweiter Hand” in Swiss copyright law.
+GPL-2.0 contains more detailed explanations in its Section 2 about what is to be 
+considered a ”derivative work”. It is unclear whether these are intended to 
+reflect the understanding of the US Copyright Act or whether they differ from 
+it. The GPL-3.0 follows a different, international approach here: ”To ’modify’ a 
+work means to copy from or adapt all or part of the work in a fashion requiring 
+copyright permission, other than the making of an exact copy. The resulting work 
+is called a ’modified version’ of the earlier work or a work ’based on’ the 
+earlier work.” If a country requires permission for the adaptation that goes 
+beyond the mere right of reproduction, this is considered a ”modification” that 
+triggers the copyleft of GPL-3.0.
+
+1.4 Legal background
+It may be surprising that neither copyright laws nor the courts make a clear 
+statement as to when the use of two or more software components results in a 
+”derivative work” and when these are to be considered independent works. There 
+are two main reasons for such a situation: On the one hand, the understanding of 
+other work categories as works of art and literature can only be transferred to 
+software to a certain extent; and on the other hand, it is only the phenomenon 
+of FOSS that has led to the question of what a ”derivative work” is. In the 
+realm of proprietary software development, access to the source code and 
+permission to use it with other programs was usually tied to a license, which 
+made it unnecessary to draw a distinction between independent and derivative 
+works.
+It is generally agreed that modifications of source code and translations from 
+source code into object code or into another programming language can lead to a 
+”derivative work” if the originality is given. Here, computer programs are 
+comparable with literary texts and the legal assessment is largely transferable. 
+Far more difficult is the assessment of the combination of components and 
+software modules that run together but were programmed independently. In 
+specific cases, a ”compilation“ or ”collective work“ may exist if the selection 
+or arrangement of preexisting works represents a creative act. However, this is 
+less likely to include cases where a program is created using preexisting 
+components or where different software components interact with each other. 
+There is much controversy and lack of case law in the assessment of such cases 
+(with the exception of those in the video game sector, which are not easily 
+transferable to other software development).
+For European copyright law, it can at least be concluded from Directive 
+2009/24/EC that ”the function of a computer program is to communicate and work 
+together with other components of a computer system and with users and, for this 
+purpose, a logical and, where appropriate, physical interconnection and 
+interaction is required to permit all elements of software and hardware to work 
+with other software and hardware and with users in all the ways in which they 
+are intended to function.” The focus here is primarily on ”interfaces“: ”The 
+parts of the program which provide for such interconnection and interaction 
+between elements of software and hardware are generally known as ’interfaces’. 
+This functional interconnection and interaction is generally known as 
+’interoperability’; such interoperability can be defined as the ability to 
+exchange information and mutually to use the information which has been 
+exchanged.”
+The dilemma of the term ”interface” is that it describes an extremely wide range 
+of connection modes: On the one hand, passing program execution from one 
+component directly to another component which is a very tight connection and may 
+be seen by many as a clear case of a derivative work could be called an 
+”interface”, since the entire mechanism is called ”application programming 
+interface”. On the other hand, a network connection between completely different 
+computers that are thousands of miles separated from each other which probably 
+nobody will consider to be a case of an adaptation of one of the interacting 
+programs, may also be called a network interface. In consequence, adherence to 
+the term ”interface” and trying to use it as a solution to conclude about 
+derivation does not seem to be obvious and Directive 2009/24/EC does not provide 
+for a definition of that term. In addition, whether using the term ”interface” 
+in the context of derivation is transferable to US copyright law is as open as 
+the question of what is to be considered an ”interface” in the sense of the 
+directive. Thus, arguments can be derived for individual constellations from the 
+aspect that independent programs can also be interoperable, but numerous 
+technical constellations are still controversial.
+Last but not least, the purely copyright related understanding can be affected 
+by the interpretation of the GNU General Public License by the Free Software 
+Foundation (FSF), since the latter, as the ”license steward”, has a special 
+standing. Numerous right holders assume the FSF’s broad interpretation of the 
+term ”derivative work” to be correct when licensing.
+In the following, we want to give indications for an assessment of the most 
+important scenarios and make clear which of these scenarios are controversial, 
+what is the interpretation of the FSF in this regard and what OSADL is 
+recommending. Please note that OSADL’s recommendations must not be considered 
+individual legal advice, but are merely an opinion based on legal and technical 
+criteria OSADL considers relevant.
+
+2 Scenarios of software combinations
+
+Several source code snippets that are written in the computer language C are 
+presented in the following in order to demonstrate the various ways the 
+functionality of a given software may be expanded. In all of the following 
+examples, the original version of the code, the modified version of the code and 
+the so-called patch file (see explanation below) that may be used to convert the 
+original to the new version are presented. The fact that this modification may 
+not reach the required threshold of originality to gain copyright in the 
+modified work shall not be considered here.
+
+1. Modifying a single source code file
+The following source code snippets exemplify the modification of an existing 
+source code file by inserting a condition into the flow of commands: The 
+unconditional assignment of the value 1 to the variable a is adapted in such a 
+way that it becomes dependent on the newly introduced condition condition. The 
+variable a is given a value of 2, if condition is true; only if condition is 
+false, a still becomes 1. Modifying a source code file by adding a condition in 
+the exemplified manner certainly would not reach the threshold of originality 
+for a copyright in the modified work to be granted. If, however, larger 
+modifications were applied similarly to proof reading a manuscript with major 
+additions and corrections, then this would be considered creating a derivative 
+work. Thus, the argument for a derivative work is based on transferring the 
+action of adapting literature to the action of fixing or expanding software.
+
+Source code
+/* Description */
+
+(a) Before applying the modification:
+
+int a;
+/*Declare the integer variable named ”a”*/
+
+a = 1;
+/* Assign a value of 1 to the integer variable ”a” */
+
+(b) After applying the modification:
+
+int a;
+/* Declare the integer variable named ”a” */
+
+int condition;
+/* Declare the integer variable named ”condition” */
+
+if (condition)
+/* Test whether the variable ”condition” is true or not */
+  a = 2;
+  /* If ”condition” is true, assign a value of 2 to the variable ”a” */
+else
+  a = 1;
+  /* If ”condition” is false, assign a value of 1 to the variable ”a” */
+
+(c) The related patch file to apply the above modification would look like:
+
+ int a;
++int condition;
+
+-a = 1;
++if (condition)
++  a = 2;
++else
++  a = 1;
+
+Brief digression: What is a patch?
+A so-called patch file is a common method to submit software change requests. 
+Instead of sending the entire new file that may be very long and normally does 
+not contain hints which lines were modified, a short file is provided that 
+contains instructions how to edit the file. The first character of such a patch 
+file indicates the meaning of the subsequent line:
+
+- Space: Leave the line unchanged (so-called context that is used to locate the 
+code area to be modified)
+- Minus sign (-): Remove that line
+- Plus sign (+): Insert that line
+
+The command to be entered at command line level to create a patch named 
+patchfile runs as follows:
+diff -u oldfile newfile >patchfile
+
+The command to be entered at command line level to apply the patch named 
+patchfile runs as follows:
+patch <patchfile
+
+In addition, a patch is recommended to be prefixed by a header that contains 
+information why a particular modification was applied. It is further recommended 
+that the header provides the name of the author of the patch and a statement 
+that the patch does not contain any third parties’ rights and that the author is 
+licensing the modification appropriately.
+
+Table 1: Does ”Modifying a single source code file” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Yes
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+2. Adding a function to a single source code file and calling that function from code of the same file
+In contrast to the above example, existing source code may also be adapted by 
+adding a function call at a particular location. This will cause the program to 
+branch to another code section and execute the instructions of that section. 
+Upon return to the original location, a result value is returned that may be 
+evaluated by the caller. Such a scenario also constitutes a derivative work, 
+since – same as above – an existing source code file is adapted. However, the 
+newly added function may be provided in two different ways: Either the new 
+function is added to the same source code file, or the new function is placed in 
+another file and linked to the executable program only later on. For the current 
+case, it is assumed that the new function is added to the same source code file. 
+The following source code snippets implement the same functionality as above, 
+but here a function call is used.
+
+Source code
+/* Description */
+
+(a) Before applying the modification:
+
+int a;
+/* Declare the integer variable named ”a” */
+
+a = 1;
+/* Assign a value of 1 to the integer variable ”a” */
+
+(b) After applying the modification:
+
+int condition;
+/* Declare the integer variable named ”condition” */
+
+int set()
+/* Define a function named ”set” that returns an integer value */
+{
+  if (condition)
+  /* Test whether the variable ”condition” is true or not */
+    return 2;
+    /* If ”condition” is true, return the value 2 */
+  else
+    return 1;
+    /* If ”condition” is false, return the value 1 */
+}
+
+int a;
+/* Declare the integer variable named ”a” */
+
+a = set();
+/* Call the function ”set” and assign the return value to the variable ”a” */
+
+(c) The related patch would look like:
+
++int condition;
++int set()
++{
++  if (condition)
++    return 2;
++  else
++    return 1;
++}
+
+ int a;
+
+-a = 1;
++a = set();
+
+Table 2: Does ”Adding a function to a single source code file and calling that 
+function from code of the same file” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Yes
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+3. Providing an additional source code file with a new function and adding a 
+call to that function to an existing source code
+In contrast to the above given second example, the source code of the new 
+function is now provided in a separate file that is linked to the program only 
+at a later stage. This makes it possible to call the function from other files 
+of the same program or even from other programs, if this is desired. It has the 
+important advantage that it reduces the size of the program, helps facilitate 
+software maintenance and improve software quality. It ensures that a required 
+adaption of the function must only be done once; otherwise, it would be possible 
+that not all instances of the function code are adapted accordingly which 
+normally would result in a misbehavior of the program or, if separate programs 
+are involved, of the entire system.
+Standard functions of computer languages such as creating text output at a 
+console or graphics functions of desktop window managers such as painting lines 
+and areas on screen are usually provided in a separate file. Such files may 
+contain a large number of functions and are called ”libraries”. They are 
+generally shared among all programs that create text output or run under this 
+window manager, respectively.
+For the discussion of creating a derivative work or not, two separate aspects 
+must be considered: First, the action of providing or adding the function call 
+and, second, the action of creating the library functions. For providing or 
+adding the function call, it may be argued similarly as in the two above cases, 
+since it, again, represents a modification of an existing source code file. At 
+first glance, the newly provided function appears as a separate work; however, 
+the final program can never be used, if the function is not available. Thus, it 
+certainly may be argued that the program with the function call and the library 
+that contains the code of the function constitute a derivative work. As an 
+equivalent scenario from established art, a polyphonic piece of music may be 
+considered for which the composer did not provide a score with all voices, but 
+separate parts for each instrument. These separate parts create a derivative 
+work and can only be licensed altogether. An adapter may then – with permission 
+of the original composer – add a new part for an additional instrument to be 
+performed along with the original music. This will create a derivative work, and 
+a compatible license must be obtained, if the work is performed in public or 
+copied and distributed together.
+Where FOSS is concerned, the way of providing the function, i.e. either 
+inseparably in the same source code file or separately in another file, has an 
+eminently important implication, as the various licenses differ from each other 
+by explicitly ruling whether a particular software may
+
+- be combined with any other software irrespective of whether the components 
+may be separated later on or not (so-called ”permissive licenses”) such as 
+BSD-type licenses
+- be combined with differently licensed software components, if they always can 
+be separated and exchanged individually and if certain additional license 
+obligations and conditions are fulfilled (so-called ”licenses with weak 
+copyleft”) such as the Lesser GNU Public License (LGPL) or the Mozilla Public 
+License (MPL)
+- never be combined with differently licensed software, if not explicitly 
+permitted (so-called ”licenses with strong copyleft”) such as the GNU General 
+Public License (GPL)
+
+The following source code snippets implement the same functionality as above; 
+however, here not only a function call is used, but the related function is 
+placed in a new and separate file. The original code is contained in a file 
+named code.c, the new file is called set.c. In order to obtain the desired 
+functionality, the code with the newly added function must be combined with the 
+code that calls the function either at the time of creating the executable 
+program (static linking) or at the time of running the program (dynamic 
+linking).
+In most cases, libraries are intended as standard components used by various 
+programs. This is achieved by a so-called ”shared library mechanism”, i.e. a 
+library must only be present once on a system for all programs to be combined 
+with it at run time by dynamic linking. But it may also be conceivable that a 
+library is created for one particular program and is intended to be used only 
+with this program. Although it is to be expected that in such a case the library 
+would be statically linked, it is technically possible for the library to remain 
+separate and only be dynamically linked. It can be assumed that the mainstream 
+interpretation of copyright law would lean towards considering that linking such 
+a specified library forms a derivative work rather than linking to a standard 
+library.
+
+Source code
+/* Description */
+
+(a) Before applying the modification:
+
+int a;
+/* Declare the integer variable named ”a” */
+
+a = 1;
+/* Assign a value of 1 to the integer variable ”a” */
+
+(b) After applying the modification:
+Code in a file named code.c:
+
+int a;
+/* Declare the integer variable named ”a” */
+
+a = set();
+/* Call the function ”set” and assign the return value to the variable ”a” */
+
+Code in a separate file named set.c:
+
+int condition;
+*/ Declare the integer variable named ”condition” */
+
+int set()
+/* Define a function named ”set” that returns an integer value */
+{
+  if (condition)
+  /* Test whether the variable ”condition” is true or not */
+    return 2;
+    /* If ”condition” is true, return the value 2 */
+  else
+    return 1;
+    /* If ”condition” is false, return the value 1 */
+}
+
+(c) The related patch would look like:
+
+Index: code.c
+/* This indicates that the following patch instructions relate to the file 
+”code.c” */
+===================================================================
+--- code.c.orig
+/* This indicates that there was an existing original file ”code.c” to be 
+modified */
++++ code.c
+/* This indicates that the modified file will be ”code.c” */
+@@ -1,3 +1,3 @@
+/* This indicates that the patch deals with lines 1 to 3 */
+ int a;
+-a = 1;
++a = set();
+/* Here come the actual patch instructions */
+
+Index: set.c
+/* This indicates that the following patch instructions relate to the file 
+”set.c” */
+===================================================================
+--- /dev/null
+/* This indicates that there was no existing file */
++++ set.c
+/* This indicates that the new file will be created as ”set.c” */
+@@ -0,0 +1,9 @@
+/* This indicates that the patch found 0 lines and added lines 1 to 9 */
++int condition;
++int set()
++{
++  if (condition)
++    return 2;
++  else
++    return 1;
++}
+/* Here come the actual patch instructions */
+
+Table 3a: Does ”Providing an additional source code file with a new function, 
+adding a call to that function to an existing source code and statically linking 
+the files” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Yes
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+
+Table 3b: Does ”Providing an additional source code file with a new function, 
+adding a call to that function to an existing source code and dynamically 
+linking the files” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+
+4. Further methods to provide calls to newly added functions such as plugins
+
+Calling a static function
+The immediate call from a particular code location to a function and return from 
+it with an optional return value is the normal and the easiest way to obtain the 
+functionality of providing a software component that can be shared among 
+programs and users. Every imaginable microprocessor architecture provides a 
+suitable instruction for this purpose such as bsr in Motorola or call in Intel 
+syntax. The mnemonic bsr stands for branch to subroutine, since assembly 
+programmers prefer the term subroutine while C programmers call it a function; 
+however, the two terms are equivalent. Likewise, a machine instruction is 
+provided to return from subroutine which is, for example, rts for return from 
+subroutine in Motorola or ret in Intel syntax. Thus, the C compiler would 
+translate some short snippets from the above example code in the following way:
+
+Source code
+/* Description */
+
+(a) C language:
+
+int set()
+/* Define a function named ”set” that returns an integer value */
+{
+  return 1;
+  /* Return the value 1 */
+}
+
+int a = set();
+/* Call the function ”set” and use the return value */
+
+(b) The above source code in Intel assembly language:
+
+<set>:
+/* Define the label ”set”, this is the start of the subroutine */
+  mov $0x1,%eax
+  /* Load the value 1 to the machine register ”eax” */
+  ret
+  /* Return from subroutine, this is the end of the subroutine */
+  
+  call <set>
+  /* Call the subroutine ”set” and return from it (cannot be another address, 
+since ”set” is a static address) */
+  
+  move %eax, ...
+  /* Use the return value for future computation */
+
+Calling a function at a variable address
+Sometimes, however, it is desired not to call a predefined function that is 
+located at an unchangeable static location, but to refer to a program variable 
+that contains the start address of a function. Such variables are called 
+function pointers, and this mechanism is used to provide so-called plugin 
+libraries. The code then provides the entire mechanism of a function call, but 
+the location where to branch may be defined only at runtime. The only important 
+prerequisite is that the calling program and the plugin adhere to the same 
+calling convention. Plugins make it possible to interchangeably use various 
+libraries for different, but compatible functionality. An example use case could 
+be a distribution that contains various plugin versions of a particular library 
+in different natural languages from which a user can select at runtime. Since 
+plugins are widely used to expand the functionality of a program for example by 
+replacing a restricted default FOSS library by a feature-rich commercial 
+version, the question often arises whether calling a function in a plugin 
+library can be considered being equivalent to a regular function call and, thus, 
+normally creates a derivative work or not. The following code snippet reproduces 
+the functionality of the above regular function call, but uses a function 
+pointer instead.
+
+Source code
+/* Description */
+
+(a) C language:
+
+int set()
+/* Define a function named ”set” that returns an integer value. This function 
+may be exchanged by adifferent plugin. */
+{
+  return 1;
+  /* Return the value 1 */
+}
+
+int (*func)() = set;
+/* Declare the variable function pointer ”func” and assign the start address of 
+the function ”set” to it */
+
+int a = func();
+/* Call the function and use the return value */
+
+(b) The above source code in Intel assembly language:
+
+<set>:
+/* Define the label ”set”, this is the start of the subroutine */
+  mov $0x1,%eax
+  /* Load the value 1 to the machine register ”eax” */
+  ret
+  /* Return from subroutine, this is the end of the subroutine */
+  
+  mov <set>,%rdx
+  /* Store the address of the function ”set” to the machine register ”rdx” 
+(could be another address, if desired) */
+  
+  call *%rdx
+  /* Evaluate the address of the machine register ”rdx”, branch to and return 
+from it */
+  
+  move %eax, ...
+  /* Use the return value for future computation */
+
+The assembly language versions of the two above examples, calling a static 
+function and calling a function at a variable address, clearly show that the 
+calling mechanism, i.e. using the call instruction and returning with ret, is 
+identical irrespective of whether the normal or the plugin method of calling a 
+function is used. Thus, we think that plugin libraries create a derivative work 
+with the calling program in the same way as normal libraries do.
+
+Table 4: Does ”Providing an additional source code file with a new function, 
+adding a call to that function to an existing source code and calling the 
+function via a function pointer” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+5. Exception: By-passing the operating system and branching to stand-alone 
+functions in a separate memory area
+Under very particular conditions, an execution scenario may be created where the 
+functions to be executed are not part of the same operating system, but run 
+immediately on the microprocessor in a separate reserved memory area that the 
+primary operating system is not aware of. In this case, functions may be 
+implemented that are completely agnostic from the local settings and may run on 
+any system with the only requirement that the processor architecture must be 
+compatible. Such functions do not form a derivative work with the primary 
+operating system.
+
+Table 5: Does ”By-passing the operating system and branching to stand-alone 
+functions in a separate memory area” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Unknown
+Recommendation of OSADL: No
+
+6. Software components that interact with each other via an interface other than 
+a function call
+
+(a) User-space program and operating system kernel
+The execution of an operating system kernel command by a user-space program such 
+as requesting to write data to a storage medium does not work via function calls 
+as in the above examples, but is realized using so-called exception processing 
+of the microprocessor. Such processing switches to another work mode of the 
+processor, and reprograms the memory manager and the memory pointers in such a 
+way that other memory areas are assigned to the program. This makes the 
+user-space program and the operating system kernel completely independent and 
+separable from each other at any time. In consequence, they do not form a 
+derivative work and, thus, can be licensed independently. This is attested in 
+particular for the Linux kernel by the so-called Linux Syscall Note prepended to 
+the GPL-2.0 by Linus Torvalds, the original author of the Linux kernel:
+
+"NOTE! This copyright does *not* cover user programs that use kernel services by 
+normal system calls - this is merely considered normal use of the kernel, and 
+does *not* fall under the heading of "derivative work". Also note that the GPL 
+below is copyrighted by the Free Software Foundation, but the instance of code 
+that it refers to (the Linux kernel) is copyrighted by me and others who 
+actually wrote it."
+
+(b) Compiler and source code
+When source code is compiled with FOSS tools such as included in the GNU 
+Compiler Collection (GCC), the created object code certainly does not create a 
+derivative work along with the compiler, but simply constitutes another state of 
+aggregate of the original code. Therefore, it may certainly retain its license, 
+meaning in particular that also proprietary source code may be compiled with a 
+FOSS compiler while remaining proprietary.
+
+Possible exception: A compiler may include components into the object code If 
+GCC tools combine additional protected FOSS components (e.g. runtime libraries) 
+with the source code when creating an executable, this executable forms a 
+derivative work of the protected components. This is, for example, the case for 
+the C++ standard library libstdc++. In order to avoid every program written in 
+C++ to be a derivative work of the standard library, the so-called GCC Runtime 
+Exception (https://gcc.gnu.org/onlinedocs/libstdc++/manual/license.html) is 
+added to the GNU General Puplic License version 3.0 for the libstdc++ and other 
+such libraries contained in the GCC.
+
+(c) Interpreter and script
+In equivalence to compiling, a script licensed in any manner can be executed by 
+a FOSS interpreter without forming a derivative work with the same. For example, 
+a proprietary PHP script may be processed by the FOSS Apache web server, but the 
+script certainly stays proprietary.
+
+(d) Programs connected via local Unix socket
+Two independent programs may communicate via a local Unix socket, but this does 
+not lead to a derivative work of the two programs. They stay a mere aggregate of 
+independent works and, thus, may be licensed independently.
+
+(e) Programs connected via local or remote network connection
+Two independent programs may communicate via a local or remote network 
+connection, but this does not lead to a derivative work of the two programs. 
+They stay a mere aggregate of independent programs, if local, or, if remote, 
+completely separate programs. In consequence, they may continue to be licensed 
+independently.
+
+(f) Software connected via local bus (e.g. PCIe) interface
+An operating system driver that communicates with the firmware of a PCIe adapter 
+board such as the Linux kernel interacting with a network interface adapter is 
+not creating a derivative work, since both systems may run independently of each 
+other and may also communicate with other partners.
+
+(g) Programs connected via remote bus (e.g. USB) interface
+Two computers that communicate with each other via a remote interface do not 
+form a derivative work, since both systems may run independently of each other 
+and may also communicate with other partners.
+
+Table 6: Do ”Software components that interact with each other via an interface 
+other than a function call” lead to a derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: No (However, if two independent programs establish intimate 
+communication by sharing complex data structures, or shipping them back and 
+forth they might be considered a derivative work. See FAQ of the FSF at 
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#GPLPlugins)
+Recommendation of OSADL: No
+
+7.
+(a) Main process and forked child process with subsequent execution
+Many operating systems, if not all, offer the mechanism that a program may 
+launch execution of another program (a so-called ”child process”) and completely 
+split from it. This happens, for example, when a user double-clicks on an item 
+in a file manager desktop such as the Windows Explorer and the related program 
+starts. In this case, the file manager and the started program do not form a 
+derivative work, since they continue to be independent programs – even, if they 
+communicate later on with each other (see 6. (d) - (g)). This is called ”fork 
+and execute” and works as follows:
+
+Source code
+/* Description */
+
+pid = fork();
+/* Duplicate the current process, but it is not yet independent */
+if (pid == -1)
+  exit(1);
+  /* An error occurred */
+else if (pid == 0) {
+/* This code is executed by the child process – still not independent */
+  ...
+  /* Additional code may be executed here ... */
+  char *args[] = {"prog", NULL}
+  /* Prepare independent execution of the child process */
+  execv("prog", args);
+  /* Execute it as new program ”prog” to make it independent */
+  exit(0);
+  /* This line is only executed in case of error */
+} else {
+  ...
+  /* Here the original program continues */
+}
+
+If the above code is executed continuously without any extra code between fork() 
+and execv(), then this code snippet exactly reproduces the situation described 
+above, and the new program prog will run independently and not create a 
+derivative work with the program it was forked from.
+
+(b) Exception: Forking a child process without subsequent execution
+There are, however, rare situations only available in some operating systems 
+when a child process is split from the original program, but is not executed as 
+separated program and continues to run as companion of the first one. This is 
+the case when additional code is executed after the fork() took place, but 
+before execv() was executed. This code runs as an exact copy of the original 
+task and, thus, forms a derivative work with it. This feature is available in 
+Unix operating systems and is, for example, unknown in Windows computers. It is 
+mentioned here for the sake of completeness; normally it is evident whether a 
+new and separate program is launched or a program merely is a metamorphosis of 
+the old one.
+
+Table 7a: Does ”Forking a child process with subsequent independent execution” 
+lead to a derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: No (However, if two independent programs establish intimate 
+communication by sharing complex data structures, or shipping them back and 
+forth they might be considered a derivative work. See FAQ of the FSF at 
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#GPLPlugins)
+Recommendation of OSADL: No
+
+Table 7b: Does ”Forking a child process without independent execution” lead to a 
+derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Unknown
+Recommendation of OSADL: Yes
+
+8. Exception: Independent programs that are distributed as a single work
+In general, ”mere aggregation” of independent software components on the same 
+storage or distribution medium or as common archive and image files, in such a 
+way that the original independent files can become available again, does not 
+result in a derivative work. However, if the independent parts can no longer be 
+separated easily so, in fact, a single work is created (e.g. in a single binary 
+file or in an archive that uses an undisclosed archiving method), it would be 
+considered a derivative work.
+
+Table 8: Do ”Independent programs that are distributed as a single work” lead to 
+a derivative work?
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Unknown
+Recommendation of OSADL: Yes
+
+3 Circumvention of copyleft
+
+As concluded above, the interface method, i.e. the way how the various software 
+components talk to each other, is the key criterion to decide whether the 
+components become part of a derivative work or not. However, there are many ways 
+to convert a given interface into another one, and the question arises whether 
+such a technical conversion method may be legally valid, or whether it generally 
+constitutes an illegal circumvention of the authors’ licensing intention.
+
+1. Practical example of an attempt to circumvent copyleft
+It is assumed in this example that an author has created a library to transform 
+a stream of discrete analog data (amplitude over time) into a histogram of 
+contained frequency components (power over frequency) and uses the principle of 
+a Fast Fourier Transform (FFT) for this purpose. The library is licensed under 
+the GNU General Public License (GPL) version 2. A company decides to use this 
+library, link it to a proprietary application and copy and distribute it along 
+with their product under a proprietary license (see Figure 1).
+
+Figure 1: Original use of the library via function call. (FFT-library-EN.eps)
+
+When at a later stage the company realizes that this constitutes an infringement 
+of the library author’s copyright, it is decided to add a so-called wrapper to 
+the library that allows to compile the library into a stand-alone FFT server 
+application. The functionality of the library is then made available to the 
+proprietary application via a local socket interface (see Figure 2). 
+
+Figure 2: Modified use of the library via socket connection. (FFT-server-EN.eps)
+
+In practice, the FFT server is launched automatically when the computer is 
+started, and the application establishes the socket connection during its 
+initialization. Instead of directly branching into the functions of the library 
+using normal function calls as originally intended, the application submits 
+service requests along with data to the server via the socket interface and 
+receives the transformed data via the return channel in the same way. Since a 
+server and an application that communicate via a local socket interface normally 
+do not create a derivative work and, thus, can be licensed independently, the 
+company assumes to have found a solution to the licensing problem. Is this a 
+valid assumption?
+
+2. Pro and contra of the legal validity of the above scenario
+
+Pro
+- The formal criterion that independent and separable works have been created is 
+fulfilled. Thus, the application no longer forms a work derived from the 
+library.
+
+Cons
+- The author of the library has explicitly decided to use a license with a 
+strong copyleft. This decision restricts the number of users considerably and, 
+thus, almost certainly will lead to a smaller test base and, in consequence, to 
+lesser bug reports and finally to a lower software quality than would be 
+possible when using a license with weak copyleft or when using a permissive 
+license. In consequence, the author of the library must have had important 
+personal reasons to still decide in favor of the GPL and, thus, has the right 
+that this choice is recognized.
+- There is no technical reason whatsoever to add a wrapper layer around the 
+library.
+- The only plausible explanation of adding a wrapper layer around the library is 
+the unwillingness of the author to accept the copyleft of the license.
+- It is true that the GPL formally allows unrestricted modification of the 
+software, but it may be argued that adding a wrapper layer to the software with 
+the only intend to circumvent license obligations violates the author’s higher 
+legal interest to achieve license compliance.
+- The criterion that independent and separable works have been created is merely 
+a formal one. If functionality is accepted as a criterion, one may argue that 
+the application cannot work correctly when the server is not available.
+- The copyright perspective is not only based on the technical arrangement, but 
+can also take other criteria into account.
+
+Conclusion
+More arguments, at least for the above scenario, favor the view that an illegal 
+circumvention of derivation was established and that the employed retrospective 
+approach to obtain license compliance is deemed to fail. Thus, the 
+recommendation can again be given to prospectively pay more attention to license 
+compatibility before deciding to use a particular software than to try finding a 
+method of circumvention after erroneously deciding to use a software that cannot 
+be licensed in its original environment.
+
+4 Conclusion as recommended by OSADL
+
+The question whether software components are part of a single work or are 
+separate and independent of each other in such a way that they do not create a 
+derivative work is best answered by analyzing the technical connection between 
+them.
+
+(A) Connected via function call
+A normal function call almost always creates a derivative work. This is mostly 
+independent of the mechanism the function call is realized in practice. However, 
+if at least one work uses a FOSS license, this does not automatically mean that 
+the derivative work must be distributed under a single license. This is 
+possible, as some FOSS licenses permit to be combined with other licenses under 
+certain conditions (license with weak copyleft) or often even without 
+restriction (permissive licenses). To determine whether combining works under 
+different licenses is possible at all and whether there are licensing 
+obligations for the derivative work the compatibility of the involved licenses 
+must be evaluated (see -> ”Compatibility Matrix”).
+
+(B) Connected via a mechanism other than by function call
+Nearly no connection mechanism other than by function call forms a derivative 
+work and, thus, the various software components may generally be treated as 
+independent works.
+
+As the example in Section 3 shows, the technical consideration alone does not 
+always satisfy the legal assessment of copyright law in individual cases. As 
+shown in Section 2, exceptions are always possible. However, as there are almost 
+no clear statements either from copyright law or from the courts, the technical 
+connection is the only remaining criterion to make a decision on whether a 
+derivative work is formed.
+
+Overview of which scenarios of software combination lead to a derivative work
+
+- Modifying a single source code file
+
+Mainstream interpretation of copyright law: Yes
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+- Adding a function to a single source code file and calling that function from 
+code of the same file
+
+Mainstream interpretation of copyright law: Yes
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+- Providing an additional source code file with a new function, adding a call 
+to that function to an existing source code and statically linking the files
+
+Mainstream interpretation of copyright law: Yes
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+- Providing an additional source code file with a new function, adding a call to 
+that function to an existing source code and dynamically linking the files
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+- Providing an additional source code file with a new function, adding a call to 
+that function to an existing source code and calling the function via a function 
+pointer
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Yes
+Recommendation of OSADL: Yes
+
+- By-passing the operating system and branching to stand-alone functions in a 
+separate memory area
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Unknown
+Recommendation of OSADL: Yes
+
+- Software components that interact with each other via an interface other than 
+a function call
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: No (However, if two independent programs establish intimate 
+communication by sharing complex data structures, or shipping them back and 
+forth they might be considered a derivative work. See FAQ of the FSF at 
+https://www.gnu.org/licenses/old-licenses/ gpl-2.0-faq.html#GPLPlugins)
+Recommendation of OSADL: No
+
+- Forking a child process with subsequent independent execution
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: No (However, if two independent programs establish intimate 
+communication by sharing complex data structures, or shipping them back and 
+forth they might be considered a derivative work. See FAQ of the FSF at 
+https://www.gnu.org/licenses/old-licenses/ gpl-2.0-faq.html#GPLPlugins)
+Recommendation of OSADL: No
+
+- Forking a child process without independent execution
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Unknown
+Recommendation of OSADL: No
+
+- Independent programs that are distributed as a single work
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: No
+Recommendation of OSADL: No
+
+- State of derivation is maintained after technical conversion of interfaces 
+(circumvention)
+
+Mainstream interpretation of copyright law: Unknown
+View of FSF: Unknown
+Recommendation of OSADL: Yes

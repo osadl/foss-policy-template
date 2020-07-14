@@ -1,0 +1,16 @@
+%###########################################################################
+%
+% Annex to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Caren Kresse
+% 
+%###########################################################################
+
+Black List
+
+
+This document lists FOSS licenses that we consider not suitable for use in any 
+project. These licenses can never be approved for use in our company.
+
+

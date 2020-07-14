@@ -1,0 +1,106 @@
+%###########################################################################
+%
+% Supplement to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde 
+% 
+%###########################################################################
+
+How To: Acknowledgments
+
+
+1 Background
+
+A FOSS license may impose the obligation to forward or to provide an 
+acknowledgment using a text which is usually stated in the license. The obvious 
+intention of the original authors or the organization that owns the copyright of 
+the software to request such acknowledgment is to be credited for the time and 
+money of making the work available free of charge under an Open Source license. 
+However, it also is intended to transparently inform the recipient of the 
+software that the supplier may not be the author and may not merit the full 
+credit. For the latter, some licenses request that the acknowledgment must not 
+only be forwarded or provided in some hidden place, but at a conspicuous 
+location.
+
+2 Examples
+
+2.1 BSD-4-Clause-UC
+A well-known example of an Open Source license that requires an acknowledgment 
+is the (original) BSD-4-Clause-UC license that states in section 3:
+
+All advertising materials mentioning features or use of this software must 
+display the following acknowledgement: This product includes software developed 
+by the University of California, Berkeley and its contributors. 
+
+Note that this acknowledgment contains a static string, i.e. it must always be 
+cited verbatim.
+
+2.2 IPL-1.0
+The (now outdated) IPL-1.0 license imposes a similar acknowledgment obligation 
+and requests that it must be placed in a conspicuous location:
+
+Each Contributor must include the following in a conspicuous location in the 
+Program: Copyright (C) 1996, 1999 International Business Machines Corporation 
+and others. All Rights Reserved.
+
+This acknowledgment also contains a static string and must always be cited 
+verbatim.
+
+2.3 BSD-4-Clause
+The general form of the BSD-4-Clause license may be used by right holders other 
+than the University of California, Berkeley and thus, each occurrence may name a 
+different entity (the term ”organization” is used as a placeholder by the SPDX 
+Working Group):
+
+All advertising materials mentioning features or use of this software must 
+display the following acknowledgement:
+This product includes software developed by the organization.
+
+All different texts of the various acknowledgments must be extracted 
+individually from every software package and provided along with advertising 
+material, if any. In some cases, the author or authors may have omitted to 
+replace the term ”organization” by an appropriate name or ignored it 
+intentionally. In this case, the acknowledgment can be cited as is and needs 
+only to occur once should several files or software packages use the same 
+license.
+
+3 Practical considerations
+
+3.1 Required actions may differ
+Only if i) source code delivery is chosen, ii) the acknowledgment obligation of 
+the license does not explicitly request a particularly enhanced visibility of it 
+and iii) the source code delivery contains the acknowledgment in the source code 
+files or in an accompanying obviously named file, no additional action is 
+required to fulfill the acknowledgment obligation. However, if the 
+acknowledgment must be placed at a well visible location or binary delivery is 
+chosen in which case the acknowledgment normally is stripped off during 
+compilation, the text of the acknowledgment must be carefully extracted and 
+provided separately in an appropriate manner. Copying and distributing software 
+without appropriately acknowledge the authors although it is requested by the 
+license may breach the license and, thus, constitute copyright infringement.
+
+3.2 Examples of relevant license obligation as obtained from the OSADL License 
+Obligations Checklists
+An Open Source license checklist may contain the section
+
+USE CASE Source code delivery
+  YOU MUST Credit Verbatim ”Acknowledgment”
+    ATTRIBUTE Highlighted
+
+or the section
+
+USE CASE Binary delivery
+  YOU MUST Credit Verbatim ”Acknowledgment”
+
+while the latter may or may not require the acknowledgment to be placed at a 
+conspicuous location such as
+
+    ATTRIBUTE Highlighted
+
+In all above cases, the appropriate acknowledgment string must be obtained and 
+provided along with the product as specified in the license.
+
+3.3 How to obtain the acknowledgment string
+The recommended way to obtain the acknowledgment string is to identify and 
+extract it as explained in the Supplement -> ”How To Scan”.

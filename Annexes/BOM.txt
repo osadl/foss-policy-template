@@ -1,0 +1,244 @@
+%###########################################################################
+%
+% Annex to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde, Caren Kresse
+% 
+%###########################################################################
+
+Bill of Material (BOM)
+
+
+This document lists and explains the information that a Bill of Material (BOM) 
+of a software product of our company must contain. The information must be 
+entered into the form supplied at the end of this document. According to the 
+number of contained software components the provided Section 2: Contained 
+software material must be duplicated repeatedly.
+========================================
+The content of a BOM that is delivered along with the product depends on the 
+customer’s rrequirements and may be significantly shorter. At the very least 
+however it must contain name and version of the component and its licenses.
+========================================
+
+1 General information on the software product
+
+- Name: Unique name of the product that serves as reference throughout our 
+company and the entire group of affiliates.
+
+- Company/department: Name of the leading department that is internally 
+responsible for this software product.
+
+########################################
+- Optional: Brief description: A quick overview about the software product and 
+its intended use cases
+########################################
+
+########################################
+- Optional: Third-party or in-house developed product: This entry notes whether 
+this BOM describes an acquired product and the BOM is primarily needed for 
+internal documentation or whether the BOM describes a product developed in-house 
+and the BOM is needed to compliantly fulfill license obligation when copying and 
+distributing it.
+########################################
+
+########################################
+- Optional: Asset ID: Unique ID to be referenced to our company’s inventory list
+########################################
+
+- Version number
+
+- Release date: The release date of the current version
+
+########################################
+- Optional: Remarks: Additional information
+########################################
+
+- In-house contacts: The persons responsible for the above information (e.g. 
+SD, PL).
+
+2 Contained software material
+
+This is the actual bill of material, and since a software product may contain 
+several separate materials, this section may need to be repeated as often as 
+separate software components are contained. Every section lists the following 
+items:
+
+- Name: Unique name of the software component
+
+########################################
+- Optional: Brief description: A quick overview about the software component 
+and its intended use cases.
+########################################
+
+########################################
+- Optional: Asset ID: Unique ID to be referenced to our company’s inventory list
+########################################
+
+- Version number
+
+- Release date: The release date of the current version
+
+########################################
+- Optional if BOM is not internal: Provider: Name of the person or company that 
+provides the software component. If the software has been developed in-house and 
+the BOM is required for a compliant delivery of a product that contains this 
+software, ”in-house” should be specified here.
+########################################
+
+########################################
+- Optional: if BOM is not internal: Provider contact: Full contact data of the 
+provider, may be external or internal
+########################################
+
+########################################
+- Optional if BOM is not internal: Provider URL: URL of the provider, required 
+if external, optional if internal
+########################################
+
+########################################
+- Optional: Source and/or object code: This specifies whether the final state 
+of the software component, i.e. when it is externally delivered or released for 
+in-house use, is available in source code or object code form or both.
+########################################
+
+########################################
+- Optional: Computer languages: The computer languages employed, may be left 
+undefined, if the software component is only available in object code form and 
+the computer language is unknown.
+########################################
+
+########################################
+- Optional: Acquisition mode: How was the software component acquired, multiple 
+selections may be specified if applicable
+  - CD, DVD or similar
+  - USB Stick
+  - Download, this requires that the URL from where the software component was 
+downloaded is additionally specified.
+  - Integrated in hardware
+########################################
+
+- Licenses: This is the most important section of the BOM. All applicable 
+licenses of this software component must be given. The preferred form is to use 
+SPDX specifiers of the licenses. In case a selection may be made from several 
+licenses (e.g. dual licensing) this must be noted.
+
+########################################
+- Optional: Remarks: Additional information
+########################################
+
+- In-house contacts: The responsible person(s) at the PD and the SD must be 
+given here.
+
+3 Bill of Dependencies (BOD)
+
+A software product may be conveyed as a separate trade item, but additional 
+software components such as a standard library of the employed computer language 
+may be required at runtime. Such additional software components must be listed 
+here.
+
+########################################
+- Optional: Source of information: The dependency information may have been 
+obtained from the provider and/or immediately extracted from the code by our 
+engineering department.
+########################################
+
+- In-house contacts: The responsible person(s) at the provider and/or in-house 
+(SD or PL) must be given here.
+
+- Required software components: Finally and most importantly, the required 
+software components must be listed. They shall be differentiated in two 
+categories whether they form a derivative work with the software product 
+described herein, or whether the two merely constitute an aggregate of 
+independent pieces of software.
+
+4 Approval
+
+The final section of the BOM contains the name of the responsible person at the 
+LD who approved the BOM along with place, date and signature.
+
+
+Bill of Material
+
+1 General information on the software product
+
+Name:
+
+Company/department:
+
+Optional: Brief description:
+
+Optional: Third-party or in-house developed product:
+O Third-party
+O In-house development
+
+Optional: Asset ID:
+
+Version number:
+
+Release date:
+
+Optional: Remarks:
+
+In-house contacts (SD or PL):
+
+2 Contained software material #1
+
+Name:
+
+Optional: Brief description:
+
+Optional: Asset ID:
+
+Version number:
+
+Release date:
+
+Optional if BOM is not internal:
+Provider:
+Provider contact:
+Provider URL:
+
+Optional: Source and/or object code:
+O Source
+O Object
+
+Optional: Computer language(s):
+
+Optional: Acquisition mode:
+O CD, DVD
+O USB stick
+O Download, Download URL if applicable
+O Integrated in hardware
+
+Licenses (in SPDX format):
+
+Optional: Remarks:
+
+In-house contacts:
+PD:
+SD:
+
+3 Dependencies
+
+Optional: Source of information:
+O Obtained from provider
+O Extracted here from code
+
+In-house contact (SD or PL):
+
+Required software (derivative work):
+
+Required software (mere aggregate):
+
+4 Approval
+
+In-house contact (LD):
+
+Approval:
+O Approved for in-house use
+O Approved for distribution
+
+Place and date:
+
+Signature:

@@ -1,0 +1,175 @@
+%###########################################################################
+%
+% Annex to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Caren Kresse, Carsten Emde 
+% 
+%###########################################################################
+
+List of known licenses
+
+
+This document lists all FOSS licenses that have been evaluated previously. When 
+an unknown license has gone through an approval request it is added to this 
+list.
+========================================
+It might make sense to categorize this list, e.g. by strong, weak, no copyleft, 
+additional sales obligations (e.g. LGPL-2.1), acknowledgment requirements, 
+licensing of patents, etc.
+The list below is merely a suggestion that is based on the OSADL Open Source 
+License Obligation Checklists. It must be reviewed individually before employing 
+it. A company’s list of known licenses could also be based on e.g. the SPDX list 
+or OSI list of licenses.
+========================================
+
+1 Licensing categories
+
+1.1 Copyleft licenses
+
+Strong copyleft licenses
+- GNU Affero General Public License v3.0 (AGPL-3.0)
+- Common Public License 1.0 (CPL-1.0)
+- Eclipse Public License 1.0 (EPL-1.0)
+- European Union Public License 1.1 (EUPL-1.1)
+- GNU General Public License v2.0 (GPL-2.0)
+- GNU General Public License v3.0 (GPL-3.0)
+- IBM Public License Version 1.0 (IPL-1.0)
+- Microsoft Reciprocal License (MS-RL)
+- Open Software License 3.0 (OSL-3.0)
+
+Weak copyleft licenses
+- Common Development and Distribution License 1.0 (CDDL-1.0)
+- Eclipse Public License 2.0 (EPL-2.0)
+- GNU General Public License v2.0 WITH Classpath exception 2.0 (GPL-2.0 WITH 
+Classpath-exception)
+- GNU Lesser General Public License v2.0 (LGPL-2.0)
+- GNU Lesser General Public License v2.1 (LGPL-2.1)
+- GNU Lesser General Public License v3.0 (LGPL-3.0)
+- Mozilla Public License 1.1 (MPL-1.1)
+- Mozilla Public License 2.0 (MPL-2.0)
+- Mozilla Public License 2.0 no copyleft exception 
+(MPL-2.0-no-copyleft-exception)
+- Reciprocal Public License 1.5 (RPL-1.5)
+
+Copyleft licenses with additional requirements
+- GNU Lesser General Public License v2.1 (LGPL-2.1)
+========================================
+The GNU Lesser General Public License v2.1 (LGPL-2.1), imposes additional sales 
+obligations. These include that the distributor must permit modification of 
+linked proprietary components and reverse engineering of the same to debug such 
+modifications. This may conflict with other equally applicable sales conditions 
+in such a way that the management may generally forbid to use software under 
+such licenses in products. Alternatively, such licenses may, of course, simply 
+be put on the -> ”Black List”.
+========================================
+- GNU Lesser General Public License v3.0 (LGPL-3.0)
+========================================
+Version 3.0 of the GNU Lesser General Public License (LGPL-3.0) imposes the 
+additional obligation to not restrict modification of those parts of a 
+derivative work that are licensed thus, and to permit reverse engineering to 
+debug such modifications.
+========================================
+
+########################################
+Option 1: Software that is licensed under the GNU Lesser General Public License 
+v2.1 (LGPL-2.1) and/or the GNU Lesser General Public License v3.0 (LGPL-3.0) and 
+that would be linked from our company’s proprietarily licensed software may not 
+be used in products.
+########################################
+Option 2: There is no general restriction on the use of software that is 
+licensed under the GNU Lesser General Public License v2.1 (LGPL-2.1) or the GNU 
+Lesser General Public License v3.0 (LGPL-3.0). However, individual projects may 
+define per-project rules on combining software under GNU Lesser General Public 
+License v2.1 (LGPL-2.1) and/or GNU Lesser General Public License v3.0 (LGPL-3.0) 
+with proprietary software of our company.
+########################################
+
+This is then appropriately noted in the lower part of the -> ”Compatibility 
+Matrix” that is part of this FOSS policy.
+
+1.2 Permissive licenses
+
+With acknowledgment requirements
+- Apache License 1.0 (Apache-1.0)
+- Apache License 1.1 (Apache-1.1)
+- BSD 4-Clause License (BSD-4-Clause)
+- BSD 4-Clause ”Original” or ”Old” License (BSD-4-Clause-UC)
+- Freetype Project License (FTL)
+- Independent JPEG Group License (IJG)
+- XFree86 License 1.1 (XFree86-1.1)
+- zlib/libpng License with Acknowledgement (zlib-acknowledgement)
+
+Without particular requirements
+- Academic Free License v2.0 (AFL-2.0)
+- Academic Free License v2.1 (AFL-2.1)
+- Apache License 2.0 (Apache-2.0)
+- Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
+- BSD 2-Clause License (BSD-2-Clause)
+- BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
+- BSD 3-Clause License (BSD-3-Clause)
+- bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
+- bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
+- Creative Commons Zero v1.0 Universal (CC0-1.0)
+- curl License (curl)
+- Eiffel Forum License v2.0 (EFL-2.0)
+- Historic Permission Notice and Disclaimer (HPND)
+- IBM PowerPC Initialization and Boot Software (IBM-pibs)
+- ICU License (ICU)
+- ISC License (ISC)
+- libpng License (Libpng)
+- libtiff License (libtiff)
+- MIT License (MIT)
+- CMU License (MIT-CMU)
+- Net Boolean Public License v1 (NBPL-1.0)
+- NTP License (NTP)
+- Python License 2.0 (Python-2.0)
+- Qhull License (Qhull)
+- SunPro License (SunPro)
+- Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
+- Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
+- Universal Permissive License v1.0 (UPL-1.0)
+- Do What The F*ck You Want To Public License (WTFPL)
+- X11 License (X11)
+- zlib License (Zlib)
+
+2 Explicit licensing of patents
+
+========================================
+All FOSS licenses require licensing implemented patents. But while not all 
+licenses rule this explicitly, the licenses listed here do so.
+========================================
+
+- Academic Free License v2.0 (AFL-2.0)
+- Academic Free License v2.1 (AFL-2.1)
+- GNU Affero General Public License v3.0 (AGPL-3.0)
+- Apache License 2.0 (Apache-2.0)
+- BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
+- bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
+- Creative Commons Zero v1.0 Universal (CC0-1.0)
+- Common Development and Distribution License 1.0 (CDDL-1.0)
+- Common Public License 1.0 (CPL-1.0)
+- Eclipse Public License 1.0 (EPL-1.0)
+- Eclipse Public License 2.0 (EPL-2.0)
+- European Union Public License 1.1 (EUPL-1.1)
+- GNU General Public License v2.0 (GPL-2.0)
+========================================
+The patent license of the GPL-2.0 is not undisputed as sections 0 and 1 of the 
+license are not explicit.
+========================================
+- GNU General Public License v2.0 WITH Classpath exception (GPL-2.0 WITH 
+Classpath-exception)
+- GNU General Public License v3.0 (GPL-3.0)
+- IBM PowerPC Initialization and Boot Software (IBM-pibs)
+- Independent JPEG Group License (IJG)
+- IBM Public License Version 1.0 (IPL-1.0)
+- GNU Lesser General Public License v2.1 (LGPL-2.1)
+- GNU Lesser General Public License v3.0 (LGPL-3.0)
+- Mozilla Public License 1.1 (MPL-1.1)
+- Mozilla Public License 2.0 (MPL-2.0)
+- Mozilla Public License 2.0 no copyleft exception 
+(MPL-2.0-no-copyleft-exception)
+- Microsoft Public License (MS-PL)
+- Microsoft Reciprocal License (MS-RL)
+- Open Software License 3.0 (OSL-3.0)
+- Reciprocal Public License 1.5 (RPL-1.5)

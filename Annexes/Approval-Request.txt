@@ -1,0 +1,167 @@
+%###########################################################################
+%
+% Annex to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde, Caren Kresse 
+% 
+%###########################################################################
+
+Approval request
+
+
+This document details the information and material that must be collected to 
+submit an approval request for a third-party software component (”Candidate for 
+Use”). A Candidate for Use is eligible for an approval request when it has gone 
+through our company’s -> ”Approval process” and the outcome indicates so. The 
+information must be entered into the form supplied at the end of this document 
+and must be submitted to the LD.
+
+Information and material to submit
+
+- Intended use: Since third-party software that is merely used in-house may be 
+treated differently from software that is intended to be copied and distributed 
+to customers, it is important to specify the intended use of the Candidate for 
+Use.
+
+- Software package name and version number: The correct name of the software 
+package and the version number must be specified. If it is already predictable 
+that in the foreseeable future other version numbers may apply, they must be 
+given.
+########################################
+Option 1: A separate approval request must be submitted when the software is 
+upgraded to a new version.
+########################################
+Option 2: All versions are approved as long as there is no license change.
+########################################
+
+- URL of the related software project: Some software projects maintain a home 
+page that displays more general information of the software with background 
+information to licensing including answers to frequently asked questions with 
+respect to licensing. This is particularly important, since the authors or 
+holders of rights of a software have an important say with respect to the 
+license and interpretation of the same.
+
+- License name: Licenses have a distinguishable name, such as ”Common 
+Development and Distribution License 1.0” which must be given here. If 
+available, the SPDX Identifier (https://spdx.org/licenses/) shall be used.
+
+- Type of license: The license type must be specified, if this is possible in 
+advance: i.e. FOSS (listed in the catalog of Open Source licenses maintained by 
+the Open Source Initiative (OSI, https://www.opensource.org)) or other.
+
+- Original license text: If the license is not listed by OSI, the original 
+license text must be attached to the approval request. OSI listed licenses 
+fulfill the requirements of the Open Source Definition (OSD, 
+https://www.opensource.org/osd). Other licenses must be classified individually.
+
+- Type of integration: This item relates to the way the Candidate for Use will 
+be integrated into a system, if any. This is important, since FOSS licenses 
+differ with regard to obligations imposed on a derivative work (see Supplement 
+-> ”What is copyleft?”). Therefore, it should be specified here whether the 
+software to be approved is stand-alone or whether it is combined with other 
+third-party or in-house developed software. This has implications on whether the 
+compatibility of involved licenses needs to be considered. There are various 
+ways software components can interact, such as being statically or dynamically 
+linked, as plugins, as kernel modules, through other interfaces, etc. For 
+details see Supplement -> ”What is a derivative work?”
+
+- Type of linkage: Not all copyleft licenses request that the same license must 
+be used for any combined work, but may mitigate this obligation in such a way 
+that another license may be used, if the software components are linked at 
+compile or run time, can be separated at any time later on and the customer can 
+individually replace components by another version of choice. Such licenses are 
+called FOSS license with weak copyleft. It is therefore important to 
+differentiate the way of how the components are linked to each other and whether 
+they can be separated and relinked later on.
+========================================
+Copyleft licenses with and without restrictions are given as part of the -> 
+”OSADL Open Source License Obligations Checklists” project.
+========================================
+
+- List of software components to which the Candidate for Use will be linked, if 
+any: A complete list of all software components to which the Candidate for Use 
+will be linked must be given here to allow a license compatibility check. In 
+addition, for every such component the applicable license must be specified. If 
+approval is granted and software components are listed here, the approval is 
+limited to either stand-alone use or when linked to one of the listed 
+components.
+
+- List of software components that the Candidate for Use requires at link or run 
+time, if any: Some software packages are dependent on other software components 
+such as language libraries. A complete list of all software components that the 
+Candidate for Use requires at link or run time must be given here. In addition, 
+for every such component the applicable license must be specified and a separate 
+approval must have been obtained.
+
+- Attachments with respect to linkage and separability, if any: It sometimes 
+may be difficult to decide which components are linked together and whether they 
+can be separated later on – particularly, if a component recursively depends on 
+other components. In this case, a callgraph and/or a list of unresolved symbols 
+must be created and attached to this request (A tool to create such a call graph 
+by analyzing ELF files is available at https://github.com/armijnhemel/ 
+compliance-scripts/tree/master/elfgraphs).
+
+- Requester’s contact data: Finally, the contact data of the requester must be 
+given in case explanations of the provided information are needed.
+
+
+Approval request
+
+To be submitted to:
+Name
+Department
+Email
+
+Intended use: 
+O In-house only
+O To be copied and distributed
+O As SaaS
+
+Software package name:
+
+Software version number:
+
+URL of the related software project:
+
+License name or SPDX Identifier:
+
+Type of license:
+O OSI approved
+O Other
+
+O Original license text attached (mandatory, if not listed by SPDX)
+
+Type of integration:
+O Stand-alone
+O Linked
+O Other
+
+Type of linkage, if any:
+O Static, unseparable
+O Static, separable
+O Dynamic
+
+List of software components to which the software package to be approved will be linked, if any:
+Software component #1:
+  License:
+...
+Software component #n:
+  License:
+Additional software components, if any, are listed in an attachment.
+
+List of software components that the software package to be approved requires 
+at link or run time, if any:
+Software component #1:
+  License:
+...
+Software component #n:
+  License:
+Additional software components, if any, are listed in an attachment.
+
+Attachments with respect to linkage:
+O Callgraph
+O List of unresolved symbols
+
+Requester name, department:
+Requester email, phone:
