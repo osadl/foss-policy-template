@@ -29,7 +29,7 @@ Option 2:
 Initiated and concluded by lines of plus signs  
 ++++++++++++++++++++++++++++++++++++++++
 
-* Annexes and Supplements are given as separate .txt files. Where they are referenced, the document title is preceded by an arrow ->
+* Annexes and Supplements are given as separate .txt files in [Annexes/](Annexes) and [Supplements/](Supplements) Where they are referenced, the document title is preceded by an arrow ->
 
 ## Disclaimer
 This collection of explanations, templates and contract proposals was created in close collaboration with OSADL's General Counsel Dr. Till Jaeger and other legal professionals. However, the fact that legal professionals were involved in the preparation of the documents does not mean that any of the assessments or recommendations may be understood as individual legal advice that can only be given on a per-case basis by a lawyer.
