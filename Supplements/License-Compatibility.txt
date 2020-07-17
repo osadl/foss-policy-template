@@ -10,7 +10,133 @@
 License compatibility
 
 
-========================================
-This document will explain the concept of license compatibility an what aspects 
-must be considered when evaluating compatibility of FOSS licenses.
-========================================
+Software licenses are fundamentally legal texts and as such are by default not 
+compatible with each other. In the course of the adoption of FOSS, it has become 
+customary to combine pre-existing software components that are licensed under 
+different licenses and distribute them together. In general, this does not pose 
+any problem as long as the obligations of all licenses are fulfilled. However, 
+in particular scenarios combined software components may form a derivative work 
+(for details on when that might be the case see -> Supplement ”What is a 
+derivative work?”). A derivative work can only be distributed compliantly when 
+all involved licenses are compatible. License compatibility means that the 
+license requirements of all components of a derivative work do not contradict 
+each other. There are four possibilities for compatibility of FOSS licenses with 
+each other:
+
+- Incompatibility: Two licenses are incompatible with each other when they 
+contradict each other, i.e. one requires something that the other one does not 
+allow to require.
+
+- Unilateral compatibility: Two licenses are unilaterally compatible when their 
+requirements do not contradict each other but one license requires to be the 
+valid license for the entire derivative work.
+
+- Multilateral compatibility: Two or more licenses are bi- or multilaterally 
+compatible when their requirements do not contradict each other and none of them 
+has any licensing requirements on differently licensed components of the 
+derivative work.
+
+- Unclear compatibility: If a license requirement or the extend of a copyleft 
+clause is unclear, compatibility with other licenses cannot be determined 
+universally.
+
+This categorization leads to general guidelines for determining compatibility of 
+two FOSS licenses:
+
+- Copyleft licenses are not compatible with each other.
+Copyleft licenses (see -> Supplement ”What is Copyleft?”) require derivative 
+works to be licensed under the original license. If software components under 
+different copyleft licenses form a derivative work, it is not possible to 
+license that work under any license without violating the others.
+Exception:
+A copyleft license may explicitly rule compatibility with another copyleft 
+license. E.g. LGPL-2.1 and GPL: ”You may opt to apply the terms of the ordinary 
+GNU General Public License instead of this License to a given copy of the 
+Library”
+
+- Permissive licenses are unilaterally compatible with copyleft licenses.
+A copyleft license and a permissive license are generally compatible, with the 
+copyleft license being the ”leading” license under which the derivative work is 
+distributed.
+Exception:
+If the permissive license contains requirements that the copyleft license 
+forbids to require, they are not compatible. E.g. the BSD-4-Clause is a 
+permissive license that contains an advertising clause (see -> Supplement ”How 
+to: Acknowledgments”) which in the sense of the GPL-2.0 constitutes a ”further 
+restriction”, and thus makes the two licenses incompatible.
+
+- Permissive licenses are bilaterally compatible.
+Permissive FOSS licenses are generally compatible with each other. A derivative 
+work that consists of components licensed only under permissive licenses can be 
+compliantly distributed by fulfilling the license obligations of all involved 
+licenses.
+
+- If a license is unclear or the copyleft is questionable, compatibility has to 
+be decided on an individual basis.
+
+These guidelines have transpired from creating the -> ”OSADL Compatibility 
+Matrix”. This matrix displays the state of compatibility of every license that 
+is evaluated as part of the -> ”OSADL Open Source License Obligations 
+Checklists” with every other license. Compatibility is displayed by a green 
+field, incompatibility by a red field and unclear cases by a gray field. In case 
+two licenses are unilaterally compatible, the leading license marks the row of 
+the matrix. For a schematic of the matrix see Table 1.
+
+License A: Copyleft license that does not allow further restrictions (e.g. 
+GPL-2.0)
+License B: Copyleft license with explicit compatibility with license A (e.g. 
+LGPL-2.1)
+License C: License with an unclear copyleft clause (e.g. OpenSSL)
+License D: Permissive license without particularity (e.g. MIT)
+License E: Permissive license with further requirements (e.g. BSD-4-Clause)
+License F: Permissive license with unclear requirements (e.g. Apache-1.0)
+
+Table 1: Schematics of the -> ”OSADL Compatibility Matrix”
+
+Leading License: License A
+Compatibility with 
+  - License B: Yes
+  - License C: Unknown
+  - License D: Yes
+  - License E: No
+  - License F: Unknown
+
+Leading License: License B
+Compatibility with 
+  - License A: No
+  - License C: Unknown
+  - License D: Yes
+  - License E: No
+  - License F: Unknown
+
+Leading License: License C
+Compatibility with 
+  - License A: No
+  - License B: No
+  - License D: Unknown
+  - License E: Unknown
+  - License F: Unknown
+
+Leading License: License D
+Compatibility with 
+  - License A: No
+  - License B: No
+  - License C: Unknown
+  - License E: Yes
+  - License F: Yes
+
+Leading License: License E
+Compatibility with 
+  - License A: No
+  - License B: No
+  - License C: Unknown
+  - License D: Yes
+  - License F: Yes
+
+Leading License: License F
+Compatibility with 
+  - License A: No
+  - License B: No
+  - License C: Unknown
+  - License D: Yes
+  - License E: Yes
