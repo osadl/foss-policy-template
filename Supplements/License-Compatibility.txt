@@ -11,17 +11,19 @@ License compatibility
 
 
 Software licenses are fundamentally legal contracts and as such are by default 
-not compatible with each other. In the course of the adoption of FOSS, however, 
-it has become customary to combine pre-existing software components that are 
-licensed under different licenses and distribute them together. In general, this 
-does not pose any problem as long as the obligations of all licenses are 
-fulfilled. However, in particular scenarios combined software components may 
+not compatible with each other. In the course of the adoption of FOSS and modern 
+software development strategies, however, it has become indispensable to combine 
+pre-existing software components that are licensed under different licenses and 
+distribute them together. Although such combined distribution does not pose a 
+problem in many cases, in particular scenarios combined software components may 
 form a derivative work (for details on when that might be the case see -> 
-Supplement ”What is a derivative work?”). A derivative work can only be 
-distributed compliantly when all involved licenses are compatible. License 
-compatibility means that the license requirements of all components of a 
-derivative work do not contradict each other. There are four possibilities for 
-compatibility of FOSS licenses with each other:
+Supplement ”What is a derivative work?”). Such a derivative work can only be 
+distributed compliantly when all involved licenses are compatible. Therefore, 
+license compatibility has become an important issue in evaluating FOSS licenses. 
+Generally, license compatibility means that the license requirements of all 
+components of a derivative work do not contradict each other. There are four 
+possible outcomes when evaluating compatibility of FOSS licenses with each 
+other:
 
 - Incompatibility: Two licenses are incompatible with each other when they 
 contradict each other, i.e. one requires something that the other one does not 
