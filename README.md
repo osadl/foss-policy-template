@@ -4,7 +4,7 @@ This repository contains the plain text version of the OSADL Open Source Policy 
 The pdf documents of the original OS-Policy template can be filled out according to a company's requirements. However, some company's might prefer to customize the policy template more extensively. Therefore, the plain text version is provided and maintained here.
 
 ### Contributions
-Contributions and feedback on content and usability of the Policy Template are welcome. Please send your suggestions and comments as pull requests or issues. Contributions will be reviewed and, if approprate, included.
+Contributions and feedback on content and usability of the Policy Template are welcome. Please send your suggestions and comments as pull requests or issues. Contributions will be reviewed and, if approprate, included. Contributors agree to publish their contribution under the copyright notice and attribution as stated in section [Licensing](#licensing) below.
 
 ### Structure
 The origianl pdf documents rely on layout and linking for structuring. As this could not be transferred identically to the plain text version, an introduction to the structuring of the text files is given below and in the initial explanation of the main document.
@@ -35,9 +35,6 @@ Initiated and concluded by lines of plus signs
 This collection of explanations, templates and contract proposals was created in close collaboration with OSADL's General Counsel Dr. Till Jaeger and other legal professionals. However, the fact that legal professionals were involved in the preparation of the documents does not mean that any of the assessments or recommendations may be understood as individual legal advice that can only be given on a per-case basis by a lawyer.
 
 ## Licensing
-Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG, <info@osadl.org>
-
-For author information see the separate files.
-
-Licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0), https://creativecommons.org/licenses/by/4.0/  
-Attribution: A project by the Open Source Automation Development Lab (OSADL) eG, [www.osadl.org/os-policy](https://www.osadl.org/os-policy)
+Copyright 2019, 2020 Open Source Automation Development Lab (OSADL) eG and contributors, <info@osadl.org>  
+Licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0), [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)  
+Attribution: A project by the Open Source Automation Development Lab (OSADL) eG. For further information about authors and contributors see the contribution history at [www.osadl.org/os-policy](https://www.osadl.org/os-policy)
