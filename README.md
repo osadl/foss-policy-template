@@ -4,7 +4,7 @@ This repository contains the plain text version of the OSADL Open Source Policy 
 The pdf documents of the original OS-Policy template can be filled out according to a company's requirements. However, some company's might prefer to customize the policy template more extensively. Therefore, the plain text version is provided and maintained here.
 
 ### Contributions
-Contributions and feedback on content and usability of the Policy Template are welcome. Please send your suggestions and comments as pull requests or issues. Contributions will be reviewed and, if approprate, included. Contributors agree to publish their contribution under the copyright notice and attribution as stated in section [Licensing](#licensing) below.
+Contributions and feedback on content and usability of the Policy Template are welcome. Please send your suggestions and comments as pull requests or issues. Contributions will be reviewed and, if approprate, included. Contributors agree to publish their contribution under the copyright notice and attribution as stated in section [Licensing](#licensing) below. Contributers may refuse to be named in the contribution history.
 
 ### Structure
 The origianl pdf documents rely on layout and linking for structuring. As this could not be transferred identically to the plain text version, an introduction to the structuring of the text files is given below and in the initial explanation of the main document.
