@@ -166,7 +166,9 @@ Contents
 
 Preamble
 
-A Responsibilities
+A Scope
+
+B Responsibilities
 Management (M)
 Open Source Compliance Officer (OSCO)
 Project Lead (PL)
@@ -176,9 +178,9 @@ Purchase Department (PD)
 Quality Management (QM)
 Training
 
-B Communication of the FOSS policy
+C Communication of the FOSS policy
 
-C Detection and analysis of third-party software
+D Detection and analysis of third-party software
 Goals
 Main categorization of the handling of third-party software
 Testing for technical suitability
@@ -186,7 +188,7 @@ Candidate for Use
 Request for approval
 Repository check-in 
 
-D Creating FOSS License Information
+E Creating FOSS License Information
 Use Case 1: Internal use  
 Use Case 2: Distribution of unmodified source code 
 Use Case 3: Distribution of modified source code
@@ -200,20 +202,21 @@ Creating BOM
 Documentation of compliance
 Updating FOSS License Information
 
-E Delivery of FOSS License Information
+F Delivery of FOSS License Information
 Delivery media
 QA process
-Contribution to FOSS projects
+
+G Contribution to FOSS projects
 Approval of contributor
 Approval of FOSS project
 Approval of contribution
 Contribution permission
 
-G Own FOSS projects
+H Own FOSS projects
 
-H Audits and certification
+I Audits and certification
 
-I Patent considerations
+J Patent considerations
 Third-party patents
 Own patents 
 
@@ -243,7 +246,22 @@ Supplement 6: How to: Acknowledgments
 Supplement 7: Selecting a FOSS license
 
 
-A Responsibilities
+A Scope
+
+This FOSS policy is applicable to
+
+########################################
+Option 1: the entire company
+########################################
+Option 2: the subsidiary
+########################################
+Option 3: the department
+########################################
+Option 4: the project
+########################################
+
+
+B Responsibilities
 
 This chapter defines the roles of the various departments and individual staff 
 with respect to tasks provided by this FOSS policy. 
@@ -672,7 +690,7 @@ as required:
 ########################################
 
 
-B Communication of the FOSS policy
+C Communication of the FOSS policy
 
 Our company’s FOSS policy is communicated within the entire company and to 
 involved external parties in the following ways:
@@ -720,7 +738,7 @@ OpenChain (role: OSCO). Modifications and updates of this FOSS policy have to be
 communicated to all relevant staff (role: OSCO).
 
 
-C Detection and analysis of third-party software
+E Detection and analysis of third-party software
 
 There are different types of licenses of third-party software. A categorization 
 can be found in section Abbreviations and definitions. 
@@ -1407,7 +1425,7 @@ License Information by comparing scan results, and consequently, update the
 archived materials (e.g. continuous integration). (role: PL)
 
 
-E Delivery of FOSS License Information
+F Delivery of FOSS License Information
 
 I Delivery media
 The best way to provide the customer (or other recipients) with FOSS License 
@@ -1460,7 +1478,7 @@ Delivery: When all license obligations are fulfilled, the product is released
 for distribution together with all required FOSS License Information.
 
 
-F Contribution to FOSS projects
+G Contribution to FOSS projects
 ========================================
 When a company uses FOSS in their products, they may sooner or later decide to 
 contribute to the FOSS projects they are using, because
@@ -1585,7 +1603,7 @@ permission is formally given by filling out the form -> Annex 12: ”Contributio
 permission”.
 
 
-G Own FOSS projects
+H Own FOSS projects
 Various considerations are required when making the decision to license a 
 software project that is developed in-house under a FOSS license (role: PL, 
 OSCO, LD, M)). The most fundamental of these include
@@ -1610,7 +1628,7 @@ aspects to be evaluated and the process to select an appropriate license are
 given in -> Supplement 7: ”Selecting a FOSS license”.
 
 
-H Audits and certification
+I Audits and certification
 To verify our compliance with FOSS license obligations and thereby evaluate our 
 established processes, we make use of various control mechanisms. The decision 
 on when and how often each of the following procedures is carried out depends on 
@@ -1641,7 +1659,7 @@ evaluated.
 ========================================
 
 
-I Patent considerations
+J Patent considerations
 
 I Third-party patents
 Patents are fundamentally different from copyrights: while copyrights protect 
