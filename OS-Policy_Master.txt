@@ -331,6 +331,12 @@ The OSCO has the following responsibilities:
 - Maintaining continuous contact to the Legal Department (LD)
 - Selecting and purchasing software tools and technical infrastructure such as 
 tools and server for software scanning
+========================================
+Depending on the size of the company and the amount of different FOSS that is 
+used, the task of maintaining tooling and integrating it into the build process 
+may be quite extensive and may therefore be assigned as a separate role, e.g. 
+Open Source Build and Release Engineer (OSBRE).
+========================================
 - Supervising and organizing Quality Management (QM)
 - Maintaining the contribution process, if any
 - Providing a first contact point for internal requests
@@ -395,10 +401,16 @@ a compatibility matrix provided as part of the OSADL Open Source License
 Obligations Checklists -> Annex 4: ”Compatibility Matrix”.
 
 V. Software Developer (SD)
+========================================
+Within the scope of this policy the term "Software Developer" includes all staff 
+that actively and directly work with FOSS, e.g. software engineers, application 
+developers, system engineers, DevOps engineers, hardware developers, etc.
+========================================
+
 Every Software Developer (SD) has the following responsibilities when handling 
 software that is distributed under a FOSS license:
 
-- Testing FOSS
+- Evaluating FOSS for technical suitability
 - Introducing FOSS into internal repositories while complying with the process 
 described in Section C
 - Supporting the PL in creating the BOM for a project
@@ -423,12 +435,35 @@ If a company does not have separate QM staff, the PL could take over the tasks
 listed below.
 ========================================
 
-The personnel of the Quality Management (QM) has the following responsibilities:
+The staff of the Quality Management (QM) has the following responsibilities:
 
 - Ensuring that all license obligations of all licenses that are contained in a 
 product according to the internal BOM are correctly fulfilled. For this purpose, 
-the -> Annex 1: ”OSADL Open Source License Obligations Checklists” may be 
+the -> Annex 1: "OSADL Open Source License Obligations Checklists" may be 
 consulted.
+
+VIII. Optional: Open Source Board (OSB)
+
+========================================
+Larger companies might be faced with the challenge to coordinate varying 
+requirements on a FOSS policy that different departments or subsidiaries might 
+have. To address this challenge, it should be considered to establish a 
+so-called "Open Source Board" (OSB). This can be made up of the OSCO of each 
+sub-organization and representatives of the LD. Given the appropriate authority, 
+the OSB can relieve demand on the LD and the M by handling individual requests 
+and making definite decisions with respect to FOSS licensing issues.
+========================================
+
+The Open Source Board (OSB) coordinates compliance efforts of our various 
+sub-organizations. To that end, it has the following responsibilities:
+
+- Adapting this FOSS policy to the requirements of each sub-organization.
+- Deciding on possible FOSS license interpretations.
+- Overall classification of FOSS licenses, i.e. creating -> Annex 7: "List of 
+known licenses", -> Annex 8: "Black List" and Annex 9: "White List".
+- Assessing and giving contribution permissions.
+- Assessing and deciding practical questions of FOSS compliance in case of 
+doubt.
 
 
 Matrix of responsibilities
@@ -600,7 +635,7 @@ S: SD
 C:
 I: OSCO
 
-Testing FOSS
+Evaluating FOSS for technical suitability
 R: SD
 A:
 S:
@@ -846,8 +881,8 @@ compliance with FOSS license obligations without creating administrative
 overhead.
 ========================================
 
-III Testing for technical suitability
-SD and PL are permitted to test freely downloadable software for a first 
+III Evaluation of technical suitability
+SD and PL are permitted to evaluate freely downloadable software for a first 
 technical assessment before the legal analysis and approval process is 
 initialized. However, the following conditions must be observed:
 - Only for technical assessment
@@ -855,8 +890,8 @@ initialized. However, the following conditions must be observed:
 is required. In case that any license or other legal document must be accepted 
 in the name of our company, an approval from LD is needed. In this case, a 
 request of SD to legal@companyname.topleveldomain with the subject ”Request for 
-permission – testing software” must be submitted and following items must be 
-specified:
+permission – evaluating software for technical suitability” must be submitted 
+and following items must be specified:
   - Name of the software
   - Download link
   - Link to the legal text or copy of the legal text
@@ -866,26 +901,27 @@ short explanatory statement with the name of the software in the archive on our
 company’s Intranet at the URL https://intranet.company.topleveldomain/directory 
 - Including in internal software repositories is not allowed: No software may be 
 stored in the internal development repositories without prior approval according 
-to Section C.V For testing, the server fully qualified network name of the 
-testing server may be used.
+to Section C.V For evaluation, the server [Network name of the evaluation 
+server] may be used.
 
 ========================================
 When developing software using third party components it is advised to not 
-restrict developers during the testing phase, but let them assess which software 
-would best fit a use case so that an informed decision can be made once the 
-technical space has been explored. However, this does not mean that rules should 
-not be applied, as there are situations where there are legal implications, such 
-as when a third party component needs a license agreement or terms of use need 
-to be accepted when downloading or purchasing. Such cases would need to be 
-controlled by the legal department. During the testing phase, the components 
-should (likely) also not be included in any internal software repositories.
+restrict developers during the evaluation phase, but let them assess which 
+software would best fit a use case so that an informed decision can be made once 
+the technical space has been explored. However, this does not mean that rules 
+should not be applied, as there are situations where there are legal 
+implications, such as when a third party component needs a license agreement or 
+terms of use need to be accepted when downloading or purchasing. Such cases 
+would need to be controlled by the legal department. During the evaluation 
+phase, the components should (likely) also not be included in any internal 
+software repositories.
 ========================================
 
 IV Candidate for Use
 When a software component (hereafter referred to as ”Candidate for Use”) is 
 considered useful for our company, it will need to go through an approval 
 process. A software component may become a Candidate for Use after successful 
-technical testing or by being purchased as or along with a product.
+technical evaluation or by being purchased as or along with a product.
 
 There are various ways of confirming that purchased software is and continuously 
 can be distributed compliantly:
