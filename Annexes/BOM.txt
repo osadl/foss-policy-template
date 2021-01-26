@@ -11,13 +11,21 @@ Bill of Material (BOM)
 
 
 This document lists and explains the information that a Bill of Material (BOM) 
-of a software product of our company must contain. The information must be 
-entered into the form supplied at the end of this document. According to the 
-number of contained software components the provided Section 2: Contained 
-software material must be duplicated repeatedly.
+of a software product of our company must contain. Only software components that 
+are actually distributed must be considered. The information must be entered 
+into the form supplied at the end of this document. According to the number of 
+distributed software components the provided Section 2: Distributed software 
+material must be duplicated repeatedly.
+########################################
+Option 1: Only FOSS components are listed in the BOM.
+########################################
+Option 2: All software components, independent of how they are	licensed, are 
+listed in the BOM.
+########################################
+
 ========================================
 The content of a BOM that is delivered along with the product depends on the 
-customer’s rrequirements and may be significantly shorter. At the very least 
+customer’s requirements and may be significantly shorter. At the very least 
 however it must contain name and version of the component and its licenses.
 ========================================
 
@@ -57,12 +65,11 @@ distributing it.
 - In-house contacts: The persons responsible for the above information (e.g. 
 SD, PL).
 
-2 Contained software material
+2 Distributed software material
 
 This is the actual bill of material, and since a software product may contain 
-several separate materials, this section may need to be repeated as often as 
-separate software components are contained. Every section lists the following 
-items:
+several separate components, this section may need to be repeated as often as 
+necessary. Every section lists the following items:
 
 - Name: Unique name of the software component
 
@@ -182,7 +189,7 @@ Optional: Remarks:
 
 In-house contacts (SD or PL):
 
-2 Contained software material #1
+2 Distributed software material #1
 
 Name:
 

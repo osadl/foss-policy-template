@@ -1783,16 +1783,18 @@ Option 2: do not check if any of our own patents are implemented.
 
 Abbreviations and definitions
 
-BOM (Bill of Material): The BOM of a product lists all contained FOSS 
-components, their respective licenses and optionally additional information. 
+BOM (Bill of Material): The BOM of a product lists all contained software 
+components (FOSS and optionally other software) - i.e. all software components 
+that are not only required to build the software but are actually distributed - 
+their respective licenses and optionally additional information. 
 Every product that we distribute must be accompanied by a BOM. For the content 
 of our BOMs see -> Annex 3: ”Bill of Material (BOM)”.
 ########################################
 Option 1: We do not require a BOM from our suppliers.
 ########################################
 Option 2: For every product that enters our company, we require a BOM according 
-to the requirements of the
-purchase agreement (see -> Annex 5: ”Special purchase conditions FOSS”).
+to the requirements of the purchase agreement (see -> Annex 5: ”Special purchase 
+conditions FOSS”).
 ########################################
 
 BOD (Bill of Dependencies): A software product may be conveyed as a separate 
