@@ -14,8 +14,8 @@ Special purchase conditions for Free and Open Source Software (FOSS-SPC)
 
 These FOSS-SPC apply to the purchase of all products containing software by 
 COMPANY and independent of the type of contract on which the purchase is based. 
-The provisions of these FOSS-SPC shall superseded our other conditions of 
-purchase and the General Terms and Conditions of the supplier.
+The provisions of these FOSS-SPC shall prevail within their scope over our other 
+conditions of purchase and the General Terms and Conditions of the supplier.
 
 2 Definition
 
@@ -26,7 +26,7 @@ registered in the publicly accessible lists of Free Licenses and Open Source
 Licenses of the Free Software Foundation and/or the Open Source Initiative, 
 respectively.
 
-2.2 These FOSS-SPC apply for Public Domain Software accordingly.
+2.2 These FOSS-SPC apply to Public Domain Software accordingly.
 
 3 Verification and information obligations of the supplier
 
