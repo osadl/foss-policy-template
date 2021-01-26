@@ -7,7 +7,7 @@
 % 
 %###########################################################################
 
-White List
+Allow List
 
 This document lists FOSS licenses that may always be used in any of our projects 
 without an individual approval request.

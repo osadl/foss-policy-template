@@ -230,8 +230,8 @@ Annex 4: Compatibility Matrix
 Annex 5: Special purchase conditions Free and Open Source software
 Annex 6: Approval process
 Annex 7: List of known licenses
-Annex 8: Black List
-Annex 9: White List
+Annex 8: Deny List
+Annex 9: Allow List
 Annex 10: Approval request
 Annex 11: SaaS licenses
 Annex 12: Contribution permission
@@ -460,7 +460,7 @@ sub-organizations. To that end, it has the following responsibilities:
 - Adapting this FOSS policy to the requirements of each sub-organization.
 - Deciding on possible FOSS license interpretations.
 - Overall classification of FOSS licenses, i.e. creating -> Annex 7: "List of 
-known licenses", -> Annex 8: "Black List" and Annex 9: "White List".
+known licenses", -> Annex 8: "Deny List" and Annex 9: "Allow List".
 - Assessing and giving contribution permissions.
 - Assessing and deciding practical questions of FOSS compliance in case of 
 doubt.
@@ -942,8 +942,8 @@ purchase agreement (see -> Annex 5: ”Special purchase conditions FOSS”, role
 PD)
 
 The approval process is detailed in -> Annex 6: ”Approval process”, and the 
-documents -> Annex 7: ”List of known licenses”, -> Annex 8: ”Black List” and -> 
-Annex 9: ”White List” must be consulted. If the conclusion of the approval 
+documents -> Annex 7: ”List of known licenses”, -> Annex 8: ”Deny List” and -> 
+Annex 9: ”Allow List” must be consulted. If the conclusion of the approval 
 process is clearly positive, the Candidate for Use is checked into the company’s 
 repository according to Section C.VI. If the outcome is clearly negative, the 
 Candidate for Use is entered into our company’s database fully qualified name of 
@@ -1002,7 +1002,7 @@ is entered into our database fully qualified name of database on our Intranet at
 the URL http://intranet.company.toplaveldomain/directory as ”Not suitable for 
 use” and an alternative software component has to be found. If a license is not 
 only unsuitable for a particular project or use case but can never be approved 
-for use in our company, it is entered into our company’s -> Annex 8: ”Black 
+for use in our company, it is entered into our company’s -> Annex 8: ”Deny 
 List”. 
 
 Alternatively, a proprietary license can be asked for from the copyright 
@@ -1883,9 +1883,9 @@ Annex 6: Approval process
 
 Annex 7: List of known licenses
 
-Annex 8: Black List
+Annex 8: Deny List
 
-Annex 9: White List
+Annex 9: Allow List
 
 Annex 10: Approval request
 
