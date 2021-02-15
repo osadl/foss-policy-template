@@ -13,7 +13,7 @@
 Open Source Policy Template
 The Basis for License Compliance
 
-Version 1.1
+Version 1.2
 
 Editorial note
 This collection of explanations, templates and contract proposals was created in 
