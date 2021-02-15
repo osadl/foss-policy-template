@@ -10,10 +10,12 @@
 Bill of Material (BOM)
 
 
-This document lists and explains the information that a Bill of Material (BOM) 
-of a software product of our company must contain. Only software components that 
-are actually distributed must be considered. The information must be entered 
-into the form supplied at the end of this document. According to the number of 
+Traditionally, a Bill of Material (BOM) lists all parts that a product is made 
+up of. More recently, this definition has been extended to also include software 
+components. This document lists and explains the information required for a BOM 
+for our products that contain software. Only software components that are 
+actually distributed must be considered. The information must be entered into 
+the form supplied at the end of this document. According to the number of 
 distributed software components the provided Section 2: Distributed software 
 material must be duplicated repeatedly.
 ########################################
@@ -25,8 +27,8 @@ listed in the BOM.
 
 ========================================
 The content of a BOM that is delivered along with the product depends on the 
-customer’s requirements and may be significantly shorter. At the very least 
-however it must contain name and version of the component and its licenses.
+customer’s requirements and may be significantly shorter. At the very least, 
+however, it must contain name and version of the component and its licenses.
 ========================================
 
 1 General information on the software product

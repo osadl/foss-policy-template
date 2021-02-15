@@ -253,11 +253,11 @@ This FOSS policy is applicable to
 ########################################
 Option 1: the entire company
 ########################################
-Option 2: the subsidiary
+Option 2: the subsidiaries
 ########################################
-Option 3: the department
+Option 3: the departments
 ########################################
-Option 4: the project
+Option 4: the projects
 ########################################
 
 
@@ -334,8 +334,8 @@ tools and server for software scanning
 ========================================
 Depending on the size of the company and the amount of different FOSS that is 
 used, the task of maintaining tooling and integrating it into the build process 
-may be quite extensive and may therefore be assigned as a separate role, e.g. 
-Open Source Build and Release Engineer (OSBRE).
+may be quite extensive and may therefore be assigned to an additional person who 
+can support the OSCO, e.g. as Open Source Build and Release Engineer (OSBRE).
 ========================================
 - Supervising and organizing Quality Management (QM)
 - Maintaining the contribution process, if any
@@ -464,6 +464,10 @@ known licenses", -> Annex 8: "Deny List" and Annex 9: "Allow List".
 - Assessing and giving contribution permissions.
 - Assessing and deciding practical questions of FOSS compliance in case of 
 doubt.
+- Regularly synchronizing FOSS-related activities of all sub-organizations.
+- Organizing shared training and conferences for the OSCOs of all 
+sub-organizations.
+
 
 
 Matrix of responsibilities
@@ -566,7 +570,7 @@ I:
 
 Deciding if own software shall be contributed to FOSS projects, if applicable
 R: PL
-A: M?, OSCO
+A: M, OSCO
 S: SD
 C:
 I:
