@@ -1,0 +1,50 @@
+%###########################################################################
+%
+% OSADL Open Source Policy Template for License Compliance
+%
+% Annex on Outsourcing FOSS development.
+% 
+% Copyright (c) 2021 Open Source Automation Development Lab (OSADL) eG
+% 
+%###########################################################################
+
+Outsourcing FOSS development
+
+When commissioning an external party (e.g. freelancer, supplier) to 
+develop software that is licensed as FOSS, there are different scenarios of how 
+to handle the rights on the created software:
+
+- Rights remain with the external party: All rights of the developed software remain with the external party. 
+The work contract stipulates that all software is licensed under a particular FOSS 
+license and either contributed to a public repository or delivered to the 
+customer directly. The responsibility for the software (e.g. 
+third-party rights, patents) remains with the external party. 
+=========================================================
+Template wording for work contract.
+=========================================================
+
+- All rights transferred: The work contract stipulates that all rights of use are transferred to the 
+customer on delivery of the software, i.e. the copyright notices must be 
+adapted accordingly. The company then publishes the software under a FOSS 
+license on their repository. Note: The work contract should also clarify if an 
+author attribution is desired.
+=========================================================
+Template wording for work contract.
+=========================================================
+
+- Credit: Rights remain with the external party but the company is credited in the 
+file headers (e.g. "funded by company").
+=========================================================
+Template wording for work contract.
+=========================================================
+
+- Repository: Rights remain with the external party but the software is published on the 
+company‘s repository. In addition, the external party is commissioned to 
+maintain the repository and take care of contributions from third 
+parties.Who is responsible for the published software? 
+(Guess: The company is responsible because they own the repository and thus 
+copy and distribute the software.)
+=========================================================
+Template wording for work contract.
+=========================================================
+

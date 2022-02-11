@@ -99,8 +99,9 @@ may be difficult to decide which components are linked together and whether they
 can be separated later on – particularly, if a component recursively depends on 
 other components. In this case, a callgraph and/or a list of unresolved symbols 
 must be created and attached to this request (A tool to create such a call graph 
-by analyzing ELF files is available at https://github.com/armijnhemel/ 
-compliance-scripts/tree/master/elfgraphs).
+by analyzing ELF files is available in its original version at
+https://github.com/armijnhemel/compliance-scripts/tree/master/elfgraphs
+and as extended version made by OSADL at https://git.osadl.org/ckresse/callgraph).
 
 - Requester’s contact data: Finally, the contact data of the requester must be 
 given in case explanations of the provided information are needed.

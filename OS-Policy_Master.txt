@@ -1,9 +1,9 @@
 %###########################################################################
 % OSADL Open Source Policy Template
 %
-% Master document
+% Master template
 %
-% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Copyright (c) 2020-2022 Open Source Automation Development Lab (OSADL) eG
 % Authors: Carsten Emde, Caren Kresse
 %          Authors of the various subsections and annexes are listed
 %          separately in the header of the individual documents
@@ -24,12 +24,12 @@ recommendations may be understood as individual legal advice that can only be
 given on a per-case basis by a lawyer.
 
 Licensing
-Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG 
+Copyright (c) 2019-2022 Open Source Automation Development Lab (OSADL) eG 
 ⟨info@osadl.org⟩
 Licensed under the Creative Commons Attribution 4.0 International license 
-(CC-BY-4.0), https://creativecommons.org/licenses/by/4.0/
+(CC-BY-4.0), https://creativecommons.org/licenses/by/4.0/.
 Attribution: A project by the Open Source Automation Development Lab (OSADL) eG, 
-www.osadl.org/os-policy
+www.osadl.org/os-policy.
 
 ========================================
 How to use the subsequent ”Open Source Policy Template”
@@ -60,8 +60,11 @@ Printed in regular font on an orange background with a dark orange left bar.
 - Ready made text block templates that may be used to modify or extend existing 
 company contracts and other documents, such as employment contracts.
 ++++++++++++++++++++++++++++++++++++++++
-Printed in regular font on a light gray background with a gray left bar.
+Printed in regular font on a light grey background with a grey left bar.
 ++++++++++++++++++++++++++++++++++++++++
+
+- Template texts and ready to make text blocks may contain placeholders
+that require completion.
 
 - Templates for annexes to a company’s FOSS policy listed in List of policy 
 annexes including processes and forms that can be completed to provide legal and 
@@ -252,6 +255,11 @@ This FOSS policy is applicable to
 
 ########################################
 Option 1: the entire company
+
+To implement a FOSS policy for an entire corporation it is recommended to limit 
+the global content to high level provisions and establish complementary 
+policies in the individual subsidiaries.
+
 ########################################
 Option 2: the subsidiaries
 ########################################
@@ -291,6 +299,10 @@ example for such general recommendations is given in General remarks.
 ========================================
 
 II. Open Source Compliance Officer (OSCO)
+Large companies or corporations are likely to have individual OSCOs for the 
+various departments or subsidiaries as well as a company-wide or group-wide 
+OSCO hierarchy. For details and suggestions for organizational structure see 
+Open Source Board (OSB) (role: OSB).
 The Open Source Compliance Officer (OSCO) represents the main contact person of 
 our company in the context of using, copying and distributing FOSS of any kind. 
 He or she coordinates all related activities and maintains a dedicated 
@@ -303,6 +315,10 @@ violations are therefore relevant for the risk management of the company.
 - Modification of this FOSS policy.
 
 ========================================
+The role of the OSCO is often assigned to an employee who is already familiar 
+and actively engaged with FOSS. In many cases, the OSCO is also the company's
+main contact person for OSADL.
+
 The assignment of the OSCO can be documented here or for example on a company’s 
 intranet or wiki pages. This decision might depend on how often the assignment 
 changes.
@@ -318,7 +334,7 @@ Email address: Email address
 Beginning of the assignment: Day.Month.Year
 End of the assignment: Day.Month.Year
 Deputy in case of absence: First name goes here Last name goes here
-Average week hours to dedicate to the OSCO role: Hours
+Average week hours to dedicate to the OSCO role: N hours
 ########################################
 Option 2: The current OSCO for our company is assigned at:
 https://wiki.company.tld
@@ -350,6 +366,22 @@ The following items may need to be investigated further:
 management
 - Financing and resources
 ========================================
+++++++++++++++++++++++++++++++++++++++++
+Addition to the work contract for an OSCO
+
+As Open Source Compliance Officer for company / department the employee 
+takes on responsibilities in addition to his or her regular function. The scope 
+and nature of these additional responsibilities are outlined in our FOSS 
+policy. To be able to meet these responsibilities the OSCO is released from his 
+or her regular function for an average of hours per week.
+========================================
+How many hours / days per week the OSCO may spend on FOSS-related 
+responsibilities depends mainly on the size of a company. It is recommended to 
+estimate on average approximately one hour per week for every ten developers 
+with a limit of one day per week. If more time is required, it is recommended 
+to appoint a second OSCO.
+========================================
+++++++++++++++++++++++++++++++++++++++++
 
 III. Project Lead (PL)
 The Project Lead (PL) is responsible for the license compliant use of FOSS 
@@ -393,7 +425,8 @@ Particular competences and responsibilities are:
 
 - Creating and reviewing license checklists
 - License interpretation
-- Consideration of FOSS in agreements with customers and suppliers
+- Consideration of FOSS in agreements with customers and suppliers. Text templates are given in
+"FOSS in Terms and Conditions"
 - Consideration of FOSS in employment and freelancer contracts
 - Handling external requests (e.g. C&D letters)
 - Decisions about license compatibility, confirming or adapting the template of 
@@ -422,9 +455,11 @@ The staff of the Purchase Department (PD) has the following responsibilities:
 
 - Requesting the BOM from any software provider as part of the commercial offer 
 of any kind of software
-- Requesting the BOM from any hardware provider for hardware that shall be 
-redistributed as part of the commercial offer of any kind of hardware that might 
-contain software, e.g. as built-in firmware.
+- Requesting the BOM and Bill of Dependencies from any software provider as part of the commercial offer of any kinst of software.
+- Requesting the BOM and BOD from any hardware provider for 
+hardware that shall be redistributed as part of the commercial offer of any 
+kind of hardware that might contain software, as built-in
+firmware.
 - Taking care that FOSS standard clauses are used in purchase agreements, see 
 -> Annex 5: ”Special purchase conditions FOSS”
 
@@ -442,7 +477,7 @@ product according to the internal BOM are correctly fulfilled. For this purpose,
 the -> Annex 1: "OSADL Open Source License Obligations Checklists" may be 
 consulted.
 
-VIII. Optional: Open Source Board (OSB)
+VIII. Optional: Open Source Board (OSB) (role: OSB)
 
 ========================================
 Larger companies might be faced with the challenge to coordinate varying 
@@ -459,8 +494,8 @@ sub-organizations. To that end, it has the following responsibilities:
 
 - Adapting this FOSS policy to the requirements of each sub-organization.
 - Deciding on possible FOSS license interpretations.
-- Overall classification of FOSS licenses, i.e. creating -> Annex 7: "List of 
-known licenses", -> Annex 8: "Deny List" and Annex 9: "Allow List".
+- Overall classification of FOSS licenses, i.e. creating and maintaining -> Annex 7: "List of 
+known licenses", -> Annex 8: "Deny List" and -> Annex 9: "Allow List".
 - Assessing and giving contribution permissions.
 - Assessing and deciding practical questions of FOSS compliance in case of 
 doubt.
@@ -736,17 +771,31 @@ involved external parties in the following ways:
 
 - Initial and updated versions are communicated via circular letter and on our 
 Intranet at the URL http://intranet.company.tld/FOSS-Policy.pdf (role: OSCO).
-- The following additional provisions are added to employment contracts of any 
-affected staff, e.g. of employed programmers, freelancers, project managers, 
-software purchase department, quality assessment department, and trainees.
+
+Option 1: The following additional provisions are added to employment 
+contracts of any affected staff, of employed programmers, 
+freelancers, project managers, software purchase department, quality 
+assessment department, and trainees.
+
+Option2: This FOSS policy is communicated to every affected employee in an 
+obligatory training course.
+
+Option 3: Every affected employee must individually confirm the receipt and 
+acknowledgment of this FOSS policy.
+
+- When contracting external parties to develop software on behalf of our 
+company, this FOSS policy is communicated to such external parties and they 
+must also follow the processes laid out here. For details on contractual provisions
+when outsourcing FOSS development, see -> "Outsourcing FOSS development".
+
 ++++++++++++++++++++++++++++++++++++++++
 English:
 The ”FOSS policy” contains the guidelines for the use of FOSS by all employees 
 and can be accessed through the Intranet at 
-http://intranet.company.tld/FOSS-Policy.pdf . The employee is obliged to take 
+http://intranet.company.tld/FOSS-Policy.pdf. The employee is obliged to take 
 note of and follow the employer’s FOSS policy immediately after taking up his or 
-her duties. The employer will inform the employee about updates of the FOSS 
-policy which the employee must also immediately take note of and comply with.
+her duties. The employer will inform the employee about updates of the FOSS policy
+which the employee must also immediately take note of and comply with.
 
 Deutsch:
 Die „FOSS policy“ enthält die Arbeitsanweisung für den Umgang aller Mitarbeiter 
@@ -773,7 +822,7 @@ contact information of the OSCO are provided in the FOSS policy.
 This FOSS policy itself and all documents that directly and indirectly refer to 
 it are documented in our company’s archive and are considered and/or integrated, 
 if applicable, while undergoing quality certification such as ISO 9001 or 
-OpenChain (role: OSCO). Modifications and updates of this FOSS policy have to be 
+ISO 5230 (OpenChain) (role: OSCO). Modifications and updates of this FOSS policy have to be 
 communicated to all relevant staff (role: OSCO).
 
 
@@ -785,11 +834,18 @@ This section describes the process to determine which FOSS is used in our
 company, in particular for distribution in products. This includes FOSS 
 components contained in proprietary third-party software.
 
+These first two options of how to handle third-party software aim to 
+differentiate between any software (FOSS and otherwise) that is used in 
+products or in close connection with products, development or 
+testing tools, and software that is solely used internally, i.e. 
+company IT. For the differentiation between internal and distributed FOSS, see 
+-> "In-house-handling".
+
 ########################################
 Option 1: This requires that all software acquired by us...
 ########################################
 Option 2: This requires that all software acquired by us that is intended for 
-redistribution to third parties (including affiliates)...
+use in or for a product...
 ########################################
 
 ...in any of the possible forms
@@ -811,14 +867,15 @@ technical analysis is performed before the software is released for being used
 in the company.
 
 I. Goals
-Creating and maintaining a company-wide archive that lists all third-party 
+Creating and maintaining a company-wide (or at least project specific) archive 
+that lists all third-party 
 software that is available in our company and establishing a process to release 
 the software under particular conditions has a number of goals:
 
 - Knowing what external software is used and what license conditions apply
 - Avoiding the use of unlicensed software as FOSS
 - Avoiding breach of customer agreements
-- Collecting the necessary information for the creation of a BOM for products 
+- Collecting the necessary information for the creation of a BOM and BOD for products 
 that contain software: any distribution of FOSS requires a BOM, i.e. a list of 
 software components and their licenses -> Annex 3: ”Bill of Material (BOM)”
 
@@ -893,7 +950,7 @@ initialized. However, the following conditions must be observed:
 - Download is permitted if no acceptance of license agreement or “Terms of use” 
 is required. In case that any license or other legal document must be accepted 
 in the name of our company, an approval from LD is needed. In this case, a 
-request of SD to legal@companyname.topleveldomain with the subject ”Request for 
+request of SD to legal@companyname.tld with the subject ”Request for 
 permission – evaluating software for technical suitability” must be submitted 
 and following items must be specified:
   - Name of the software
@@ -902,7 +959,7 @@ and following items must be specified:
   - Referral to this section of the policy
   - LD: Review license text and provide inquirer with approval or denial. Store 
 short explanatory statement with the name of the software in the archive on our 
-company’s Intranet at the URL https://intranet.company.topleveldomain/directory 
+company’s Intranet at the URL https://intranet.company.tld/directory 
 - Including in internal software repositories is not allowed: No software may be 
 stored in the internal development repositories without prior approval according 
 to Section C.V For evaluation, the server [Network name of the evaluation 
@@ -924,8 +981,29 @@ software repositories.
 IV Candidate for Use
 When a software component (hereafter referred to as ”Candidate for Use”) is 
 considered useful for our company, it will need to go through an approval 
-process. A software component may become a Candidate for Use after successful 
-technical evaluation or by being purchased as or along with a product.
+process. A downloaded or purchased software component may become a Candidate 
+for Use after successful technical evaluation or by being purchased as or along 
+with a product.
+
+Purchased software from third-party suppliers
+When downloading a particular software component from an online repository or 
+project website, the scope of the software that becomes the Candidate for Use 
+is obvious.
+In contrast, software that is purchased from a supplier may encompass a much 
+larger and less clearly defined scope.
+Therefore, particular aspects have to be considered when collecting the 
+information on the basis of which the approval process is performed.
+
+Option 1: The approval process is performed solely on the basis of the
+license information provided by the supplier.
+
+Option 2: The supplier is requested to provide information on contained
+software in form of a BOM according to the
+requirements of the purchase agreement (see
+Annexes -> Purchase-Contract "Special purchase conditions FOSS", (role: PD))
+
+Option 3: Individual rules apply to each supplier depending on our business 
+relationship and the quality of the supplied information.
 
 There are various ways of confirming that purchased software is and continuously 
 can be distributed compliantly:
@@ -933,17 +1011,12 @@ can be distributed compliantly:
 - OpenChain conformance of suppliers
 - Collecting and analyzing pre-sales information
 
-########################################
-Option 1: The approval process is performed solely on the basis of the license 
-notices provided by the supplier.
-########################################
-Option 2: The supplier is requested to provide information on contained licenses 
-in comprehensive and trackable form.
-########################################
+If a supplier claims that a product does not contain any FOSS, the
+PL has to decide whether to
+- perform a binary analysis scan of the product (role: SD), or
+- request a written confirmation from the supplier (role: PD)
 
-The supplier is requested to provide a BOM according to the requirements of the 
-purchase agreement (see -> Annex 5: ”Special purchase conditions FOSS”, role: 
-PD)
+Approval process
 
 The approval process is detailed in -> Annex 6: ”Approval process”, and the 
 documents -> Annex 7: ”List of known licenses”, -> Annex 8: ”Deny List” and -> 
@@ -952,7 +1025,7 @@ process is clearly positive, the Candidate for Use is checked into the company�
 repository according to Section C.VI. If the outcome is clearly negative, the 
 Candidate for Use is entered into our company’s database fully qualified name of 
 the database on our company’s Intranet at the URL 
-http://intranet.company.topleveldomain/directory as ”Not suitable for use” and 
+http://intranet.company.tld/directory as ”Not suitable for use” and 
 an alternative software component has to be found. If the outcome is not 
 definite, an individual approval request has to be made as outlined in Section 
 C.V.
@@ -966,17 +1039,12 @@ and -> Annex 10: ”Approval request”) to the LD has to be made. This aims to
 reduce the requests that need to be checked individually.
 ========================================
 
-If a supplier claims that a product does not contain any FOSS, the PL has to 
-decide whether to
-- perform a binary analysis scan of the product (role: SD), or
-- request a written confirmation from the supplier (role: PD).
-
 V Request for approval
 If the outcome of the -> Annex 6: ”Approval process” is not definite, an 
 individual approval request must be submitted. To do so, the information and 
-material given in -> Annex 10: ”Approval request” must submitted to the LD. The 
-LD then has to assess whether the Candidate for Use can be approved. This 
-includes:
+material given in -> Annex 10: ”Approval request” must be submitted to.. who holds
+the approval authority. The approval authority then has to assess wether the Candidate for Use
+can be approved. This includes:
 
 - Are the conditions that the license of the Candidate for Use imposes generally 
 acceptable for the specified use case? License obligations are given in the -> 
@@ -989,7 +1057,7 @@ for Use (for details see -> Supplement 3: ”License compatibility”)
 - If a combined work with other FOSS or proprietary software is formed (for 
 details see -> Supplement 4: ”What is a derivative work?”), license 
 compatibility of relevant licenses of the project needs to be checked. For this, 
-our instance of the -> Annex 4: ”OSADL Compatibility Matrix” is to be 
+our company's instance of the -> Annex 4: ”OSADL Compatibility Matrix” is to be 
 consulted. Compatibility of FOSS licenses with each other are displayed in the 
 upper part of the matrix while compatibility with our company’s proprietary 
 licenses is displayed in the bottom five rows. The final license of the combined 
@@ -998,12 +1066,12 @@ indicated with green color and incompatibility with red color. Cases that need
 to be decided individually are indicated with gray color. If an unclear (gray) 
 compatibility has not been decided or if a license of the Candidate for Use is 
 not listed in the Compatibility Matrix, the LD has to make an individual 
-decision. If this decision is generally valid for us, it must be noted in our 
-instance of the compatibility matrix.
+decision. If this decision is generally valid for our company, it must be noted in our 
+company's instance of the compatibility matrix.
 
 If there are any obstacles found during the license check, the Candidate for Use 
 is entered into our database fully qualified name of database on our Intranet at 
-the URL http://intranet.company.toplaveldomain/directory as ”Not suitable for 
+the URL http://intranet.company.tld/directory as ”Not suitable for 
 use” and an alternative software component has to be found. If a license is not 
 only unsuitable for a particular project or use case but can never be approved 
 for use in our company, it is entered into our company’s -> Annex 8: ”Deny 
@@ -1016,7 +1084,7 @@ VI Repository check-in
 When a FOSS component is approved for use in our products, it must be entered 
 into our repository in order to be able to reproduce the build process at a 
 later time. The following information has to be archived in our Intranet at the 
-URL http://intranet.company.topleveldomain/git/repository (role: PL or SD):
+URL http://intranet.company.tld/git/repository (role: PL or SD):
 
 - product name and version
 - source code
@@ -1081,6 +1149,12 @@ License Information see Section E.
 The purpose of this chapter is to list the aspects that need to be considered 
 for various use cases of FOSS distribution.
 
+Option 1: The required FOSS License Information must be collected for all FOSS 
+that is distributed by us currently and in the future.
+
+Option 2:  "Legacy arrangement": The required FOSS License Information must 
+only be collected for any new FOSS that enters the company.
+
 I Use Case 1: Internal use
 Internal use does not require to provide FOSS License Information since all 
 known FOSS licenses do not trigger license obligations for mere internal use. 
@@ -1100,7 +1174,7 @@ and FOSS License Information is provided only on request.
 Option 2: We consider the exchange of FOSS among affiliates as distribution and 
 FOSS License Information is provided as described in the use cases below.
 ########################################
-Option 3: We use a group-wide repository with access to the source code by all 
+Option 3: We use a group-wide repository with access to the source code of all 
 affiliates.
 ########################################
 
@@ -1141,7 +1215,7 @@ Check software tools for copying code into our developments (target code). For
 example, this is the case with libstdc++ which is used by gcc when compiling C++ 
 code. Some software tools (as gcc) have specific exceptions for this purpose. 
 This needs further assessment by the LD. Please send a request to 
-legal@companyname.topleveldomain with the subject ”Request for permission – 
+legal@companyname.tld with the subject ”Request for permission – 
 software tools” and provide the following information:
 - Name of the software
 - Download link
@@ -1155,7 +1229,7 @@ In most cases all necessary FOSS License Information is included in the source
 code and there is no need for additional actions. Please do the following:
 
 1. Check that the license texts are included in the source code. In the unlikely 
-event that this is not the case, add the license text as stored in our 
+event that this is not the case, add the license text as stored in the corresponding 
 repository. (role: PL)
 
 2. If the source code is distributed in performance of a contractual agreement 
@@ -1178,8 +1252,9 @@ III Use Case 3: Distribution of modified source code
 4. Include modification notices into the source code using the following 
 standard modification notice (role: SD):
 ++++++++++++++++++++++++++++++++++++++++
-modified on [year] by © company name , authors: [authors’ names if wanted and 
-agreed to]
+modified in [year] by © company 
+name                              , authors: [authors’ names if 
+wanted and agreed to]
 ++++++++++++++++++++++++++++++++++++++++
 
 5. Decide and note licensing of modifications:
@@ -1188,10 +1263,13 @@ agreed to]
 - If the software is licensed under a copyleft license, check whether the 
 copyleft is triggered (role: PL). In unclear cases contact OSCO and, if 
 necessary, LD for clarification.
-- If the copyleft is triggered and new files are created, add a license notice 
-into the header (role: PL, SD). Please use the following SPDX format:
+- If the copyleft is triggered, consider whether or not to use the same 
+copyleft license or a compatible license (role:PL)
+If new files are created, add a license notice into the header (role:PL), (role:SD). 
+Please use the following SPDX format:
 ++++++++++++++++++++++++++++++++++++++++
-# SPDX-FileCopyrightText: [year] company name < email address of OSCO >
+# SPDX-FileCopyrightText: [year] company 
+name                                       < email address of OSCO >
 #
 # SPDX-License-Identifier: [identifier according to https://spdx.org/licenses/]
 ++++++++++++++++++++++++++++++++++++++++
@@ -1212,12 +1290,12 @@ context of software and with regard to what constitutes a derivative work see
 1. Create FOSS License Information by using all of the applicable -> Annex 1: 
 ”OSADL Open Source License Obligations Checklists”. (role: PL) If the checklist 
 for a particular FOSS license is not available, send a request to LD 
-legal@companyname.topleveldomain with the license text. (role: PL) A new 
+legal@companyname.tld with the license text. (role: PL) A new 
 checklist will then be created and contributed to the OSADL checklist project. 
 (role: LD)
 
 2. Check whether or not the binary is linked to copyleft software or is itself 
-under a copyleft license, see -> Annex 2: ”Copyleft policy”) (role: PL). If 
+under a copyleft license, see -> Annex 2: ”Copyleft policy” (role: PL). If 
 yes, check whether or not the copyleft is triggered. If yes, proceed as 
 described below in Section D.V. If the binary is under a copyleft license but no 
 copyleft is triggered, proceed with 3.
@@ -1285,19 +1363,22 @@ provided by the licenses. Refer to -> Annex 11: ”SaaS licenses”.
 
 Refer to Sections D.I - D.V.
 
+For legal background, definitions and detailed use cases see the OSADL Legal 
+Assessment "Open Source software in the cloud".
+
 VII Use Case 7: Distribution of a Linux kernel in an embedded system
-This use cases describes the typical situation that we distribute embedded 
+This use case describes the typical situation that we distribute embedded 
 devices with a Linux kernel under GPL-2.0 and the GNU C Library under LGPL-2.1.
 
 1. Provide the following text as part of the FOSS License Information:
 ++++++++++++++++++++++++++++++++++++++++
-This product contains third party Open Source Software and Free Software 
+This product contains third party Free and Open Source Software 
 distributed under a number of different licenses (hereinafter referred to as 
 „FOSS“). The respective licenses are listed here, and you can obtain 
 comprehensive rights directly from the right holders to the extent specified 
 therein. The FOSS licenses prevail over all other license conditions and 
-contractual agreements with company name with regard to the corresponding FOSS 
-components contained in the product.
+contractual agreements with company name with regard to the corresponding 
+FOSS components contained in the product.
 ++++++++++++++++++++++++++++++++++++++++
 
 2. Fulfill license obligations as given by the -> Annex 1: ”OSADL Open Source 
@@ -1308,10 +1389,10 @@ following aspects must be considered:
 with a note, a section in the manual or a pop-up window on the GUI containing 
 the required information:
 ++++++++++++++++++++++++++++++++++++++++
-At the request of the copyright holders we point out the following: ”This 
-program is distributed in the hope that it will be useful, but WITHOUT ANY 
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
-PARTICULAR PURPOSE. See the GNU General Public License for more details.”
+At the request of the copyright holders we point out the following: 
+”This program is distributed in the hope that it will be useful, but WITHOUT 
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.”
 ++++++++++++++++++++++++++++++++++++++++
 - Extract and provide license texts of all licenses and copyright notices 
 contained in the Linux kernel (-> Supplement 2: ”How to scan”) and deliver them 
@@ -1331,8 +1412,8 @@ holders as Free Software or Open Source software under the GNU General Public
 License, version 2, and/or GNU Lesser General Public License, version 2.1. 
 Anyone can obtain the source code for these software components from us on a 
 data carrier (CD-ROM, DVD or USB memory stick). This offer is valid within three 
-years after the most recent distribution of the object code by us. Please send 
-your request to the following email address [email address] or via regular mail 
+years after the most recent distribution of the object code by us. 
+Please send your request to the following email address [email address] or via regular mail 
 to the following address:
 Company name
 Department
@@ -1340,25 +1421,31 @@ Address
 Please specify the address to which you wish us to send the source code. 
 Additional product information (e.g. explicit product name, serial number etc.) 
 will help us to identify the corresponding source code for you.
+
 The source code will be sent to the given address after reimbursement of the 
 expenses actually incurred for providing the data carrier and shipping.
 ++++++++++++++++++++++++++++++++++++++++
 ########################################
+
+Option 3: Decide immediate or delayed delivery of CCSC, build instructions and 
+installation information for each project individually.
+
 - If any modifications were made
   - to an existing file: Include modification notices into the source code or 
 deliver the patch and the git history of the repository showing content and date 
 of any changes. (role: SD)
 Use our standard modification notice:
 ++++++++++++++++++++++++++++++++++++++++
-modified on [year] by © company name , authors: [authors’ names if wanted and 
-agreed to]
+modified in [year] by © Company 
+name                        , authors: [authors’ 
+names if wanted and agreed to]
 ++++++++++++++++++++++++++++++++++++++++
   - by adding a new file: Include copyright notices and license header into the 
 source code using the Linux kernel standard (role: SD):
 ++++++++++++++++++++++++++++++++++++++++
 /* SPDX-License-Identifier: GPL-2.0-only
 *
-* (C) Copyright [year], company name
+* (C) Copyright [year], Company name
 * author: [name], <email>
 */
 ++++++++++++++++++++++++++++++++++++++++
@@ -1373,7 +1460,7 @@ obligations to be fulfilled. (role: PL, SD)
 4. If there are any restrictions that prevent the recipient of the embedded 
 system from re-installing modified kernel versions (digital signatures or 
 similar; for more details see the results of the OSADL Legal Seminar at 
-https://www.osadl.org/?id=2394, OSADL member login required)
+https://www.osadl.org/?id=2394, OSADL member login required).
 ########################################
 Option 1: we provide information to allow installation of a user’s own version, 
 e.g. where to receive a key for signing or where to send the device for 
@@ -1389,8 +1476,8 @@ source code for all modules it contains, plus any associated interface
 definition files, plus the scripts used to control compilation and installation 
 of the executable.”
 The GPL-2.0 may be interpreted here in a way that the installation of modified 
-versions of the software needs to be enabled on the original device. If this the 
-case is an unclear legal question that requires an internal decision. OSADL 
+versions of the software on the original device must be enabled. If this is true,
+ is an unclear legal question that requires an internal decision. OSADL 
 considers this interpretation preferable according to the intention of the 
 license and when applying German law.
 ========================================
@@ -1399,12 +1486,13 @@ license and when applying German law.
 sure that the following license information is included in the FOSS License 
 Information or in our terms and conditions:
 ++++++++++++++++++++++++++++++++++++++++
-Modifications of the proprietary software of company name for the user’s own use 
-and reverse engineering for debugging such modifications are herewith permitted. 
-However, forwarding the knowledge acquired during reverse engineering or 
-debugging to third parties is prohibited. Furthermore, it is prohibited to 
-distribute modified versions of the proprietary software of company name . There 
-is no warranty for any defects based on your modifications.
+Modifications of the proprietary software of (Company name) for the 
+user’s own use and reverse engineering for debugging such modifications are 
+herewith permitted. However, forwarding the knowledge acquired during reverse 
+engineering or debugging to third parties is prohibited. Furthermore, it is prohibited to 
+distribute modified versions of the proprietary software of 
+(Company name). There is no warranty for any defects based on your 
+modifications.
 ++++++++++++++++++++++++++++++++++++++++
 
 VIII Use Case 8: Distribution of an entire Linux distribution
@@ -1415,7 +1503,7 @@ OSADL’s website at https://www.osadl.org/?id=3060 (OSADL member login required
 The following scenarios are typical cases where an entire Linux distribution is 
 distributed and therefore licensing must be considered:
 - installed on a device
-- as the basic image of a container
+- as the base image of a container (see Use Case 11)
 - as a rescue CD
 
 IX Use Case 9: Updates
@@ -1441,6 +1529,131 @@ material). (role: PL)
 
 6. Ensure that outdated updates are deleted from our website (role: PL, OSCO)
 
+X Use Case 10: Yocto build system
+
+The build system provided by the Yocto project creates complete images for 
+embedded systems based on so-called recipes that can be combined in separate 
+layers.
+A Yocto image usually consists of a Linux kernel, a rootfilesystem with 
+required GNU tools and some individual applications on top.
+The build process for the image is automated to a large extend.
+
+The Yocto project provides certain options to support license compliance.
+However, the license information that is provided relies on the information
+given in the respective Yocto recipes, which is generally not complete.
+Therefore, some additional tasks must be done manually to achieve compliance.
+
+1. Set COPY\_LIC\_MANIFEST and COPY\_LIC\_DIRS to 1 in the build 
+configuration file build/conf/local.conf to generate the license 
+manifest containing name, version, recipe name and main license for all 
+packages and the generic license texts.
+
+2. Set INHERIT += "archiver" and ARCHIVER\_MODE[src] = "configured" in the 
+build configuration file build/conf/local.conf to generate archives 
+containing the complete corresponding source code for each package.
+
+3. For unmodified binary delivery see Use Case 4.
+
+4. For modified binary delivery see Use Case 5.
+
+5. As Yocto only lists the leading license for each package, only
+provides generic license texts, and does not provide copyright notices at all,
+the source code must be scanned for licenses with an external tool anyway, and
+license obligations must be fulfilled, including extracting license texts,
+copyright notices and acknowledgments in cases where delayed source code
+delivery with a written offer is chosen.
+
+6. There are some additional aspects that must be considered:
+
+- To make it possible to rebuild an image from only the FOSS components, it 
+is required to separate FOSS and proprietary software into different layers.
+- It is possible that pre-built binaries are downloaded during the build 
+process and included in the image. If that is the case, the generated source 
+code is not complete and corresponding. It must be taken care that either no 
+pre-built components are used or that their source code is also provided.
+- By default, Yocto downloads the pre-built binary "uninative" SDK. This 
+contains, among others, components that are licensed under the GNU Public 
+License (GPL) which requires source code delivery. Therefore, the option to 
+build the uninative toolchain from source with the uninative-tarball recipe 
+must be chosen.
+
+7. To make sure that the image can be rebuilt from the provided FOSS source 
+code, do a test rebuild on a new machine without internet access. For details 
+see -> Supplement 5: "How to archive and rebuild".
+
+
+XI Use Case 11: Container
+
+Due to various technical and practical circumstances, license compliance for
+container software is not trivial. In addition, different interpretations of
+the requirement to fulfill license obligations when distributing Containerfiles
+(e.g. dockerfiles) are possible.
+
+Details on legal and practical background can be found in
+-> Supplement 8: "License compliance for containers and Containerfiles"
+
+Option 1: We consider the distribution of Containerfiles as distribution of 
+software. Therefore, we fulfill the license obligations of all software
+referenced in a Containerfile.
+
+Option 2: We do not consider the distribution of Containerfiles as
+distribution of software. Therefore, we do not fulfill any license 
+obligations when distributing Containerfiles.
+
+Option 3: We consider the distribution of Containerfiles as distribution of 
+software and therefore fulfill the license obligations of software referenced
+in a Containerfile. However, we consider container base images as system
+requirements and therefore do not fulfill license obligations for base images
+apart from making sure that the base image referenced in a Containerfile is 
+offered from the respective repository in a license compliant waz
+(e.g. the OSADL Docker Base Image https://www.osadl.org/base-image)
+
+1. Consider each layer that adds or modifies software separately with
+respect to license compliance.
+2. Make sure that layers are separated into FOSS and proprietary software.
+3. For unmodified binaries inside a container layer see Use Case 4.
+4. For modified binaries inside a container layer see Use Case 5.
+5. If the container contains GPL-licensed FOSS, the recipient must be 
+enabled to rebuild the container image.
+
+XII Use Case 12: Encryption and GPL
+
+When delivering encrypted binary software licensed under the GNU General Public 
+License (GPL), the GNU Lesser General Public License (LGPL) or the GNU Affero 
+General Public License (AGPL) some particular aspects have to be considered.
+
+==========================================================================
+All GPL licenses require the recipient of installed binaries of so licensed 
+software to be able to install modified versions on the device. While some do 
+so explicitly ((A/L)GPL-3.0), others are open to interpretation (GPL-2.0, 
+LGPL-2.1), see Use Case 7.
+Another question that is open to interpretation is whether delivering a 
+copyleft licensed software together with differently licensed components in a 
+single encrypted file creates a derivative work that must be licensed entirely 
+under the copyleft license.
+==========================================================================
+
+Option 1: We do not prevent re-installation of GPL licensed software and do 
+not use any encryption.
+
+Option 2: We do not encrypt GPL licensed software together with proprietary 
+software but we do prevent re-installation of GPL licensed software by default. 
+However, we provide the recipient with information on how to install their 
+own versions. E.g. where to receive a signing key or how to send in their 
+device to prepare it accordingly, see text template for send-in solution in
+Annex -> GPL-Encryption.
+
+Option 3: We encrypt and deliver GPL licensed software together with 
+differently licensed components. In order to prevent a copyleft effect due to 
+the encryption we accompany the product with the key to decrypt the GPL 
+licensed components. We inform the recipients about the consequences of using 
+that key with the notice given in 
+Annex -> GPL-Encryption.
+
+Option 4: We do not consider a re-installation possibility to be required, 
+nor do we consider the copyleft effect to become active by joint encryption. 
+Therfore, we not provide the recipient with any information on this subject.
+
 X Creating BOM
 To give the recipient an overview of the FOSS contained in a product, we deliver 
 a BOM along with the FOSS license Information collected above. A template form 
@@ -1453,14 +1666,14 @@ Consider the following aspects when creating the BOM:
 - Archiving BOM
 
 XI Documentation of compliance
-To document how this policy is complied with for each project, record everything 
-that is done for a particular use case. Archive the resultant document along 
+To document how this policy is complied with for each project, record every activity
+for a particular use case. Archive the resultant document along 
 with the FOSS License Information of the project. (role: PL)
 
 XII Updating FOSS License Information
 To ensure that the current status of license compliance is maintained, we take 
 care to update all FOSS License Information of current projects. If new versions 
-of a FOSS component or a new FOSS component is used, generate any change in FOSS 
+of a FOSS component or a new FOSS component is used, identify any change in FOSS 
 License Information by comparing scan results, and consequently, update the 
 archived materials (e.g. continuous integration). (role: PL)
 
@@ -1676,7 +1889,7 @@ the content and on who can perform it.
 
 - Review of this FOSS policy (yearly, role: OSCO)
 
-- OpenChain 
+- ISO 5230 (OpenChain): 
 (https://wiki.linuxfoundation.org/_media/openchain/openchainspec-current.pdf) 
 conformance validation (yearly, role: OSCO)
 ========================================
@@ -1733,7 +1946,7 @@ patent holder and the licensor of the copyrights are not identical since the
 copyright holder cannot provide a patent license for third-party patents. 
 However, there might be exceptions to this rule, e.g. if the patent holder has 
 entered into a general licensing agreement such as with the Open Invention 
-Network (OIN) or the patent holder has made publicly a covenant not tue sue.
+Network (OIN) or the patent holder has made publicly a covenant not to sue.
 3. As a rule, FOSS which is licensed under a non-copyleft license and includes a 
 patented method may, in case the patent owner and the licensor of the copyright 
 are not identical, only be used, if the patent owner has granted a separate 
@@ -1821,7 +2034,7 @@ the source code is actually complete and corresponding see -> Supplement 5:
 
 Affiliates: Companies are affiliates if they are bound together by a contract or 
 agreement. In contrast to a subsidiary, companies are affiliates if one owns 
-less than 50 % of the other or if a third party owns less than 50 % of both.
+less than 50% of the other or if a third party owns less than 50% of both.
 
 Distribution: Distribution with regard to copyright law and software is an act 
 whereby possession of a software is transferred from one legal entity to 

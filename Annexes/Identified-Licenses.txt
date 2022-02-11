@@ -11,7 +11,7 @@ List of known licenses
 
 
 This document lists all FOSS licenses that have been evaluated previously. When 
-an unknown license has gone through an approval request it is added to this 
+an unknown license has gone through our approval request it is added to this 
 list.
 ========================================
 It might make sense to categorize this list, e.g. by strong, weak, no copyleft, 
@@ -56,12 +56,12 @@ Copyleft licenses with additional requirements
 - GNU Lesser General Public License v2.1 (LGPL-2.1)
 ========================================
 The GNU Lesser General Public License v2.1 (LGPL-2.1), imposes additional sales 
-obligations. These include that the distributor must permit modification of 
+obligations. These include that the recipient must be permitted modification of 
 linked proprietary components and reverse engineering of the same to debug such 
 modifications. This may conflict with other equally applicable sales conditions 
 in such a way that the management may generally forbid to use software under 
 such licenses in products. Alternatively, such licenses may, of course, simply 
-be put on the -> ”Black List”.
+be put on the -> ”Deny List”.
 ========================================
 - GNU Lesser General Public License v3.0 (LGPL-3.0)
 ========================================

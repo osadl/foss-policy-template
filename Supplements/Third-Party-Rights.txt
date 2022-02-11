@@ -1,0 +1,17 @@
+%###########################################################################
+%
+% Supplement to the OSADL Open Source Policy Template
+%
+% Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde 
+% 
+%###########################################################################
+
+How To: Acknowledgments
+
+
+1 Background
+
+A FOSS license may impose the obligation to forward or to provide an 
+acknowledgment using a text which is usually stated in the license. The obvious 
+
