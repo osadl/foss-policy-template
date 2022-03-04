@@ -1,0 +1,202 @@
+%###########################################################################
+% OSADL Open Source Policy Template for License Compliance
+%
+% Supplement on License compliance for containers and Containerfiles
+%
+% Copyright (c) 2021 Open Source Automation Development Lab (OSADL) eG
+%
+%###########################################################################
+
+License Compliance for containers and Containerfiles
+
+Supplement to open Source Policy Template
+
+In recent years, container virtualization has become increasingly popular also
+in industry. One of the reasons for this popularity, is certainly the
+possibility it offers to deploy and run an application with all its
+dependencies within a container. This avoids compatibility issues between
+various components on the target system. While this undoubtedly simplifies life
+from a technical point of view, it complicates it from a legal standpoint. This
+is because although a large majority of containers comprise Free and Open
+Source software (FOSS), their licensing requirements have so far not been
+considered either by the container technology itself nor by most suppliers of
+container software.
+
+The desire to run certain software separately form the rest of the system is
+not new, and the required technical means have already existed for some time.
+However, only in recent years this technology has experienced a remarkable
+growth. Besides security requirements this is also due to the increasing
+complexity of modern computer systems and the resulting compatibility issues
+between various software components. Containers address these challenges by
+offering the possibility to combine, deploy and run all dependencies, data and
+configurations of an application in an isolated environment.
+
+Terminology
+When speaking of "containers" one may refer to various different things:
+
+- The container engine together with a container runtime is the layer between
+the host's operating system and the individual containers. The engine organizes
+and manages the container instances and their allocated resources. There are
+various providers of container engines, among others Docker
+(https://www.docker.com/) , Podman (https://podman.io/) or LXD
+(https://linuxcontainers.org/).
+
+- Container image refers to a collection of software components o disk.
+
+- One or several container instances can be created from a container image.
+
+- In addition, it is possible to pass a script (a so-called Containerfile) to
+the container engine to create a container image by downloading, assembling and
+configuring software.
+
+In most cases it becomes clear from context what is meant when speaking of
+containers so that a specification is usually not necessary.
+
+What is a container image made up of?
+Similar to other build environments - like e.g. Yocto - container images
+consist of layers that build on top of each other and contain different
+components, functionalities and modifications as schematically shown in
+Figure 1.
+
+Figure 1: Structure of a Container image made up of stacked layers containing
+different Functionalities. (Container-Content.svg)
+
+The lowest layer is called "base layer" or "base image" and contains essential
+system requirements such as system libraries, a package management system and a
+shell. Figure 2 shows schematically how subsequent layers add individual
+applications and their libraries or updates to modify or replace  software in
+lower layers.
+
+Figure 2: Schematic representation of components inside individual container
+layers. (Container-Layers.svg)
+
+When a container instance is created from such an image and started, the
+running container shows only the projection onto the topmost layer as shown in
+Figure 3. However, the distributed image and the running container still
+include all software components of every layer.
+
+Figure 3: Representation of the view from inside a running container instance:
+All layers are projected onto the top layer. Original versions of deleted and
+modified components (E and C) are not visible but still included.
+(Container-Top-View.svg)
+
+Where do container layers come from?
+A container base image is generally derived from a minimal version of a Linux
+distribution such as Debian, Ubuntu or Alpine. These base images are often
+provided directly by the distributions themselves. In addition, there is a
+large number of public repositories offering container images of various
+projects. These are in turn usually built on top of a distribution base layer.
+Individual customization, however, is obtained from private company
+repositories or created manually.
+
+FOSS in containers
+As already apparent from the base layers' description containers usually
+include also Free and Open Source software (FOSS). Thus, license obligations of
+the contained FOSS must be complied with when copying and distributing or
+publicly reproducing containers. Depending on the respective licenses this may
+include information obligations (delivery of license texts, copyright notices,
+warranty disclaimers, etc.), disclosure obligations (delivery or offer of the
+complete corresponding source code and build and installation instructions) and
+licensing obligations (considering FOSS in Terms of Use and EULA, correctly
+licensing own development in case a derivative work with copyleft licensed FOSS
+is created). Complying with these license obligations is particularly
+challenging for containerized software for two main reasons:
+
+1. Due to the layered structure of containers it is not obvious which
+software is actually distributed.
+License obligations have to be fulfilled for all included software components,
+irrespective of whether they are ever used or not. Thus, also the license
+conditions of software in lower layers must be complied with.
+
+2. A vast majority of public container repositories do not include sufficient
+or even any compliance material.
+However, the obligation to comply with license conditions remains largely with
+the distributor of a container and not with the owner of a repository.
+
+What about Containerfiles?
+In general, FOSS license obligations are only required to be fulfilled when
+distributing or publicly reproducing the software. In many cases however,
+containers are not distributed physically but specified in form of
+Containerfiles whereby software is downloaded and configured only at the
+recipient's end. Thus, the container engine creates a container image according
+to the instructions from the Containerfile. Who is responsible for license
+compliance of the downloaded software in this case? To answer this question the
+definition of "distribution" according to copyright law must be considered. For
+this purpose, it must be noted that several German and European court rulings
+interpret the concept of distribution insofar as the legal person who controls
+or holds the organizational responsibility over the act of distribution is also
+responsible for it. With respect to Containerfiles this means that the person
+who creates a Containerfile - and thereby controls what software is used in
+what way - must also fulfill the license obligations of any downloaded FOSS
+when the Containerfile is executed at the recipient's end. Therefore,
+distributing a Containerfile is equivalent to distributing the specified
+container image.
+
+Are there any exceptions?
+
+In light of the present situation, the question arises whether and how
+compliance efforts can be consolidated within the community. It should be noted
+that FOSS licenses do not impose any conditions on the availability of system
+requirements. For example, if a FOSS application is distributed as a
+stand-alone item, no license obligations have to be fulfilled for the operating
+system that must be present at the recipient's end for the application to run.
+When distributing containers it is respectively true that no license
+obligations must be fulfilled for the operating system or the container engine
+if these are installed by the recipient. Taking into account the definition of
+container base images as a collection of essential system components, it can be
+fathomable to extend the definition of "system requirements" to include
+container base images. Following this, referencing a base image in a
+Containerfile might be considered support in acquiring the system requirements
+instead of an individual act of distribution. The result of this interpretation
+is that license obligations for the base image do not have to be fulfilled by
+the creator of the Containerfile but by the owner of the repository that
+provides it. A condition for this to be permissible is that there are no
+modifications of the base image and especially that the base image is
+distributed in a license compliant way by the owner of the repository. However,
+this exception cannot be extended to include software components beyond the base
+image as the individual composition of various layers concern a particular
+container and can therefore no longer be considered system requirements.
+Manufacturers must still fulfill license obligations of individually selected
+software when distributing Containerfiles. In addition, it should be noted that
+so far there is no case law on this topic, and therefore, different
+interpretations with respect to the distribution of Containerfiles and the
+exception of base images are conceivable. However, there is a published article
+on the issue by a renowned specialist lawyer available that advocates and
+substantiates the interpretation presented here: "Distribution of
+Dockerfiles: Who is responsible for FOSS License Compliance?", Journal of
+Open Law, Technology, \& Society, 12(1), pp 1 20 DOI: 10.5033/jolts .v1 2
+i1.147, (https://jolts.world/index.php/jolts/article/download/147/267)
+
+A license compliant container base image!
+
+When taking the described interpretation as valid, a manufacturer does not have
+to fulfill license obligations for a base layer if the distributed Containerfile
+can obtain the base layer in a license compliant way from the referenced
+repository. As laid out above, this is currently not the case for most
+providers. However, it seems obvious for a solution to the issue to apply the
+Open Source principle of shared development of non-differentiating technologies
+and services to license compliance of container base images. Therefore, OSADL
+has initiated the OSADL Base Image project to create license compliant versions
+of frequently used Linux based container base images and provide these
+publicly. License compliant means in particular to provide the complete
+corresponding source code that can be rebuild and installed according to the
+provided build and installation instructions, the extracted license texts and
+copyright notices, a separate warranty disclaimer in favor of the original
+authors and conspicuous legal notices to point out where to find the
+above-mentioned material. The OSADL Base Images are also available in two
+versions:
+
+- Immediate source code delivery: All compliance material is contained
+within the base image itself.
+
+- Delayed source code delivery with written offer: Only the legal notices, the
+extracted license texts and copyright notices and the written offer for the
+source code are contained within the base image. The source code and build and
+installation instructions are provided separately.
+
+The currently available variants and architectures of the OSADL Base Image are
+listed on the project website (https://www.osadl.org/base-image). In addition,
+instructions on how the base image and the compliance material is created are
+also available an can be used to create individual container layers in a
+license compliant way.
+

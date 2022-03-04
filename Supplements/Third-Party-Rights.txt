@@ -1,0 +1,372 @@
+%###########################################################################
+%
+% OSADL Open Source Policy Template for License Compliance
+%
+% Annex to third-party rights
+%
+% Copyright (c) 2022 Open Source Automation Development Lab (OSADL) eG
+% Author: Carsten Emde
+%
+%###########################################################################
+
+Supplement to Open Source Policy Template
+
+Third-party rights
+
+
+1 Background
+
+Activities relating to goods or services of any kind may be restricted to a
+certain extent because external parties may have rights to them. This applies
+whether or not these rights are directly apparent. The most important
+third-party rights are
+
+- Copyright
+- Patent rights
+- Trademark rights
+
+Although all these rights can be grouped under the term "third-party rights",
+they are defined by significantly different characteristics. In particular,
+copyright law differs in a number of important ways from other third-party
+rights. All of the above mentioned third-party rights potentially apply to
+software, especially if it is used in industry applications: If a machine is
+run by a sophisticated computer program, the manufacturer might want to protect
+the software itself through copyright, the method for controlling the machine
+through patents, and if the software should be sold or otherwise marketed, a
+trademark could be registered.
+
+This supplement of the OSADL Open Source Policy Template aims to provide an
+overview of the various aspects of third-party rights that may play a role  when
+creating and distributing products and to compare the third-party  rights with
+each other. Unlike the other supplements, which all refer to terms  that are
+more or less related to copyright, this supplement takes a look more  at third
+party rights in general of which copyright is only one part.
+
+Third-party rights
+
+Overview
+
+Copyright
+Scope: Copy, modify, distribute, publish
+Registration required: No
+Expensive registration: n.a.
+Validity regionally limited: No (Depends on whether the respective territory has
+joined the international convention)
+State mandated violation detection: No
+Automated detection of violation: Yes
+
+Patent right
+Scope: Use
+Registration required: Yes
+Expensive registration: Yes
+Validity regionally limited: Yes
+State mandated violation detection: No
+Automated detection of violation: No
+
+Trademark right
+Scope: Show
+Registration required: Yes
+Expensive registration: No
+Validity regionally limited: Yes
+State mandated violation detection: Yes
+Automated detection of violation: Yes
+
+Scope
+
+Copyright
+
+Copyright in the EU is governed by a number of European legislative acts, which
+harmonize copyright throughout the member countries (On an international level,
+international agreements such as the Berne Convention for the Protection of
+Literary and Artistic Works) ensure common grounds for copyright protection and
+common grounds for minimal standards of copyright protection. Copyright applies
+to a variety of works, e.g. literature, music and visual arts. Computer programs
+i.e. source code and object code (Including preparatory design material see Art.
+1 para 1 Software Directive (2009/24/EC), available at
+https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32009L0024) are
+considered literary works (See Art. 1 para 1 Software Directive) and  are
+therefore subject to copyright. Computer programs may also be  combined works
+including e.g. visual artwork (video sequences in computer games, elements of
+graphical user interfaces).
+
+The author of the work has exclusive rights to the work, including but not
+limited to reproduction of the work (copies in any manner or form),
+translations, adaptations and arrangements, to perform the work in public or to
+communicate it to the public. However, exceptions to these exclusive rights
+might apply; some exceptions are  related to the contextof use (such as in
+education or research), to freedom of  speech (right to citations, where
+applicable), or related to the protected  subject matter.
+
+The latter often is the case with computer programs: Sometimes, restricted acts
+such as the creation of copies, translations or adaptations are necessary in
+order to use the program or to inspect its proper functioning, or to correct
+errors in the program that prohibit normal use. If this is the case, these acts
+do not require authorization if the person performing these acts legally
+acquired the program i.e. has the right to use the program (See Art. 5  Software
+Directive). Moreover, one may perform acts of decompilation  (including
+reproduction of the code and translation of its form) of the  relevant part of a
+computer program, if decompilation is necessary to obtain  information about the
+program that is needed to achieve interoperability with  other computer programs
+(See Art. 6 Software Directive).
+
+Copyright law is concerned with making verbatim copies of a work or parts of it
+and distributing them. It always only protects embodiments of an author's
+idea,  never the idea itself. For example, if someone describes a functionality
+of how  a computer program might work, anybody is free to develop a computer
+program  that implements that principle. On the other hand, the term also
+includes formal changes in the work, such as translating a novel into another
+language, reproducing a painting in a different size, or playing a piece of
+music on an instrument other than the one for which it was originally intended.
+All of the latter would constitute a copyright infringement if it were done
+without a valid license or an applicable exception.
+
+Patent right
+In contrast to copyright, patent law is concerned with protecting patented
+processes or material. It is particularly important that the scope of a  patent
+is not limited to the way the process was exemplified in the patent
+application. For example, a solution to a technical problem may have been
+described in a particular computer language, but this does not mean that the
+patent can be circumvented if the method is implemented in another computer
+language. All implementations of the method, regardless of how they are
+implemented in detail, are protected.
+
+Hence, a particular patent may be violated by two or more different computer
+programs each of which is protected by copyright. Copyright protection and
+patent protection can therefore coexist independently.
+
+*******************************************************************************
+Example:
+To illustrate the difference between copyright and patent law, a Linux-based
+embedded system will serve as an example, and it is assumed that a copyrighted
+subroutine of the Linux kernel implements a patented method. It is further
+assumed that a mechanism has been implemented to disable the execution of the
+patented method, and in one particular case, this mechanism is used to disable
+it before it was even executed. This approach most probably protects the user
+from patent infringement as the patented method is not used. If the kernel code
+was later distributed including the copyrighted subroutine, it would still
+constitute copyright infringement if a valid copyright license was not obtained.
+*******************************************************************************
+
+Trademark right
+Trademark rights grant the holder of such a right the exclusive use of certain
+words or figurative marks in connection with products of certain categories.
+Trademarks provide information about the origin of the product, which is also
+relevant in the context of FOSS: A trademark can provide  valuable hints as to
+whether software has been developed and tested by a large number of people or
+companies (e.g. RedHat Linux) as opposed to a  non-trademarked project which
+might as well be a fresh fork by a single  developer.
+
+Trademark infringement may occur when the marks are used on a product that
+falls within the registered product category or when they are otherwise used in
+a trademarked manner, such as in promotional materials. However, trademark
+infringement requires usage of the trademark in commercial trade as a means of
+differentiation from competitors or in a way that impairs the trademark's
+indication-of-origin function. Moreover, using someone else's trademark in
+connection with one's own goods or services also constitutes trademark
+infringement as this use encroaches upon the indication-of-origin function
+(e.g. a developer creates a new operating system and brands it as RedHat Linux
+in order to boost credibility and acceptance).
+
+Contrary to the above, no infringement occurs if the use of the trademark
+happens outside of a business or commercial context, or to merely denote or
+describe a product or company.
+
+
+Registration and expenses
+
+Copyright
+
+One of the peculiarities of copyright law is that it does not require
+registration or formal marking of the work to indicate that it is protected by
+copyright. Instead, the mere act of creating a work leads to it being protected,
+as set forth in the Berne Convention. Consequently, works such  as
+
+- a written, spoken, or sung sequence of words,
+- a computer program source code and object code,
+- a work of art such as a painting, sculpture, or installation,
+- or a movement such as a dance or ballet performance
+
+that were created by a human being, can be perceived by a human being and are
+sufficiently complex (This refers to the standard of originality criteria, which
+differs in various jurisdictions. Especially for computer program source code,
+the minimum standard is quite low: "no tests as to the qualitative or aesthetic
+merits of the program should be applied", see Software Directive recital 8. In
+addition, Art. 1 para 3 states: "A computer program shall be protected if it is
+original in the sense that it is the author's own intellectual creation. No
+other criteria shall be applied to determine its eligibility for protection.")
+may not be copied, edited or distributed without a valid  license from the
+copyright holder if no exception (see above) applies. Copyright protection ends
+when a certain time after the death of the author (or of the last author in case
+of co-authored works) has passed (Member countries of the Berne Convention agree
+to provide at least 50 years of protection after the author's death.). In the
+EU and in the US, copyright protection ends 70 years after the death of the
+author (Protection might be shorter for some categories of works).
+
+Since there is no mandatory registration, there are of course no registration
+fees, so copyright protection is free of charge.
+
+Patent right
+If an inventor wants to protect an invention to prevent anyone from using the
+invented process and to obtain the right to charge a royalty for the use of the
+process, the inventor must register the patent. Such patent application is
+relatively expensive because it is usually helpful to seek advice of a patent
+attorney to go through the patenting process, and after patenting, an increasing
+yearly patent fee must be paid to the patent office. Moreover, patent protection
+has to be sought in each country in which the inventor or patent holder desires
+protection. Therefore, multiple applications might have to be filed, requiring
+patent expertise in various countries.
+
+An invention needs to be patentable, i.e. fulfill a number of requirements in
+order to be granted a patent in the EU (Other requirements might apply outside
+of the EU): It must qualify as an invention in a field of technology and be of
+technical character, it must be employable for industrial application, it must
+be new and it must involve an inventive step (An exhaustive guide can be found
+in the European Patent Office's "Guidelines for Examination", available at
+https://www.epo.org/law-practice/legal-texts/guidelines.html). Moreover, the
+invention must be one that is not excluded from patent protection such as mere
+discoveries, scientific theories, mathematical methods, schemes, rules and
+methods for performing mental acts, playing games or doing business and
+computer programs if the computer program does not have a technical character.
+Also, the invention may not be contrary to morality or "ordre public" or be a
+"method for treatment of the human or animal body by surgery or therapy and
+diagnostic methods practiced on the human or animal body".
+
+If patent protection is sought for software, it must have a technical character
+in that it has a "further technical effect" other than being a computer  program
+(This is a frequent subject of debates since one could argue  that there is
+nothing of more technical character than any computer program).  For example, a
+computer program which controls an ABS system in a car has a technical
+character and would most likely be patentable, whereas a text editor most
+likely would not.
+
+Trademark right
+Companies that have built up a brand that may be seen by customers as an
+indication of certain qualities can register the word and figurative mark at a
+trademark office. Other companies may then be prevented from using the
+trademark or similar marks on their products and from profiting from its good
+reputation. Registering a trademark is less costly than registering a patent,
+the fee does not increase over time, and the registration can be renewed
+without a time limit.
+
+Validity
+
+Copyright
+Copyright is not limited to the country where the creator of the work  lives,
+but can be enforced in all countries that are signatories of the  (Berne
+Convention for the Protection of Literary and Artistic Works) and  have
+implemented the standards of the convention into national law. By the  beginning
+of 2022, 180 countries have done so; only 19 countries have not yet  done so,
+but 13 of them have joined the TRIPS Agreement (Agreement on  Trade-Related
+Aspects of Intellectual Property Rights), which includes  recognition of the
+Berne Convention standards.
+
+As a result, in countries that are members of the Berne Convention, national
+copyright protection is granted to works distributed in that country
+irrespective  of the author's nationality or country of residence due to Art.
+5 Berne Convention ("Authors shall enjoy, in respect of works for which they are
+protected under this Convention, in countries of the Union other than the
+country of origin, the rights which their respective laws do now or may
+hereafter grant to their nationals, as well as the rights specially granted by
+this Convention.", Art. 5 para 1 Berne Convention.).
+
+Patent right
+A patent application is usually limited to one country or, e.g. in the case of
+the EU, to a union of countries. It is, of course, possible to apply for the
+invention to be patented in more than one country, which is regularly the case.
+However, inventors usually limit themselves to countries where a large number of
+potential users can be assumed. If the applicant is no longer able to pay the
+patent fee, or if the patent protection has expired after the legally
+stipulated period of validity, e.g. 20 years, anyone in that territory can use
+the invented process just as unrestrictedly as in countries where an
+application has never been filed.
+
+Trademark right
+As with patent law, a trademark can be registered in a specific country, in
+many countries, or in a group of countries. Protection is granted only in the
+territory for which the trademark was registered. In addition, a trademark is
+granted only for certain classes of products. Some countries, namely the U.S.,
+require that products bearing the trademark are actually used in the country
+and that such use can be proven.
+
+Trademarks need to be used to maintain protection (in many countries, the time
+limit after which trademark protection expires if it is not being used is five
+years). Trademark protection starts with registration and usually ends after ten
+ years. However, protection can be extended infinitely by paying additional
+fees.
+
+Detection of violations
+
+Copyright
+Normally, it is the sole responsibility of the copyright holder to look for
+infringement and take appropriate action, as there is no state agency
+responsible  for doing so. In the case of FOSS license violations, the copyright
+holder might for example discover license violating code in a GitHub repository
+which she could then  use as evidence in court. However, if the infringement
+occurs in a closed source or a proprietary software project, or in a
+Software-as-a Service setting, it might be a lot harder to prove copyright
+violations since the person claiming copyright usually has no access to the
+source code or object code. If the copyright holder has established
+infringement, a lawyer is required to draw up a cease-and-desist letter or, if
+this does not help, to take the infringer to court. If the court case is
+unsuccessful, certain costs must be borne by the copyright holder; otherwise, of
+course, court and attorney fees will be reimbursed by the losing party.
+
+Patent right
+Same as with copyright, it is the sole responsibility of the holder of a patent
+right to look for infringement and take appropriate action, as there is no
+state agency responsible for doing so (State agencies such as the patent offices
+will, however, conduct research before a patent is granted, making it less
+likely that a patent is being infringed by a new patent.). Normally, the advice
+and assistance of a patent attorney is required to defend the patent in the
+event of infringement.
+
+Trademark right
+Trademark infringements are punishable by law, at least in the case of
+commercial infringement. In addition, trademark holders can investigate
+infringements on their own initiative and take infringers to court. It should
+also be pointed out here that holders of trademark rights cannot simply
+generously overlook infringements, since infringers may then argue that the
+holder has lost interest in the mark. In consequence, it may become more
+difficult for the holder to defend the trademark.
+
+Automation of violation detection
+
+Copyright
+Since copyright is about copying works or part of them in verbatim form,
+automatic detection of unlicensed copies by means of software based analysis
+initiated by the rights holder is in theory relatively easy, especially when
+infringing material is carelessly made available on the Internet. The visual
+media company (Getty Images, Inc.), for example, continuously scans the
+Internet for media and compares them to the approximately 200 million assets it
+owns. Once material is found that meets the company's criteria for copyright
+infringement, a fully automated computerized process is set in motion to draft
+a cease-and-desist letter and send it to the infringer along with an invoice
+for past use of the material. The same applies to embedded systems for which
+firmware updates are made available on the Internet. Authors of FOSS that  is
+often used in such firmware can automatically determine whether their code is
+included and check whether the license obligations are correctly fulfilled. If
+this is not the case, the authors can take action against them.
+
+Patent right
+Since the patent application describes a technical process in words and the
+actual implementation usually is an object or process (unless it is, for
+example, a music codec), it is hard to search for it in a completely automated
+way. At most, it is possible to use computers to search accompanying documents
+of devices, such as instruction manuals, and look for suspicious terms, which
+again is easily feasible as long as the documents are publicly available on the
+Internet. Typically, however, a company must acquire and analyze the suspect
+product to prove patent infringement. In addition to these procedures, a patent
+holder can monitor new patent applications and intervene when a patent
+application is filed that may infringe an existing patent because there is an
+application process for patents.  Powerful patent search engines exist for this
+purpose.
+
+Trademark right
+Trademark infringements might be observed on the internet as well - e.g. in
+online shops or on video streaming platforms, where sellers might use  foreign
+trademarks to advertise their products. Therefore, trademark  infringement
+violation detection could also be automated in the online context,  whereas it
+might be more difficult with "offline infringements". However, as with patents,
+the registration of new trademarks can be monitored and efforts may be  made to
+prevent the registration of identical or similar trademarks with  overlapping
+product categories.

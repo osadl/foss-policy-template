@@ -3,8 +3,8 @@
 % Supplement to the OSADL Open Source Policy Template
 %
 % Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
-% Author: Carsten Emde, Caren Kresse 
-% 
+% Author: Carsten Emde, Caren Kresse
+%
 %###########################################################################
 
 How to scan
@@ -13,19 +13,19 @@ How to scan
 1 Introduction
 
 What is scanning?
-The term „scanning“ in the context of software license compliance may refer to 
+The term "scanning" in the context of software license compliance may refer to
 two completely different issues:
 
 1. Informational software scanning
-Extract typical lines of text from program sources and other files possibly 
-protected by copyright law. The main purpose is to collect obvious notices in 
+Extract typical lines of text from program sources and other files possibly
+protected by copyright law. The main purpose is to collect obvious notices in
 plain text.
 
 2. Forensic software scanning or code clone scanning
-Discover non-obvious, hidden or even obfuscated software snippets that were 
-incorporated from third parties into a particular source code and may not be 
-licensed correctly. For this purpose, certain criteria from suspicious software 
-(“fingerprints”) are matched against a usually large data base of the same 
+Discover non-obvious, hidden or even obfuscated software snippets that were
+incorporated from third parties into a particular source code and may not be
+licensed correctly. For this purpose, certain criteria from suspicious software
+("fingerprints") are matched against a usually large data base of the same
 criteria of known software components.
 
 Informational Scanning
@@ -33,7 +33,7 @@ Effort: Low
 Duration: Hours/days
 FOSS: Available
 Expensive: Not at all
-Examples: Monk, Ninka, Nomos, Scancode, Fossology (Fossology is not a scanning 
+Examples: Monk, Ninka, Nomos, Scancode, Fossology (Fossology is not a scanning
 program per se, but is an administration server that uses external scanners)
 
 Forensic Scanning
@@ -45,32 +45,32 @@ Examples: Black Duck (Synopsys), Palamida (Flexera), FossID
 
 Table 1: Characteristics of informational and forensic software scanning
 
-As can be seen, the two scanning variants, informational and forensic, have 
-little in common; thus, they will be presented and discussed in the following in 
+As can be seen, the two scanning variants, informational and forensic, have
+little in common; thus, they will be presented and discussed in the following in
 two different main sections.
 
-2 Informational scanning
+2 Informational scanning
 
-2.1 Motivation
-Most FOSS licenses require that copyright notices, warranty disclaimer and 
-license texts are made available to a recipient of software that is conveyed 
-under such license. If the software is delivered in source code form, this is 
-usually easy to do and may not even require any additional action, since these 
-notices and texts are normally available within or along with the source code. 
-Some licenses, such as the various variants of the GNU Public licenses, make it 
-a little more difficult, since they require that copyright notices and warranty 
-disclaimer are published in a conspicuous manner which usually requires some 
-extra work even if source code is only forwarded. However, fulfilling the 
-information obligations of FOSS licenses always requires additional actions if 
-the distribution is done in binary form, since accompanying documentation and 
-comments that may contain such information are stripped from the source code 
-during creation of the binary. In consequence, legal texts and notices need to 
-be extracted from the original source code in a separate action to provide them 
+2.1 Motivation
+Most FOSS licenses require that copyright notices, warranty disclaimer and
+license texts are made available to a recipient of software that is conveyed
+under such license. If the software is delivered in source code form, this is
+usually easy to do and may not even require any additional action, since these
+notices and texts are normally available within or along with the source code.
+Some licenses, such as the various variants of the GNU Public licenses, make it
+a little more difficult, since they require that copyright notices and warranty
+disclaimer are published in a conspicuous manner which usually requires some
+extra work even if source code is only forwarded. However, fulfilling the
+information obligations of FOSS licenses always requires additional actions if
+the distribution is done in binary form, since accompanying documentation and
+comments that may contain such information are stripped from the source code
+during creation of the binary. In consequence, legal texts and notices need to
+be extracted from the original source code in a separate action to provide them
 to a recipient as required by the license.
-The differences in information obligations of FOSS licenses between source code 
-and binary delivery is also reflected in the OSADL Open Source License 
-Obligations Checklists by using the actions Forward or Provide for source code 
-or binary delivery, respectively. For example, license obligations of the 
+The differences in information obligations of FOSS licenses between source code
+and binary delivery is also reflected in the OSADL Open Source License
+Obligations Checklists by using the actions Forward or Provide for source code
+or binary delivery, respectively. For example, license obligations of the
 BSD-2-Clause license with respect to the copyright notices read:
 
 USE CASE Source code delivery
@@ -78,25 +78,25 @@ USE CASE Source code delivery
 USE CASE Binary delivery
   YOU MUST Provide Copyright notices In Documentation OR Distribution material
 
-Hence, in case of binary delivery a company process or at least an additional 
-procedure during compilation must be established to create the information 
-material that has to be provided and distributed along with the software in 
+Hence, in case of binary delivery a company process or at least an additional
+procedure during compilation must be established to create the information
+material that has to be provided and distributed along with the software in
 documentation or other material.
 
-2.2 How does informational software scanning work? Informational software 
-scanning uses an approach that is, at first glance, comparable to the Find 
-function of a text processor: A case-insensitive search key such as ”copyright 
-(c)” followed by a number that indicates the year of writing the code, is 
-defined and located in the text, and the subsequent part of the line is 
-evaluated to retrieve, for example, the name and other data of the copyright 
-holder. The most naive approach for this purpose can be realized by using the 
-FOSS egrep function and specifying a so-called regular expression that matches 
-usual forms of the copyright notice including any year number between 1900 and 
+2.2 How does informational software scanning work? Informational software
+scanning uses an approach that is, at first glance, comparable to the Find
+function of a text processor: A case-insensitive search key such as "copyright
+(c)" followed by a number that indicates the year of writing the code, is
+defined and located in the text, and the subsequent part of the line is
+evaluated to retrieve, for example, the name and other data of the copyright
+holder. The most naive approach for this purpose can be realized by using the
+FOSS egrep function and specifying a so-called regular expression that matches
+usual forms of the copyright notice including any year number between 1900 and
 2099 such as
 
 egrep -ir "Copyright \(c\) (19|20)[0-9][0-9]" .
 
-which may produce, for example in the init subdirectory of the Linux kernel 
+which may produce, for example in the init subdirectory of the Linux kernel
 source code, the output
 
 main.c: * Copyright (C) 1991, 1992 Linus Torvalds
@@ -104,60 +104,60 @@ calibrate.c: * Copyright (C) 1991, 1992 Linus Torvalds
 noinitramfs.c: * Copyright (C) 2006, NXP Semiconductors, All Rights Reserved
 version.c: * Copyright (C) 1992 Theodore Ts'o
 
-The first word of the above output lines reproduces the name of the source code 
-where the subsequently printed copyright notice was found. A similar procedure 
-may then be undertaken to extract other required legal notices such as warranty 
-disclaimer and type of license. It should be noted that licenses in source code 
+The first word of the above output lines reproduces the name of the source code
+where the subsequently printed copyright notice was found. A similar procedure
+may then be undertaken to extract other required legal notices such as warranty
+disclaimer and type of license. It should be noted that licenses in source code
 come in two forms:
 
-- License text: The complete text of the license. Commonly used for shorter 
+- License text: The complete text of the license. Commonly used for shorter
 licenses such as BSD or MIT.
-- License reference: For source code released under licenses with a long license 
-text (such as the (L)GPL or Apache licenses), an abbreviated reference that 
-indicates the license (and possibly where to find the complete text) is used. 
+- License reference: For source code released under licenses with a long license
+text (such as the (L)GPL or Apache licenses), an abbreviated reference that
+indicates the license (and possibly where to find the complete text) is used.
 This can sometimes be a single SPDX identifier.
 
-While the variations of license texts are limited, there may be spelling 
-variants, line breaks or other deviations from the usual form of all other legal 
-notices in source code, since there are no legal provisions how to compose them. 
-In consequence, the form of the copyright notice is merely limited by the 
-creativity of software engineers. Software scanning tools developed particularly 
-for this purpose have already been mentioned in the introduction. They take, at 
-least to a certain amount, into consideration the above limitations and should 
-therefore be used instead. Nevertheless, their working mode is based on the same 
-principle as the egrep example above, i.e. they search for occurrences of 
-predefined match strings. Furthermore, they may implement a fuzzy algorithm to 
+While the variations of license texts are limited, there may be spelling
+variants, line breaks or other deviations from the usual form of all other legal
+notices in source code, since there are no legal provisions how to compose them.
+In consequence, the form of the copyright notice is merely limited by the
+creativity of software engineers. Software scanning tools developed particularly
+for this purpose have already been mentioned in the introduction. They take, at
+least to a certain amount, into consideration the above limitations and should
+therefore be used instead. Nevertheless, their working mode is based on the same
+principle as the egrep example above, i.e. they search for occurrences of
+predefined match strings. Furthermore, they may implement a fuzzy algorithm to
 detect keywords even if they are inaccurately phrased.
-In most cases, the results of scan tools cannot be used without some manual 
-modifications to account for inaccuracies within the source files. Of course, 
-notices may not be changed without possessing the rights required to do so but 
-for example licenses that are only listed in a root directory but are explicitly 
-stated to be valid for all files below the respective root directory may be 
-assigned to the concerned files. Therefore, in addition to scan tools, it is 
-recommended to employ a company wide license management tool that stores the 
-scanning results and manual completions in a database and allows to administer, 
-adapt and retrieve them under various usage conditions. A suitable license 
-management tool for this purpose is Fossology. It should, however, be noted that 
-Fossology itself is not a scanning tool, but makes use of various default 
-software scanners that are normally part of the standard installation. In 
-addition, it offers the possibility to configure individual scanners at the 
-user’s choice.
-There is no definitive form in which to deliver the extracted materials. 
+In most cases, the results of scan tools cannot be used without some manual
+modifications to account for inaccuracies within the source files. Of course,
+notices may not be changed without possessing the rights required to do so but
+for example licenses that are only listed in a root directory but are explicitly
+stated to be valid for all files below the respective root directory may be
+assigned to the concerned files. Therefore, in addition to scan tools, it is
+recommended to employ a company wide license management tool that stores the
+scanning results and manual completions in a database and allows to administer,
+adapt and retrieve them under various usage conditions. A suitable license
+management tool for this purpose is Fossology. It should, however, be noted that
+Fossology itself is not a scanning tool, but makes use of various default
+software scanners that are normally part of the standard installation. In
+addition, it offers the possibility to configure individual scanners at the
+user's choice.
+There is no definitive form in which to deliver the extracted materials.
 However, it is commonly accepted to organize them by software package.
 
 2.3 Introducing informational software scanning in a company
-Although it certainly is possible to execute informational software scanning 
-from time to time manually, it is recommended to introduce related standard 
-processes as part of the overall software license compliance policy of a 
-company. For this purpose, two process bottlenecks have to be established that 
-must be passed by every piece of software that is used in a company, and 
-informational software scanning is either performed or verified at the 
-bottlenecks. The first bottleneck is reached when software is entering the 
-company and is referred to as input gateway. The other bottleneck is reached 
+Although it certainly is possible to execute informational software scanning
+from time to time manually, it is recommended to introduce related standard
+processes as part of the overall software license compliance policy of a
+company. For this purpose, two process bottlenecks have to be established that
+must be passed by every piece of software that is used in a company, and
+informational software scanning is either performed or verified at the
+bottlenecks. The first bottleneck is reached when software is entering the
+company and is referred to as input gateway. The other bottleneck is reached
 when software is leaving the company and is referred to as output gateway:
 
 Input gateway
-Purpose: Ensure that all licenses of incoming software are registered and 
+Purpose: Ensure that all licenses of incoming software are registered and
 checked
 Occasion: Software evaluation/purchase
 
@@ -168,90 +168,90 @@ Occasion: Intermediate/official software release
 Table 2: Purpose of software scanning at the input and output gateway
 
 2.4 Scanning for additional requirements
-Almost all modern software requires additional components, i.e. software 
-libraries, to be linked dynamically when running (see Supplement -> ”What is a 
-derivative work?” for details on dynamic linking). These libraries are often not 
-supplied when software is entering a company but are expected to be already 
-available or to be acquired separately. To be aware of all additional components 
-an incoming software might require to run, the input gateway should include a 
-scan for so-called ”unresolved symbols”. These unresolved symbols in a binary 
-software indicate that additional components are required which might impose 
-further license obligations. It is recommended to evaluate such possible 
-additional licenses in accordance with a company’s established FOSS policy.
-Scanning for unresolved symbols within a binary software is straightforward and 
-only requires simple tools. One example is the command line tool objdump that 
-displays information about binary objects including the symbol table storing 
-each of the program’s symbols along with, among other, information about its 
-location. If a symbol cannot be located within the object – i.e. it cannot be 
-resolved – it is marked as ”UND” (undefined), for example
+Almost all modern software requires additional components, i.e. software
+libraries, to be linked dynamically when running (see Supplement -> "What is a
+derivative work?" for details on dynamic linking). These libraries are often not
+supplied when software is entering a company but are expected to be already
+available or to be acquired separately. To be aware of all additional components
+an incoming software might require to run, the input gateway should include a
+scan for so-called "unresolved symbols". These unresolved symbols in a binary
+software indicate that additional components are required which might impose
+further license obligations. It is recommended to evaluate such possible
+additional licenses in accordance with a company's established FOSS policy.
+Scanning for unresolved symbols within a binary software is straightforward and
+only requires simple tools. One example is the command line tool objdump that
+displays information about binary objects including the symbol table storing
+each of the program's symbols along with, among other, information about its
+location. If a symbol cannot be located within the object - i.e. it cannot be
+resolved - it is marked as "UND" (undefined), for example
 
 objdump -T myprogram | grep UND
 0000000000000000 DF *UND* 0000000000000000 GLIBC_2.2.5 exit
 
-Unresolved symbols need to be supplied by the respective libraries when the 
-program is running; in the above example the locally unavailable C function 
-exit() can be resolved by version 2.2.5 of the GNU C library that needs to be 
+Unresolved symbols need to be supplied by the respective libraries when the
+program is running; in the above example the locally unavailable C function
+exit() can be resolved by version 2.2.5 of the GNU C library that needs to be
 supplied when the program myprogram is launched.
 
 2.5 Training for informational software scanning
-The usage of the various tools of informational software scanning and, 
+The usage of the various tools of informational software scanning and,
 particularly, of the management tool
-Fossology is not obvious. A company’s compliance process should, therefore, contain in-house training or
+Fossology is not obvious. A company's compliance process should, therefore, contain in-house training or
 participation at external training courses of the responsible personnel to ensure that the software is adequately
 installed and used and the results may be trusted.
 
 3 Forensic scanning
 
-The above described method of informational scanning is based on trust: It is 
-assumed that i) all legal notices in the source code are accurate and complete 
-or inconsistencies can be resolved manually and ii) no software of unknown or 
-doubtful origin was introduced. This, however, is not always possible; thus, 
-methods had to be developed to discover negligent or fraudulent contamination of 
-source code with unlicensed or even unlicensable material. Such methods are 
-called ”forensic scanning”. For the time being, they are primarily available to 
-search for undeclared FOSS in a given source code. Prior to searching, short 
-unique characteristics (similar to fingerprints of humans) of appropriate code 
-snippets of all known and publicly available released versions of FOSS are 
-generated and stored along with project data in a database that may become 
-rather huge, e.g. several tens or even hundreds of terabytes. When using 
-forensic scanning for undeclared FOSS in a suspicious source code, 
-characteristic fingerprints of appropriate code snippets of that source code are 
-generated in the same way as when creating the database of known Open source 
-software, and these characteristics are searched for in the database. If a match 
-is found, the corresponding code snippet is compared manually to exclude a 
-false-positive finding. In case of a confirmed match, appropriate steps have to 
-be taken to either remove the faulted software snippet or to compliantly license 
+The above described method of informational scanning is based on trust: It is
+assumed that i) all legal notices in the source code are accurate and complete
+or inconsistencies can be resolved manually and ii) no software of unknown or
+doubtful origin was introduced. This, however, is not always possible; thus,
+methods had to be developed to discover negligent or fraudulent contamination of
+source code with unlicensed or even unlicensable material. Such methods are
+called "forensic scanning". For the time being, they are primarily available to
+search for undeclared FOSS in a given source code. Prior to searching, short
+unique characteristics (similar to fingerprints of humans) of appropriate code
+snippets of all known and publicly available released versions of FOSS are
+generated and stored along with project data in a database that may become
+rather huge, e.g. several tens or even hundreds of terabytes. When using
+forensic scanning for undeclared FOSS in a suspicious source code,
+characteristic fingerprints of appropriate code snippets of that source code are
+generated in the same way as when creating the database of known Open source
+software, and these characteristics are searched for in the database. If a match
+is found, the corresponding code snippet is compared manually to exclude a
+false-positive finding. In case of a confirmed match, appropriate steps have to
+be taken to either remove the faulted software snippet or to compliantly license
 it.
 
 3.1 Criteria whether forensic scanning is needed or not
-Since forensic scanning is, for the time being, not available as a FOSS tool, 
-and licensing such software can be very expensive, it is recommended to 
-carefully evaluate whether forensic scanning is needed or not. The main 
-criterion, as already mentioned above, is trust. Can a company trust another 
-company or a person who is delivering a particular piece of software? This 
-equally applies to employed software developers, to freelancers and software 
-providers and, last but not least, even to software and hardware manufacturers, 
-if the purchased products are intended to be integrated into own devices and 
-brought to the market as a product. Alternatively, it may be negotiated that the 
-provider undertakes forensic scanning and delivers the scan result along with 
+Since forensic scanning is, for the time being, not available as a FOSS tool,
+and licensing such software can be very expensive, it is recommended to
+carefully evaluate whether forensic scanning is needed or not. The main
+criterion, as already mentioned above, is trust. Can a company trust another
+company or a person who is delivering a particular piece of software? This
+equally applies to employed software developers, to freelancers and software
+providers and, last but not least, even to software and hardware manufacturers,
+if the purchased products are intended to be integrated into own devices and
+brought to the market as a product. Alternatively, it may be negotiated that the
+provider undertakes forensic scanning and delivers the scan result along with
 the product.
-However, this again introduces the need for a certain trust that the external 
+However, this again introduces the need for a certain trust that the external
 forensic scanning was executed thoroughly and no results were retained.
-Apart from the criteria mentioned above, it might make sense to conduct a 
-forensic scan when acquiring companies or company shares if the main assets of 
+Apart from the criteria mentioned above, it might make sense to conduct a
+forensic scan when acquiring companies or company shares if the main assets of
 that company are copyrights in their software.
 
 3.2 Special case: Single-shot or double-shot forensic scanning
-A company may only recently have introduced appropriate processes to ensure that 
-all software that is entered into the company’s software pool is correctly 
-registered and, thus, licensable. However, the existing software that was grown 
-over many years may not have undergone comparably rigorous compliance processes 
-in the past. In such a case, a ”one-shot” forensic scanning may be executed to 
-either ensure that the entire software pool is clean or, if this is not the 
-case, to take appropriate measures that it becomes clean. Thereafter, one may 
-either trust the newly introduced processes (single-shot forensic scanning) or 
-repeat the scanning after a test period of, for example a year, to ensure that 
-the new processes are reliably in place (double-shot forensic scanning). Such 
-limited forensic scanning is certainly less expensive and resource intensive 
-than continuous scanning, but may, if appropriately executed, provide a 
+A company may only recently have introduced appropriate processes to ensure that
+all software that is entered into the company's software pool is correctly
+registered and, thus, licensable. However, the existing software that was grown
+over many years may not have undergone comparably rigorous compliance processes
+in the past. In such a case, a "one-shot" forensic scanning may be executed to
+either ensure that the entire software pool is clean or, if this is not the
+case, to take appropriate measures that it becomes clean. Thereafter, one may
+either trust the newly introduced processes (single-shot forensic scanning) or
+repeat the scanning after a test period of, for example a year, to ensure that
+the new processes are reliably in place (double-shot forensic scanning). Such
+limited forensic scanning is certainly less expensive and resource intensive
+than continuous scanning, but may, if appropriately executed, provide a
 comparable amount of trust.

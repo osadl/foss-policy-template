@@ -3,23 +3,23 @@
 % Supplement to the OSADL Open Source Policy Template
 %
 % Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
-% Author: Armijn Hemel, Carsten Emde, Caren Kresse 
-% 
+% Author: Armijn Hemel, Carsten Emde, Caren Kresse
+%
 %###########################################################################
 
 How to archive and rebuild
 
 
-Archiving and storing source code for a rebuild is important: It is possible 
-that years after a product has been released someone needs to be able to rebuild 
-the source code for various reasons such as license compliance or security - or 
+Archiving and storing source code for a rebuild is important: It is possible
+that years after a product has been released someone needs to be able to rebuild
+the source code for various reasons such as license compliance or security - or
 simply bug fixing.
 
 1 Archiving
 
 When archiving source code the following information has to be stored in a repository:
 - product name and version
-- source code (the build tree of a source code release must be clean (e.g. make 
+- source code (the build tree of a source code release must be clean (e.g. make
 clean or equivalent), i.e. there must not be any binary artifacts)
 - (re)build instructions
 - description of the environment:
@@ -28,85 +28,85 @@ clean or equivalent), i.e. there must not be any binary artifacts)
   - environment variables, users, paths and permissions if changed from default
 - expected results
 
-If a company already has a corporate backup strategy, it is recommended to 
-include this information in the backup for convenience and to ensure that it 
-does not get lost over time. In any way, this information should be stored in a 
-way that makes it easy to be located in the version control system of a company, 
-for example as separate Git tag. It might also be recommended to store the build 
-artifacts. In certain situations (such as very old software) it is recommended 
-to even store all software including the entire tool chain and everything else 
-that is needed for a rebuild (e.g. a disk snapshot to later load into a virtual 
+If a company already has a corporate backup strategy, it is recommended to
+include this information in the backup for convenience and to ensure that it
+does not get lost over time. In any way, this information should be stored in a
+way that makes it easy to be located in the version control system of a company,
+for example as separate Git tag. It might also be recommended to store the build
+artifacts. In certain situations (such as very old software) it is recommended
+to even store all software including the entire tool chain and everything else
+that is needed for a rebuild (e.g. a disk snapshot to later load into a virtual
 machine, original installation media, etc.)
-After archiving source code a rebuild should be done to ensure that the archived 
+After archiving source code a rebuild should be done to ensure that the archived
 information is complete and correct.
 
-2 Rebuild
+2 Rebuild
 
-Doing a test rebuild of archived source code is important, particularly with 
-respect to the disclosure obligations imposed by some Open Source licenses. When 
-the source code is made available either along with the delivery of a product or 
-as a response to a written offer, for example as stipulated in section 3 of the 
-GNU General Public License version 2 (GPL-2.0), the source code must be complete 
-and correspond to the binary version contained in the product. In addition, 
-comprehensive build instructions must be provided to allow an average skilled 
-software engineer with reasonable effort to successfully rebuild the software. 
-If a rebuild is not possible or the resulting object code is not absolutely 
-identical to the original one, the company is in breach of the license and may 
-entail legal consequences. Therefore, the preparation of the software archive 
-must be done with utmost diligence and must not be delivered to the requesting 
+Doing a test rebuild of archived source code is important, particularly with
+respect to the disclosure obligations imposed by some Open Source licenses. When
+the source code is made available either along with the delivery of a product or
+as a response to a written offer, for example as stipulated in section 3 of the
+GNU General Public License version 2 (GPL-2.0), the source code must be complete
+and correspond to the binary version contained in the product. In addition,
+comprehensive build instructions must be provided to allow an average skilled
+software engineer with reasonable effort to successfully rebuild the software.
+If a rebuild is not possible or the resulting object code is not absolutely
+identical to the original one, the company is in breach of the license and may
+entail legal consequences. Therefore, the preparation of the software archive
+must be done with utmost diligence and must not be delivered to the requesting
 customer, unless a test rebuild could be carried out successfully.
 
 I. Who should carry out the test rebuild?
-It is recommended that the test rebuild is carried out by a person who is not 
-directly involved in the original software development of the product, i.e. by 
-someone without intimate implicit knowledge of the build process. This is to be 
+It is recommended that the test rebuild is carried out by a person who is not
+directly involved in the original software development of the product, i.e. by
+someone without intimate implicit knowledge of the build process. This is to be
 able to catch any undocumented steps.
 
 II. How should the test rebuild be carried out?
 The following steps should be taken for a rebuild:
 
-1. to make sure that the success of the rebuild does not depend on the system 
-where the original software was built, install a (virtual) machine as specified 
+1. to make sure that the success of the rebuild does not depend on the system
+where the original software was built, install a (virtual) machine as specified
 in the archived instructions
 2. follow the instructions and rebuild the source code
 3. compare the built binary with the original binary (see section below)
 
-If a rebuild cannot be successfully done, the build instructions are not 
+If a rebuild cannot be successfully done, the build instructions are not
 complete and must be amended.
 
-III. How should the created object code be tested whether it is complete and 
+III. How should the created object code be tested whether it is complete and
 corresponding?
-The silver bullet of checking for completeness and correspondence, obviously, is 
-to obtain identicalness of the original and the newly created software. However, 
+The silver bullet of checking for completeness and correspondence, obviously, is
+to obtain identicalness of the original and the newly created software. However,
 this is not always the case, since for example
 
 1. the tool chain may have been updated,
 2. the tool chain may generate and insert time stamps and/or random numbers,
-3. the tool chain may include debug information such as absolute file names 
+3. the tool chain may include debug information such as absolute file names
 (that almost always differ when software is built at different locations).
 4. the order of the software components may have changed.
 
 The easy case: Files are identical
-Identicalness between files can easily be tested using the cmp command line tool 
-that only exits without error, if the compared files are the same. Similarly, 
-cryptographic checksum generators such as md5sum or sha256sum can be run and 
+Identicalness between files can easily be tested using the cmp command line tool
+that only exits without error, if the compared files are the same. Similarly,
+cryptographic checksum generators such as md5sum or sha256sum can be run and
 identical files can be assumed, if the checksums are identical.
 
 The challenging case: Files are not identical
-If the files are not identical, the easiest way to establish functional 
-equivalence is to run the original and the newly created software and to compare 
-results. This is greatly facilitated, if an original conformance test suite is 
-available that may be run by either software. If not, typical runtime scenarios 
+If the files are not identical, the easiest way to establish functional
+equivalence is to run the original and the newly created software and to compare
+results. This is greatly facilitated, if an original conformance test suite is
+available that may be run by either software. If not, typical runtime scenarios
 may be selected and the two software versions tested on them.
 
-Alternatively and if the software may not easily be run and tested, string and 
-string-like constants may be extracted using the strings command line tool and 
-compared using a tool to search for text differences such as diff. Differences 
-detected by the cmp tool or slight differences in size may then be explained by, 
+Alternatively and if the software may not easily be run and tested, string and
+string-like constants may be extracted using the strings command line tool and
+compared using a tool to search for text differences such as diff. Differences
+detected by the cmp tool or slight differences in size may then be explained by,
 for example, different build dates that are included in the binary program.
 
 Example
-A program may contain a similar puts instruction to print a message with time 
+A program may contain a similar puts instruction to print a message with time
 and date information as in the following example:
 
 #include <stdio.h>
@@ -116,16 +116,16 @@ int main(int argc, char *argv[])
   puts("This program was built on " __DATE__ ", at " __TIME__ "\n");
 }
 
-The compiler will evaluate the terms __DATE__ and __TIME__ at compile time and 
-insert the resulting texts as string constants into the program. When the 
-program is compiled during creation of the original distribution and compiled 
-again at the time of the rebuild test, two different program versions are 
+The compiler will evaluate the terms __DATE__ and __TIME__ at compile time and
+insert the resulting texts as string constants into the program. When the
+program is compiled during creation of the original distribution and compiled
+again at the time of the rebuild test, two different program versions are
 created that do not pass the test for identicalness:
 
 # cmp example.orig example.rebuild
 example.orig example.rebuild differ: byte 757, line 1
 
-However, when strings are extracted from the two program versions and compared 
+However, when strings are extracted from the two program versions and compared
 using the following commands
 
 # strings example.orig >example.orig.strings
@@ -135,5 +135,5 @@ using the following commands
 < This program was built on Jan 1 2020, at 12:34:56
 --> This program was built on Jan 31 2020, at 01:23:45
 
-it becomes evident that the two programs merely show a plausible difference in a 
-string constant, but everything else is identical.
+it becomes evident that the two programs merely show a plausible difference in a
+string constant, but everything else is identical.
