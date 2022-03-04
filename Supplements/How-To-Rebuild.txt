@@ -32,62 +32,64 @@ If a company already has a corporate backup strategy, it is recommended to
 include this information in the backup for convenience and to ensure that it
 does not get lost over time. In any way, this information should be stored in a
 way that makes it easy to be located in the version control system of a company,
-for example as separate Git tag. It might also be recommended to store the build
-artifacts. In certain situations (such as very old software) it is recommended
-to even store all software including the entire tool chain and everything else
-that is needed for a rebuild (e.g. a disk snapshot to later load into a virtual
+for example as separate Git tag. It is advisable to store the build artifacts.
+In certain situations (such as very old software) it is recommended to even
+store all software including the entire tool chain and everything else that is
+needed for a rebuild (e.g. a disk snapshot to later load into a virtual
 machine, original installation media, etc.)
+
 After archiving source code a rebuild should be done to ensure that the archived
 information is complete and correct.
 
 2 Rebuild
 
 Doing a test rebuild of archived source code is important, particularly with
-respect to the disclosure obligations imposed by some Open Source licenses. When
-the source code is made available either along with the delivery of a product or
-as a response to a written offer, for example as stipulated in section 3 of the
-GNU General Public License version 2 (GPL-2.0), the source code must be complete
-and correspond to the binary version contained in the product. In addition,
-comprehensive build instructions must be provided to allow an average skilled
-software engineer with reasonable effort to successfully rebuild the software.
-If a rebuild is not possible or the resulting object code is not absolutely
-identical to the original one, the company is in breach of the license and may
-entail legal consequences. Therefore, the preparation of the software archive
-must be done with utmost diligence and must not be delivered to the requesting
-customer, unless a test rebuild could be carried out successfully.
+respect to the disclosure obligations imposed by some FOSS licenses. When the
+source code is made available either along with the delivery of a product or as
+required in accordance with a written offer, for example as stipulated in
+section 3 of the GNU General Public License version 2 (GPL-2.0), the source
+code must be complete and correspond to the binary version contained in the
+product. In addition, comprehensive build instructions must be provided to
+allow an average skilled software engineer with reasonable effort to
+successfully rebuild the software. If a rebuild is not possible or the
+resulting object code is not absolutely identical to the original one, the
+company is in breach of the license which may entail legal consequences.
+Therefore, the preparation of the software archive must be done with utmost
+diligence and must not be delivered to the requesting customer, unless a test
+rebuild could be performed successfully.
 
 I. Who should carry out the test rebuild?
 It is recommended that the test rebuild is carried out by a person who is not
 directly involved in the original software development of the product, i.e. by
-someone without intimate implicit knowledge of the build process. This is to be
+someone without intimate implicit knowledge of the build process in order to be
 able to catch any undocumented steps.
 
 II. How should the test rebuild be carried out?
 The following steps should be taken for a rebuild:
 
-1. to make sure that the success of the rebuild does not depend on the system
-where the original software was built, install a (virtual) machine as specified
-in the archived instructions
-2. follow the instructions and rebuild the source code
-3. compare the built binary with the original binary (see section below)
+1. Install a (virtual) machine as specified in the archived instructions to
+make sure that the success of the rebuild does not depend on the system where
+the original software was built.
+2. Follow the instructions and rebuild the source code
+3. Compare the built binary with the original binary (see section below)
 
 If a rebuild cannot be successfully done, the build instructions are not
-complete and must be amended.
+complete and must be amended accordingly.
 
 III. How should the created object code be tested whether it is complete and
 corresponding?
 The silver bullet of checking for completeness and correspondence, obviously, is
-to obtain identicalness of the original and the newly created software. However,
-this is not always the case, since for example
+to obtain identicalness of the original and the newly created software.
+However, this is not always the case, since for example
 
 1. the tool chain may have been updated,
 2. the tool chain may generate and insert time stamps and/or random numbers,
 3. the tool chain may include debug information such as absolute file names
-(that almost always differ when software is built at different locations).
+(that almost always differ when software is built at different locations),
 4. the order of the software components may have changed.
 
 The easy case: Files are identical
-Identicalness between files can easily be tested using the cmp command line tool
+Whether files are identical can easily be tested using the cmp command line tool
 that only exits without error, if the compared files are the same. Similarly,
 cryptographic checksum generators such as md5sum or sha256sum can be run and
 identical files can be assumed, if the checksums are identical.
@@ -137,3 +139,58 @@ using the following commands
 
 it becomes evident that the two programs merely show a plausible difference in a
 string constant, but everything else is identical.
+
+Build instructions
+Some FOSS licenses, in particular the GNU (Lesser) General Public Licenses,
+require the distributor of binary software to also deliver "scripts to control
+compilation and installation" (GPL-2.0 sect. 3), build and installation
+instructions as part of the complete corresponding source code. Such
+instructions could read as follows
+(https://github.com/armijnhemel/compliance-scripts/blob/master/doc/build-instructions-template.txt):
+
+========================================================================
+SPDX-Identifier: CCO-1.0
+These are the build instructions to rebuild the FOSS components for
+[SOFTWARE NAME AND VERSION].
+
+Please note: Rebuilding the source code and reinstalling the resulting programs
+onto the device are not supported by our technical support department! Warranty
+claims on the modified software will expire, as long as the customer cannot
+prove that the defect would also occur without the modification.
+
+The instructions below have been tested on [DISTRIBUTION]. Other operating
+systems or distributions have not been tested.
+
+To rebuild the software, the following steps must be performed:
+
+1. Installing a (virtual) machine with [DISTRIBUTION], with at least
+[SPACE] GiB of free disk space available.
+
+2. Installing the following packages:
+* [PACKAGE 1]
+* [PACKAGE 2]
+* [PACKAGE N]
+
+3. Creating a directory [SOURCE DIRECTORY]:
+
+$ sudo mkdir -p [SOURCE DIRECTORY]
+
+4. Optional: changing the owner and environment of the directory
+
+$ sudo chown [USR:GROUP] [SOURCE DIRECTORY]
+$ export [VARIABLE]
+
+5. Unpacking the archive [SOURCE ARCHIVE] to this directory
+
+$ cd [SOURCE DIRECTORY]
+$ tar xf [SOURCE ARCHIVE]
+
+6. Starting the build process
+
+[BUILD INSTRUCTIONS]
+
+7. After the build process is complete, the built binaries are located in
+[BINARY DIRECTORY] and can be installed with
+
+[INSTALLATION INSTRUCTIONS]
+========================================================================

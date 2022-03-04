@@ -36,10 +36,10 @@ through patents, and if the software should be sold or otherwise marketed, a
 trademark could be registered.
 
 This supplement of the OSADL Open Source Policy Template aims to provide an
-overview of the various aspects of third-party rights that may play a role  when
-creating and distributing products and to compare the third-party  rights with
-each other. Unlike the other supplements, which all refer to terms  that are
-more or less related to copyright, this supplement takes a look more  at third
+overview of the various aspects of third-party rights that may play a role when
+creating and distributing products and to compare the third-party rights with
+each other. Unlike the other supplements, which all refer to terms that are
+more or less related to copyright, this supplement takes a look more at third
 party rights in general of which copyright is only one part.
 
 Third-party rights
@@ -84,8 +84,8 @@ to a variety of works, e.g. literature, music and visual arts. Computer programs
 i.e. source code and object code (Including preparatory design material see Art.
 1 para 1 Software Directive (2009/24/EC), available at
 https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32009L0024) are
-considered literary works (See Art. 1 para 1 Software Directive) and  are
-therefore subject to copyright. Computer programs may also be  combined works
+considered literary works (See Art. 1 para 1 Software Directive) and are
+therefore subject to copyright. Computer programs may also be combined works
 including e.g. visual artwork (video sequences in computer games, elements of
 graphical user interfaces).
 
@@ -93,27 +93,27 @@ The author of the work has exclusive rights to the work, including but not
 limited to reproduction of the work (copies in any manner or form),
 translations, adaptations and arrangements, to perform the work in public or to
 communicate it to the public. However, exceptions to these exclusive rights
-might apply; some exceptions are  related to the contextof use (such as in
-education or research), to freedom of  speech (right to citations, where
-applicable), or related to the protected  subject matter.
+might apply; some exceptions are related to the contextof use (such as in
+education or research), to freedom of speech (right to citations, where
+applicable), or related to the protected subject matter.
 
 The latter often is the case with computer programs: Sometimes, restricted acts
 such as the creation of copies, translations or adaptations are necessary in
 order to use the program or to inspect its proper functioning, or to correct
 errors in the program that prohibit normal use. If this is the case, these acts
 do not require authorization if the person performing these acts legally
-acquired the program i.e. has the right to use the program (See Art. 5  Software
-Directive). Moreover, one may perform acts of decompilation  (including
-reproduction of the code and translation of its form) of the  relevant part of a
-computer program, if decompilation is necessary to obtain  information about the
-program that is needed to achieve interoperability with  other computer programs
+acquired the program i.e. has the right to use the program (See Art. 5 Software
+Directive). Moreover, one may perform acts of decompilation (including
+reproduction of the code and translation of its form) of the relevant part of a
+computer program, if decompilation is necessary to obtain information about the
+program that is needed to achieve interoperability with other computer programs
 (See Art. 6 Software Directive).
 
 Copyright law is concerned with making verbatim copies of a work or parts of it
 and distributing them. It always only protects embodiments of an author's
-idea,  never the idea itself. For example, if someone describes a functionality
-of how  a computer program might work, anybody is free to develop a computer
-program  that implements that principle. On the other hand, the term also
+idea, never the idea itself. For example, if someone describes a functionality
+of how a computer program might work, anybody is free to develop a computer
+program that implements that principle. On the other hand, the term also
 includes formal changes in the work, such as translating a novel into another
 language, reproducing a painting in a different size, or playing a piece of
 music on an instrument other than the one for which it was originally intended.
@@ -122,7 +122,7 @@ without a valid license or an applicable exception.
 
 Patent right
 In contrast to copyright, patent law is concerned with protecting patented
-processes or material. It is particularly important that the scope of a  patent
+processes or material. It is particularly important that the scope of a patent
 is not limited to the way the process was exemplified in the patent
 application. For example, a solution to a technical problem may have been
 described in a particular computer language, but this does not mean that the
@@ -151,10 +151,10 @@ Trademark right
 Trademark rights grant the holder of such a right the exclusive use of certain
 words or figurative marks in connection with products of certain categories.
 Trademarks provide information about the origin of the product, which is also
-relevant in the context of FOSS: A trademark can provide  valuable hints as to
+relevant in the context of FOSS: A trademark can provide valuable hints as to
 whether software has been developed and tested by a large number of people or
-companies (e.g. RedHat Linux) as opposed to a  non-trademarked project which
-might as well be a fresh fork by a single  developer.
+companies (e.g. RedHat Linux) as opposed to a non-trademarked project which
+might as well be a fresh fork by a single developer.
 
 Trademark infringement may occur when the marks are used on a product that
 falls within the registered product category or when they are otherwise used in
@@ -179,7 +179,7 @@ Copyright
 One of the peculiarities of copyright law is that it does not require
 registration or formal marking of the work to indicate that it is protected by
 copyright. Instead, the mere act of creating a work leads to it being protected,
-as set forth in the Berne Convention. Consequently, works such  as
+as set forth in the Berne Convention. Consequently, works such as
 
 - a written, spoken, or sung sequence of words,
 - a computer program source code and object code,
@@ -194,7 +194,7 @@ merits of the program should be applied", see Software Directive recital 8. In
 addition, Art. 1 para 3 states: "A computer program shall be protected if it is
 original in the sense that it is the author's own intellectual creation. No
 other criteria shall be applied to determine its eligibility for protection.")
-may not be copied, edited or distributed without a valid  license from the
+may not be copied, edited or distributed without a valid license from the
 copyright holder if no exception (see above) applies. Copyright protection ends
 when a certain time after the death of the author (or of the last author in case
 of co-authored works) has passed (Member countries of the Berne Convention agree
@@ -232,9 +232,9 @@ Also, the invention may not be contrary to morality or "ordre public" or be a
 diagnostic methods practiced on the human or animal body".
 
 If patent protection is sought for software, it must have a technical character
-in that it has a "further technical effect" other than being a computer  program
-(This is a frequent subject of debates since one could argue  that there is
-nothing of more technical character than any computer program).  For example, a
+in that it has a "further technical effect" other than being a computer program
+(This is a frequent subject of debates since one could argue that there is
+nothing of more technical character than any computer program). For example, a
 computer program which controls an ABS system in a car has a technical
 character and would most likely be patentable, whereas a text editor most
 likely would not.
@@ -251,18 +251,18 @@ without a time limit.
 Validity
 
 Copyright
-Copyright is not limited to the country where the creator of the work  lives,
-but can be enforced in all countries that are signatories of the  (Berne
-Convention for the Protection of Literary and Artistic Works) and  have
-implemented the standards of the convention into national law. By the  beginning
-of 2022, 180 countries have done so; only 19 countries have not yet  done so,
-but 13 of them have joined the TRIPS Agreement (Agreement on  Trade-Related
-Aspects of Intellectual Property Rights), which includes  recognition of the
+Copyright is not limited to the country where the creator of the work lives,
+but can be enforced in all countries that are signatories of the (Berne
+Convention for the Protection of Literary and Artistic Works) and have
+implemented the standards of the convention into national law. By the beginning
+of 2022, 180 countries have done so; only 19 countries have not yet done so,
+but 13 of them have joined the TRIPS Agreement (Agreement on Trade-Related
+Aspects of Intellectual Property Rights), which includes recognition of the
 Berne Convention standards.
 
 As a result, in countries that are members of the Berne Convention, national
 copyright protection is granted to works distributed in that country
-irrespective  of the author's nationality or country of residence due to Art.
+irrespective of the author's nationality or country of residence due to Art.
 5 Berne Convention ("Authors shall enjoy, in respect of works for which they are
 protected under this Convention, in countries of the Union other than the
 country of origin, the rights which their respective laws do now or may
@@ -299,9 +299,9 @@ Detection of violations
 Copyright
 Normally, it is the sole responsibility of the copyright holder to look for
 infringement and take appropriate action, as there is no state agency
-responsible  for doing so. In the case of FOSS license violations, the copyright
+responsible for doing so. In the case of FOSS license violations, the copyright
 holder might for example discover license violating code in a GitHub repository
-which she could then  use as evidence in court. However, if the infringement
+which she could then use as evidence in court. However, if the infringement
 occurs in a closed source or a proprietary software project, or in a
 Software-as-a Service setting, it might be a lot harder to prove copyright
 violations since the person claiming copyright usually has no access to the
@@ -342,7 +342,7 @@ owns. Once material is found that meets the company's criteria for copyright
 infringement, a fully automated computerized process is set in motion to draft
 a cease-and-desist letter and send it to the infringer along with an invoice
 for past use of the material. The same applies to embedded systems for which
-firmware updates are made available on the Internet. Authors of FOSS that  is
+firmware updates are made available on the Internet. Authors of FOSS that is
 often used in such firmware can automatically determine whether their code is
 included and check whether the license obligations are correctly fulfilled. If
 this is not the case, the authors can take action against them.
@@ -358,15 +358,15 @@ Internet. Typically, however, a company must acquire and analyze the suspect
 product to prove patent infringement. In addition to these procedures, a patent
 holder can monitor new patent applications and intervene when a patent
 application is filed that may infringe an existing patent because there is an
-application process for patents.  Powerful patent search engines exist for this
+application process for patents. Powerful patent search engines exist for this
 purpose.
 
 Trademark right
 Trademark infringements might be observed on the internet as well - e.g. in
-online shops or on video streaming platforms, where sellers might use  foreign
-trademarks to advertise their products. Therefore, trademark  infringement
-violation detection could also be automated in the online context,  whereas it
+online shops or on video streaming platforms, where sellers might use foreign
+trademarks to advertise their products. Therefore, trademark infringement
+violation detection could also be automated in the online context, whereas it
 might be more difficult with "offline infringements". However, as with patents,
-the registration of new trademarks can be monitored and efforts may be  made to
-prevent the registration of identical or similar trademarks with  overlapping
+the registration of new trademarks can be monitored and efforts may be made to
+prevent the registration of identical or similar trademarks with overlapping
 product categories.

@@ -64,7 +64,7 @@ different Functionalities. (Container-Content.svg)
 The lowest layer is called "base layer" or "base image" and contains essential
 system requirements such as system libraries, a package management system and a
 shell. Figure 2 shows schematically how subsequent layers add individual
-applications and their libraries or updates to modify or replace  software in
+applications and their libraries or updates to modify or replace software in
 lower layers.
 
 Figure 2: Schematic representation of components inside individual container
