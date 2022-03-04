@@ -3,15 +3,14 @@
 % Supplement to the OSADL Open Source Policy Template
 %
 % Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
-% Author: Till Jaeger, Caren Kresse 
-% 
+% Author: Till Jaeger, Caren Kresse
+%
 %###########################################################################
 
 SaaS licenses
 
-
-This document lists FOSS licenses that explicitly rule how to handle using the 
-respective software as a service in the so-called ”cloud”.
+This document lists FOSS licenses that explicitly rule how to handle using the
+respective software as a service in the so-called "cloud".
 
 1 Licenses with an effective copyleft clause for the cloud
 - GNU Affero General Public License v2.0 (AGPL-2.0)
@@ -23,4 +22,4 @@ respective software as a service in the so-called ”cloud”.
 - GNU Lesser General Public License v3.0 (LGPL-3.0)
 - Apache License 2.0 (Apache-2.0)
 - Mozilla Public License 2.0 (MPL-2.0)
-- Eclipse Public License 2.0 (EPL-2.0)
+- Eclipse Public License 2.0 (EPL-2.0)

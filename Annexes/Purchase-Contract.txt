@@ -3,8 +3,8 @@
 % Annex to the OSADL Open Source Policy Template
 %
 % Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
-% Author: Till Jaeger, Astrid Spura, Caren Kresse 
-% 
+% Author: Till Jaeger, Astrid Spura, Caren Kresse
+%
 %###########################################################################
 
 Special purchase conditions for Free and Open Source Software (FOSS-SPC)
@@ -12,91 +12,92 @@ Special purchase conditions for Free and Open Source Software (FOSS-SPC)
 
 1 Scope
 
-These FOSS-SPC apply to the purchase of all products containing software by 
-COMPANY and independent of the type of contract on which the purchase is based. 
-The provisions of these FOSS-SPC shall prevail within their scope over our other 
+These FOSS-SPC apply to the purchase of all products containing software by
+COMPANY and independent of the type of contract on which the purchase is based.
+The provisions of these FOSS-SPC shall prevail within their scope over our other
 conditions of purchase and the General Terms and Conditions of the supplier.
 
 2 Definition
 
-2.1 Free and Open Source Software (“FOSS”) for the purpose of this FOSS-SPC is 
-software the license of which meets the requirements of the ”Open Source 
-Definition“ (https://opensource.org/osd) of the Open Source Initiative and/or is 
-registered in the publicly accessible lists of Free Licenses and Open Source 
-Licenses of the Free Software Foundation and/or the Open Source Initiative, 
+2.1 Free and Open Source Software ("FOSS") for the purpose of this FOSS-SPC
+is software the license of which meets the requirements of the "Open Source
+Definition" (https://opensource.org/osd) of the Open Source Initiative and/or
+is registered in the publicly accessible lists of Free Licenses and Open Source
+Licenses of the Free Software Foundation and/or the Open Source Initiative,
 respectively.
 
 2.2 These FOSS-SPC apply to Public Domain Software accordingly.
 
 3 Verification and information obligations of the supplier
 
-The supplier shall be aware that non-compliance with the license obligations for 
-FOSS may result in a violation of copyright law, and thus, in defects of title 
-of the supplied products. The supplier alone is responsible for meeting the 
-license conditions of all FOSS that is included in the products supplied to 
-COMPANY . This also applies to embedded systems as well as firmware updates and 
-any other software distribution. The supplier must check the software included 
-in his products for FOSS and must also gather the required information from 
-sub-suppliers. It is the responsibility of the supplier to comply with the 
-OpenChain Standard Version 1.2 
-(https://wiki.linuxfoundation.org/_media/openchain/openchainspec-1.2.pdf) or any 
-later version.
+The supplier shall be aware that non-compliance with the license obligations for
+FOSS may result in a violation of copyright law, and thus, in defects of title
+of the supplied products. The supplier alone is responsible for meeting the
+license conditions of all FOSS that is included in the products supplied to
+COMPANY . This also applies to embedded systems as well as firmware updates and
+any other software distribution.
+
+The supplier must check the software included in his products for FOSS and must
+also gather the required information from sub-suppliers. It is the
+responsibility of the supplier to comply with ISO 5230, the current OpenChain
+Standard Version (2.0 or later)
+(https://wiki.linuxfoundation.org/\_media/openchain/openchainspec-current.pdf).
+
 
 4 FOSS documentation
 
-At the latest with delivery of the product the supplier must provide COMPANY 
+At the latest with delivery of the product the supplier must provide COMPANY
 with
 
-a) a ”Bill of Materials” (”BOM”), i.e. a list of the used FOSS components, 
-corresponding version number and respective FOSS licenses as SPDX identifier 
-(https://spdx.org/licenses/), and
+a) a "Bill of Materials" ("BOM"), i.e. a list of the used FOSS
+components, corresponding version number and respective FOSS licenses as SPDX
+identifier (https://spdx.org/licenses/), and
 
-b) a document for the compliance with the FOSS licenses (”Open Source Content 
-Documentation”) which contains all license texts and copyright notices with 
-regard to the respective files in Debian DEP-5 format 
-(http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/) or SPDX 
-format (https://spdx.org/spdx-specification-21-web-version) and additionally all 
-further information that must be provided when distributing the software 
+b) a document for the compliance with the FOSS licenses ("Open Source Content
+Documentation") which contains all license texts and copyright notices with
+regard to the respective files in Debian DEP-5 format
+(http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/) or SPDX
+format (https://spdx.org/spdx-specification-21-web-version) and additionally all
+further information that must be provided when distributing the software
 according to the applying licenses.
 
 c) the complete and corresponding source code of FOSS contained in the product.
 
 5 Use of copyleft licenses
 
-5.1 The supplier must ensure that copyleft-licensed software is used in products 
-only in a way that does not bear the risk that COMPANY must license own software 
-components or third-party software components as FOSS when used in combination 
-with the product without having obtained a prior approval from COMPANY for this 
-purpose. Copyleft licenses are here considered to be those FOSS licenses that 
-require modifications of software licensed as such to also be licensed as FOSS 
-when distributing it.
+5.1 The supplier must ensure that copyleft-licensed software is used in products
+only in a way that does not bear the risk that COMPANY must license own
+software components or third-party software components as FOSS when used in
+combination with the product without having obtained a prior approval from
+COMPANY for this purpose. Copyleft licenses are here considered to be those
+FOSS licenses that require modifications of software licensed as such to also
+be licensed as FOSS when distributing it.
 
-5.2 The supplier ensures that the license conditions of all software components 
-linked with FOSS licensed under the GNU Lesser General Public License allow any 
-user of the software modification and reengineering for debugging such 
+5.2 The supplier ensures that the license conditions of all software components
+linked with FOSS licensed under the GNU Lesser General Public License allow any
+user of the software modification and reengineering for debugging such
 modifications.
 
-5.3 The supplier ensures that COMPANY will be provided with all necessary 
-information required to enable compilation and reinstallation of FOSS licensed 
-under the GNU Lesser General Public License, the GNU General Public License and 
-the GNU Affero General Public License (if applicable), especially in case the 
+5.3 The supplier ensures that COMPANY will be provided with all necessary
+information required to enable compilation and reinstallation of FOSS licensed
+under the GNU Lesser General Public License, the GNU General Public License and
+the GNU Affero General Public License (if applicable), especially in case the
 product is an embedded system.
 
 6 Assurance
 
-The supplier assures that the distributed products do not violate any 
-third-party copyrights and that the license conditions of all FOSS and 
+The supplier assures that the distributed products do not violate any
+third-party copyrights and that the license conditions of all FOSS and
 third-party software are fully met.
 
-7 Violation of these FOSS-SPC
+7 Violation of these FOSS-SPC
 
-7.1 In case of violation of these FOSS-SPC the supplier agrees to either 
-immediately remedy any defects and/or replace those FOSS components that are not 
+7.1 In case of violation of these FOSS-SPC the supplier agrees to either
+immediately remedy any defects and/or replace those FOSS components that are not
 compliant with their license by license-compliant components.
 
-7.2 The supplier agrees to compensate COMPANY for all damages and costs arising 
+7.2 The supplier agrees to compensate COMPANY for all damages and costs arising
 from the failure to comply with the provisions given in this FOSS-SPC.
-
 
 
 ========================================
@@ -105,91 +106,95 @@ Deutsche Version:
 
 Besondere Einkaufsbedingungen für Freie und Open Source-Software (FOSS-BEB)
 
-
 1 Geltungsbereich
 
-Diese FOSS-BEB gelten für den Erwerb sämtlicher Produkte, die Software 
-enthalten, durch UNTERNEHMEN und unabhängig von dem Vertragstypus des dem Erwerb 
-zugrunde liegenden Vertrages. Die FOSS-BEB gelten in ihrem Anwendungsbereich 
-vorrangig vor unseren übrigen Einkaufsbedingungen und den Allgemeinen 
-Geschäftsbedingungen des Anbieters.
+Diese FOSS-BEB gelten für den Erwerb sämtlicher Produkte, die Software
+enthalten, durch UNTERNEHMEN und unabhängig von dem Vertragstypus des dem
+Erwerb zugrunde liegenden Vertrages. Die FOSS-BEB gelten in ihrem
+Anwendungsbereich vorrangig vor unseren übrigen Einkaufsbedingungen und den
+Allgemeinen Geschäftsbedingungen des Anbieters.
 
 2 Definition
 
-2.1 Freie Software und Open Source-Software (“FOSS”) im Sinne dieser FOSS-BEB 
-ist Software, deren Lizenz den Anforderungen der „Open Source Definition“ 
-(https://opensource.org/osd) der Open Source Initiative genügt und/oder von der 
-Open Source Initiative und/oder der Free Software Foundation in deren öffentlich 
-zugänglichen Listen Open Source-Lizenzen bzw. freier Lizenzen aufgenommen wurde.
+2.1 Freie Software und Open Source-Software ("FOSS") im Sinne dieser
+FOSS-BEB ist Software, deren Lizenz den Anforderungen der "Open Source
+Definition" (https://opensource.org/osd) der Open Source Initiative genügt
+und/oder von der Open Source Initiative und/oder der Free Software Foundation
+in deren öffentlich zugänglichen Listen Open Source-Lizenzen bzw. freier
+Lizenzen aufgenommen wurde.
 
 2.2 Für Public Domain-Software gelten diese FOSS-BEB entsprechend.
 
 3 Prüfungs- und Informationspflichten des Anbieters
 
-Dem Anbieter ist bekannt, dass die Nichteinhaltung der Lizenzbedingungen für 
-FOSS zu einer Urheberrechtsverletzung und zu einem Rechtsmangel der an 
-UNTERNEHMEN gelieferten Produkte führen kann. Der Anbieter ist alleine dafür 
-verantwortlich, die Lizenzbedingungen sämtlicher FOSS einzuhalten, die in den an 
-UNTERNEHMEN gelieferten Produkten enthalten ist. Dies betrifft sowohl 
-Embbeded-Systeme als auch Firmware-Updates und jede andere Distribution von 
-Software. Der Anbieter hat die in seinen Produkten enthaltene Software auf FOSS 
-zu überprüfen und auch von Vorlieferanten die erforderlichen Informationen 
-einzuholen. Die Einhaltung des OpenChain Standards in der Version 1.2 
-(https://wiki.linuxfoundation.org/_media/openchain/openchainspec-1.2.pdf) oder 
+Dem Anbieter ist bekannt, dass die Nichteinhaltung der Lizenzbedingungen für
+FOSS zu einer Urheberrechtsverletzung und zu einem Rechtsmangel der an
+UNTERNEHMEN gelieferten Produkte führen kann. Der Anbieter ist alleine dafür
+verantwortlich, die Lizenzbedingungen sämtlicher FOSS einzuhalten, die in den
+an UNTERNEHMEN gelieferten Produkten enthalten ist. Dies betrifft sowohl
+Embbeded-Systeme als auch Firmware-Updates und jede andere Distribution von
+Software.
+
+Der Anbieter hat die in seinen Produkten enthaltene Software auf FOSS zu
+überprüfen und auch von Vorlieferanten die erforderlichen Informationen
+einzuholen. Die Einhaltung des OpenChain Standards in der Version 1.2
+(https://wiki.linuxfoundation.org/_media/openchain/openchainspec-1.2.pdf) oder
 späteren Versionen ist eine Obliegenheit des Anbieters.
 
 4 FOSS Dokumentation
 
 Der Anbieter muss UNTERNEHMEN spätestens mit der Überlassung des Produktes
 
-a) eine „Bill of Materials“ („BOM“), d.h. eine Liste der verwendeten FOSS 
-Komponenten, ihrer Versionsnummer und der anwendbaren FOSS Lizenzen als 
+a) eine "Bill of Materials" ("BOM"), d.h. eine Liste der verwendeten
+FOSS Komponenten, ihrer Versionsnummer und der anwendbaren FOSS Lizenzen als
 SPDX-Identifier (https://spdx.org/licenses/), und
 
-b) ein Dokument zur Einhaltung der FOSS Lizenzen (”Open Source Content 
-Documentation”), das alle Lizenztexte und Copyright-Hinweise mit Bezug auf die 
-jeweiligen Dateien im Debian DEP-5-Format 
-(http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/) oder 
-SPDX-Format (https://spdx.org/spdx-specification-21-web-version) enthält, sowie 
-zusätzlich alle weiteren Informationen, die aufgrund der anwendbaren Lizenzen 
+b) ein Dokument zur Einhaltung der FOSS Lizenzen ("Open Source Content
+Documentation"), das alle Lizenztexte und Copyright-Hinweise mit Bezug auf die
+jeweiligen Dateien im Debian DEP-5-Format
+(http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/) oder
+SPDX-Format (https://spdx.org/spdx-specification-21-web-version) enthält, sowie
+zusätzlich alle weiteren Informationen, die aufgrund der anwendbaren Lizenzen
 bei der Überlassung der Software übergeben werden müssen, und
 
-c) den vollständigen und korrespondierenden Quellcode der in dem Produkt 
+c) den vollständigen und korrespondierenden Quellcode der in dem Produkt
 enthaltenden FOSS zur Verfügung stellen.
 
 5 Einsatz von Copyleft-Lizenzen
 
-5.1 Der Anbieter hat sicherzustellen, dass Software unter Copyleft-Lizenzen in 
-den Produkten nur in einer Weise verwendet wird, die nicht das Risiko enthält, 
-dass UNTERNEHMEN bei der Verwendung des Produktes in Kombination mit eigenen 
-Software-Komponenten oder Software-Komponenten Dritter als FOSS lizenzieren 
-muss, ohne dass dafür die vorherige Zustimmung von UNTERNEHMEN eingeholt wurde. 
-Als Copyleft-Lizenzen werden solche FOSS-Lizenzen verstanden, deren 
-Lizenzbedingungen verlangen, dass Modifikationen der darunter lizenzierten 
+5.1 Der Anbieter hat sicherzustellen, dass Software unter Copyleft-Lizenzen in
+den Produkten nur in einer Weise verwendet wird, die nicht das Risiko enthält,
+dass UNTERNEHMEN bei der Verwendung des Produktes in Kombination mit eigenen
+Software-Komponenten oder Software-Komponenten Dritter als FOSS lizenzieren
+muss, ohne dass dafür die vorherige Zustimmung von UNTERNEHMEN eingeholt wurde.
+Als Copyleft-Lizenzen werden solche FOSS-Lizenzen verstanden, deren
+Lizenzbedingungen verlangen, dass Modifikationen der darunter lizenzierten
 Software bei der Weitergabe ebenfalls als FOSS lizenziert werden müssen.
 
-5.2 Der Anbieter stellt sicher, dass die Lizenzbedingungen sämtlicher 
-Software-Komponenten, die mit FOSS unter der GNU Lesser General Public License 
-verlinkt ist, jedem Nutzer der Software die Bearbeitung zum eigenen Gebrauch und 
+5.2 Der Anbieter stellt sicher, dass die Lizenzbedingungen sämtlicher
+Software-Komponenten, die mit FOSS unter der GNU Lesser General Public License
+verlinkt ist, jedem Nutzer der Software die Bearbeitung zum eigenen Gebrauch und
 das Reengineering zur Behebung von Fehlern solcher Bearbeitungen gestatten.
 
-5.3 Der Anbieter stellt sicher, dass UNTERNEHMEN die erforderlichen 
-Informationen zur Verfügung gestellt werden, die das Kompilieren und 
-Wiederaufspielen von FOSS unter der GNU Lesser General Public License, der GNU 
-General Public License und der GNU Affero General Public License ermöglichen 
+5.3 Der Anbieter stellt sicher, dass UNTERNEHMEN die erforderlichen
+Informationen zur Verfügung gestellt werden, die das Kompilieren und
+Wiederaufspielen von FOSS unter der GNU Lesser General Public License, der GNU
+General Public License und der GNU Affero General Public License ermöglichen
 (sofern vorhanden), insbesondere wenn das Produkt ein Embedded System ist.
 
 6 Zusicherung
-Der Anbieter sichert zu, dass die von ihm gelieferten Produkte keine 
-Urheberrechte Dritter verletzen und die Lizenzbedingungen sämtlicher FOSS und 
-anderer Third-Party-Software vollständig erfüllt werden.
 
-7 Verletzung dieser FOSS-BEB
+Der Anbieter sichert zu, dass die von ihm gelieferten Produkte keine
+Urheberrechte Dritter verletzen und die Lizenzbedingungen sämtlicher FOSS und
+anderer Third-Party-Software vollständig erfüllt werde
 
-7.1 Im Falle einer Verletzung dieser FOSS-BEB verpflichtet sich der Anbieter, 
-den Mangel unverzüglich zu beheben und/oder nicht lizenzkonforme 
+7 Verletzung dieser FOSS-BEB
+
+7.1 Im Falle einer Verletzung dieser FOSS-BEB verpflichtet sich der Anbieter,
+den Mangel unverzüglich zu beheben und/oder nicht lizenzkonforme
 FOSS-Komponenten durch lizenzkonforme Komponenten zu ersetzen.
 
-7.2 Der Anbieter verpflichtet sich UNTERNEHMEN sämtliche Kosten und Schäden zu 
-ersetzen, die sich aus der Nichteinhaltung der Zusicherungen aus diesen FOSS-BEB 
-ergeben.
+7.2 Der Anbieter verpflichtet sich UNTERNEHMEN sämtliche Kosten und Schäden zu
+ersetzen, die sich aus der Nichteinhaltung der Zusicherungen aus diesen FOSS-BEB
+ergeben.
+

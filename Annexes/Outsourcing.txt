@@ -1,0 +1,271 @@
+%###########################################################################
+%
+% OSADL Open Source Policy Template for License Compliance
+%
+% Annex on Outsourcing FOSS development.
+%
+% Copyright (c) 2021-2022 Open Source Automation Development Lab (OSADL) eG
+%
+%###########################################################################
+
+FOSS in external development
+
+When commissioning an external party (e.g. freelancer, supplier) to develop
+software that includes FOSS, it must be ensured that the external party adheres
+to the required standards of FOSS compliance. A template for the related
+sections of a contract with an external party is given below.
+
+============================================================================
+Please note that the proposed wording of the texts given in this document are
+general templates that must be reviewed by a company's legal counsel before
+they can be used.
+============================================================================
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+This contract rules the handling of FOSS in the context of software developed
+by the external party and COMPANY. All software delivered to COMPANY under
+this contract by the external party is hereafter referred to as "Software
+Product".
+
+1. Aim
+The provisions laid out in this contract aim to ensure that the Software
+Product delivered by the external party can be copied and distributed in
+compliance with the applicable licenses by COMPANY.
+
+2. Scope
+The provisions laid out in this contract apply to the entire Software Product.
+The provisions of this contract shall prevail within their scope over our other
+contracting conditions and the General Terms and Conditions of the external
+party.
+
+3. Definition
+3.1 Free and Open Source Software ("FOSS") for the purpose of this contract
+is software the license of which meets the requirements of the "Open Source
+Definition" (https://opensource.org/osd) of the Open Source Initiative and/or
+is registered in the publicly accessible lists of Free Licenses and Open Source
+Licenses of the Free Software Foundation and/or the Open Source Initiative,
+respectively.
+
+3.2 The provisions laid out in this contract apply accordingly to software that
+is dedicated to the Public Domain by the copyright holder.
+
+4. Verification and information obligations of the external party
+The external party shall be aware that non-compliance with the license
+obligations for FOSS may result in aviolation of copyright law, and thus, in
+defects of title of the Software Product. The external party alone is
+responsible for meeting the license conditions of all FOSS that is included in
+the Software Product. This also applies to embedded systems as well as firmware
+updates and any other software distribution.
+
+The external party must check any pre-existing software that is included in the
+Software Product for FOSS. This applies accordingly for software that the
+external party received from their suppliers. The external party commits to
+comply with the standard for Open Source License Compliance, ISO 5230, i.e. the
+current OpenChain Standard Version (2.0 or later) (See
+https://wiki.linuxfoundation.org/_media/openchain/openchainspec-current.pdf).
+
+===============================================================================
+If the contracting party wishes to offer assistance to the external party to
+implement the OpenChain standard, e.g. by offering access to the contracting
+party's own FOSS policy and/or by offering use of their compliance tooling
+infrastructure to the external party, the following text passages can be
+included. If so, please check that all requirements of the applicable data
+protection law are complied with.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+If desired, the external party has the right to get access to COMPANY'S FOSS
+policy and/or the tooling infrastructure implemented in our company to achieve
+compliance.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+
+5. FOSS documentation
+At the latest with delivery of the Software Product the external party must
+provide COMPANY with
+
+- a "Bill of Material" ("BOM"), a list of the used FOSS components,
+corresponding version number and respective FOSS licenses as SPDX identifier
+(https://spdx.org/licenses/) including all dependencies, and
+
+- a document for the compliance with the FOSS licenses ("Open Source Content
+Documentation") which contains all license texts and copyright notices with
+regard to the respective files in Debian DEP-5 format
+(http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/), or SPDX
+format (https://spdx.org/spdx-specification-21-web-version) or other
+standardized format and additionally all further information that must be
+provided when distributing the software according to the applying licenses, and
+
+- the complete and corresponding source code of FOSS contained in the Software
+Product.
+
+6. Use of copyleft licenses
+6.1 The external party must ensure that copyleft-licensed software is used in
+the Software Product only in a way that does not bear the risk that COMPANY
+must license own software and/or third party software components as FOSS when
+used in combination with the Software Product without having obtained a prior
+approval from COMPANY for this purpose. Copyleft licenses are FOSS licenses
+that contain the requirement to license all or defined modifications of the
+software or software combinations as FOSS when the modifications or software
+combinations are redistributed or used by third parties.
+
+6.2 The external party ensures that the license conditions of all software
+components linked with FOSS licensed under the GNU Lesser General Public
+License allow any user of the software modification of these software
+components and reengineering for debugging such modifications.
+
+6.3 The external party ensures that COMPANY will be provided with all
+necessary information required to enable the customer to perform compilation
+and reinstallation of FOSS licensed under the GNU Lesser General Public
+License, the GNU General Public License and the GNU Affero General Public
+License (if applicable), especially in case the product is an embedded system.
+
+7. Guarantee
+The external party guarantees that the Software Product does not violate any
+third-party copyrights and that the license conditions of all FOSS and
+third-party software are complied with.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2. Contributing externally developed software to a FOSS project
+In case the software developed by the external party is intended to be licensed
+under a FOSS license and contributed to a FOSS project or published as a new
+FOSS project, there are different scenarios of how to handle the rights on the
+created software. The following templates can be added to the general contract
+on FOSS in outsourced development given above.
+
+- Rights remain with the external party
+Ownership in the copyrights of the developed software remain with the external
+party. The work contract stipulates that all software is licensed under the FOSS
+license agreed-upon by all parties in advance and either contributed to a
+public repository or delivered to the customer directly.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The external party will retain the copyright ownership for all software
+developed as part of this contract. They will license all such software under
+the specified FOSS license(s). They will ensure that no third-party rights are
+violated by this licensing, in particular with respect to patents and
+compatibility of all involved FOSS licenses.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- Credit
+Rights remain with the external party, but the company is credited in the file
+headers. In this case, the template wording of KeepRights will be extended by
+the following addition:
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The external party agrees to place the following acknowledgment within the file
+headers of all software developed as part of this contract.
+
+Support by COMPANY is gratefully acknowledged.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+============================================================================
+Please note that most FOSS licenses do not require such an acknowledgment to be
+delivered along with a binary distribution of the software. If this is desired,
+the acknowledgment should be included in the copyright notice.
+============================================================================
+
+- Repository
+Rights remain with the external party, but the software is licensed under a
+specified FOSS license and published on a specified repository. In case the
+software is contributed to an existing project, the external party additionally
+goes through the contribution process until the contribution is accepted. In
+this case, the template wording of KeepRights can be extended by the following
+addition:
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The external party agree to contribute the software developed as part of this
+contract to the specified repository or FOSS project. This includes following
+the project's contribution process and integrating any required changes until
+the contribution is accepted.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In case the software is released as a new FOSS project, the external party is
+commissioned to maintain the repository and take care of contributions from
+third parties. In this case, the template wording of KeepRights can be extended
+by the following addition:
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The external party agree to publish the software developed as part of this
+contract on the specified repository. In addition, they will maintain the
+published software for number of years. This includes reviewing and integrating
+contributions from third parties, tracking security issues and updating the
+software accordingly.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- All rights are transferred (software buyout)
+The work contract stipulates that the copyright ownership is transferred
+entirely to the customer on delivery of the software.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(1) The external party shall grant COMPANY all economic rights in the software
+which the external party creates for the purpose of fulfilling the contractual
+relationship. With regard to the rights of use, COMPANY shall thus be provided
+with the same rights as if the software had been created in an employment
+relationship pursuant to Section 69b) (1) German Copyright Act. COMPANY is
+authorized to transfer the acquired rights of use and/or to grant non-exclusive
+rights of use thereto, in particular to publish the software under any open
+source license and to license it to all third parties.
+
+(2) At the request of the developers involved, these may be named as authors in
+the source code, with the external party using copyright and author notices
+according to the following syntax:
+
+Copyright (c) [year] COMPANY, authors: [name of author optional]
+
+The external party shall ensure that the source code contains the copyright
+notices of the developers who wish to be named, at the time the software is
+supplied to COMPANY.
+
+(3) If the external party uses pre-existing FOSS in the development of the
+software, a complete list of the used FOSS with the following information shall
+be provided upon delivery of the software:
+
+- Name and version of the FOSS,
+- FOSS license(s) as SPDX identifier (https://spdx.org/licenses/) and a
+- license information document for the distribution of the software to
+third parties.
+
+This license information document shall contain all FOSS license texts and
+copyright notices of the used FOSS. The external party shall ensure that the
+license compatibility of the FOSS used in the software is maintained.
+Alternative to the previous sentence: COMPANY wishes to offer the software
+under the following FOSS license: name of FOSS license (e.g. GNU General Public
+License, Version 3). The external party shall ensure that only such
+pre-existing FOSS is used which has licenses compatible with name of FOSS
+license (e.g. GNU General Public License, Version 3).
+
+(4) The software shall be delivered in source code form with documentation and
+the FOSS license information document.
+
+(5) Additional option: Notwithstanding paragraph, COMPANY shall not acquire
+any exclusive rights to the software components in Annex A, but shall rather be
+granted the perpetual, worldwide and unrestricted non-exclusive, irrevocable
+right to exploit the software in any known and unknown way and to reproduce,
+distribute, adapt and make the software available to the public and to
+sublicense it to this extent. The paragraphs shall apply accordingly; the
+external party shall be named as copyright owner in the copyright notice.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+===========================================================================
+For software buyouts where contract law of a country from outside the EU
+applies - in particular in the US - the wording of a buyout clause will be
+different. The following text can give some reference points on what needs to be
+ considered. Please note that the wording in particular of the text given below
+is a proposal that must be reviewed by a company's legal counsel before it can
+be used.
+===========================================================================
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Subject to the terms and conditions of this Agreement, external party hereby
+grants to COMPANY a worldwide, royalty-free, exclusive, perpetual and
+irrevocable license, with the right to transfer an unlimited number of
+non-exclusive licenses or to grant sublicenses to third parties, under the
+Copyright covering the software to use the software by all means, including,
+but not limited to:
+
+- publish the software,
+- modify the software,
+- prepare derivative works based upon or containing the software and/or to
+combine the software with other programs,
+- reproduce the software in original or modified form,
+- distribute, to make the software available to the public, display and
+publicly perform the software in original or modified form.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
