@@ -1,0 +1,147 @@
+%###########################################################################
+% OSADL Open Source Policy Template for License Compliance
+%
+% Annex with template texts for distributing encrypted GPL software.
+%
+% Copyright (c) 2021 Open Source Automation Development Lab (OSADL) eG
+%
+%###########################################################################
+
+Encryption and GPL - Template texts
+
+Annex to Open Source Policy Template
+
+Send-in solution
+The following template text must be used to inform recipients of encrypted
+software licensed under a GNU General Public License how the send-in solution
+[unlocking variant / installation variant] for installing their own software
+versions works.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+English:
+The safety of this product is of great importance to us. Therefore, as a rule,
+modified versions of the deployed Open Source software can only be installed
+[if the security features in use are removed by us / if this is enabled by us].
+Please note that the installation of modified software can entail that possible
+safety requirements on the product are no longer fulfilled and that
+consequently, it can no longer be used in the originally intended way.
+
+If you still wish to install modified versions of the software components
+licensed under the GNU General Public License (GPL) and/or the GNU Lesser
+General Public License (LGPL), please contact (open-source@company.tld) noting
+that you would like to install own versions of the software on your device. You
+will then receive all necessary information to return the device to us
+[including the software to be installed. The latter must contain adequate
+installation information].
+
+In order to comply with our license obligations towards the GPL and/or LGPL
+licensors, we will remove the security features in use, [thereby enabling you
+to install GPL and/or LGPL software, / install your GPL and/or LGPL software,]
+remove our trademarks from the product, and return the product to you. However,
+redistribution of the product with modified software is not permitted as
+exhaustion of the distribution right cannot occur for the specific copy. Also
+the use of the product may be prohibited if it violates any legal provisions.
+It is your responsibility to check whether the use is permissible in the
+specific case or to obtain the required permits. The warranty is void for any
+defects related to the use of modified software.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Deutsch:
+Die Sicherheit dieses Produktes ist für uns von großer Wichtigkeit. Daher
+können modifizierte Versionen der verwendeten Open Source-Software im Regelfall
+nur installiert werden, [wenn die verwendeten Sicherheitsfeatures durch uns
+entfernt werden / wenn dies durch uns ermöglicht wird]. Bitte beachten Sie,
+dass die Installation modifizierter Software dazu führen kann, dass eventuell
+geltende Sicherheitsanforderungen an das Produkt nicht mehr erfüllt werden und
+dieses dann nicht mehr in der ursprünglich vorgesehenen Form genutzt werden
+kann.
+
+Wenn Sie dennoch modifizierte Versionen der Softwarekomponenten installieren
+möchten, die unter der GNU General Public License (GPL) und/oder der GNU Lesser
+General Public License (LGPL) lizenziert sind, kontaktieren Sie bitte
+(open-source@company.tld) mit dem Hinweis, dass Sie eigene Versionen der
+Software auf Ihr Gerät installieren möchten. Sie erhalten sodann alle
+notwendigen Informationen für die Rücksendung des Gerätes an uns [und die
+Lieferung der zu installierenden Software. Letztere muss hinreichende
+Installationsinformationen enthalten].
+
+Wir werden dann zur Erfüllung unserer Lizenzpflichten gegenüber den GPL-
+und/oder LGPL-Lizenzgebern die verwendeten Sicherheitsfeatures entfernen,
+[Ihnen dadurch die Installation von GPL- und/oder LGPL-Software ermöglichen, /
+Ihre GPL- und/oder LGPL-Software installieren,] unsere Marken vom Produkt
+entfernen und das Produkt wieder an Sie zurücksenden. Die Weiterverbreitung des
+Produkts mit modifizierter Software ist allerdings nicht gestattet, weil am
+konkreten Vervielfältigungsstück keine Erschöpfung des Verbreitungsrechtes
+eintreten kann. Auch die Verwendung des Produkts kann verboten sein, wenn es
+gegen gesetzliche Bestimmungen verstößt. Es obliegt Ihnen zu überprüfen, ob
+die Verwendung im konkreten Fall zulässig ist bzw. die dafür erforderlichen
+Genehmigungen einzuholen. Die Gewährleistung erlischt für alle Mängel, die
+auf der Verwendung modifizierter Software beruhen.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Encryption together with differently licensed components
+
+The following template text must be used to inform recipients of software
+licensed under a GNU General Public License that is encrypted together with
+differently licensed components how they can decrypt the GPL-components and
+what consequences result from such actions.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+English:
+Dear Customer,
+the purchased device contains software that was encrypted for security and/or
+safety reasons. However, the license of some of the software components
+requires enabling installation of your own version of such software. Therefore,
+the key to decrypt the software is included in the delivery of the product.
+
+In the event that you exercise your right, i.e., decrypt the software and
+install your own software, we would like to point out the following
+consequences:
+
+- The principle of exhaustion does not apply with respect to the trademarks in
+case the software was modified. Redistribution of the product with our
+trademarks on it is therefore not permitted without our consent.
+
+- The warranty expires for all defects that are caused by the modification of
+the software.
+
+- You may be held liable for damages that may result from the use of the
+product with modified software, especially if you allow third parties to use
+it.
+
+- The use of the product may be prohibited if it violates legal regulations. It
+is your responsibility to check whether the use is permitted in the specific
+case or to subject the product to the required certification.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Deutsch:
+Sehr geehrter Kunde,
+das von Ihnen erworbene Gerät enthält Software, die wir aus
+Sicherheitsgründen verschlüsselt haben. Allerdings verlangt die Lizenz der
+Software, dass wir Ihnen den Schlüssel verfügbar machen, so dass Sie eigene
+Versionen der so lizenzierten Softwarekomponenten selbständig aufspielen
+können.
+
+Für den Fall, dass Sie von diesem Recht Gebrauch machen, d.h. die Software
+entschlüsseln und eigene Software aufspielen, weisen wir auf folgende
+Konsequenzen hin:
+
+- Der markenrechtliche Erschöpfungsgrundsatz greift bei einer Modifikation der
+Software nicht ein. Eine Weiterverbreitung des Produktes mit unseren
+Markenhinweisen ist damit ohne unsere Zustimmung nicht zulässig.
+
+- Die Gewährleistung erlischt für alle Mängel, die auf der Verwendung
+modifizierter Software beruhen.
+
+- Sie können für Schäden haftbar gemacht werden, die sich aus der Benutzung
+des Produktes mit einer modifizierten Software ergeben können, insbesondere
+wenn Sie Dritten die Benutzung ermöglichen.
+
+- Die Verwendung des Produkts kann verboten sein, wenn dies gegen gesetzliche
+Bestimmungen verstößt. Es obliegt Ihnen zu überprüfen, ob die Verwendung im
+konkreten Fall zulässig ist, bzw. die dafür erforderlichen Genehmigungen
+einzuholen.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

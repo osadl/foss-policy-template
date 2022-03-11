@@ -1,0 +1,97 @@
+%###########################################################################
+% OSADL Open Source Policy Template for License Compliance
+%
+% Annex with template texts for Terms of Use or EULA with regard to FOSS.
+%
+% Copyright (c) 2021 Open Source Automation Development Lab (OSADL) eG
+%
+%###########################################################################
+
+FOSS in Terms and Conditions
+
+Annex to Open Source Policy Template
+
+============================================================================
+If FOSS and proprietary development is jointly contained in a product and a
+company's own license terms shall be used for the proprietary development, care
+must be taken to ensure that these license terms are not in conflict with the
+FOSS license terms. If restrictions of use are applied to the whole software, a
+contradiction arises with regard to the freedoms of use granted by FOSS
+licenses. It is therefore strongly recommended to expressly limit the
+application of the proprietary license terms to the software components to which
+they apply. This may, for example, be done by using the following clause in a
+company's licenses, General Terms and Conditions, Terms of Use (ToU) or End User
+License Agreements (EULA):
+============================================================================
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+English
+1. Our products may contain Free and Open Source software (FOSS). According to
+the Open Source definition by the Open Source Initiative
+(https://opensource.org/osd) FOSS is software which is licensed by the
+respective holders of rights to everyone with extensive rights of use and
+without license fees and for which the source code is available. A list of the
+concerned software components and the respectively applicable license
+conditions as well as additional information on the availability of source
+code) are delivered along with the product. As long as the customer only uses
+the FOSS components internally, there are no license obligations for the
+customer towards the holders of rights of these FOSS components. However, the
+customer may additionally obtain a simple right of use for the contained FOSS
+from the respective holders of rights under the respective FOSS license
+conditions. Every use of FOSS on the basis of these FOSS licenses and outside
+of the intended use of our products is undertaken at the customer's own risk
+and is not subject to the contractual relationship with us.
+
+2. Our General Terms and Conditions also apply to those products that contain
+FOSS, they do, however, not restrict the rights of use and freedoms of use
+granted by the FOSS licenses. Insofar, the FOSS licenses take precedence over
+these General Terms and Conditions.
+
+3. The customer is permitted to modify our software components for the
+customer's own use and to perform reverse engineering of our software
+components for debugging of such modifications if these software components are
+linked with libraries licensed under the GNU Lesser General Public License
+(LGPL). However, forwarding the knowledge acquired during reverse engineering or
+forwarding modified software to third parties is prohibited.
+
+4. Warranty for defects of our products that are due to a modification of FOSS
+is excluded. The customer bears the burden of proof that a defect of our
+product would also occur without the modification of the contained FOSS.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Deutsch
+1. Unsere Produkte können Free und Open Source Software (FOSS) enthalten.
+FOSS ist entsprechend der Open Source Definition der Open Source Initiative
+(https://opensource.org/osd) Software, die von den jeweiligen Rechteinhabern an
+jedermann zur umfassenden lizenzgebührenfreien Nutzung lizenziert wird und
+deren Sourcecode verfügbar ist. Eine Auflistung der davon betroffenen
+Software-Komponenten und der jeweils anwendbaren Lizenzbedingungen sowie
+weitergehende Informationen (z.B. zum Erhalt von Quellcode) werden dem Kunden
+zusammen mit dem Produkt übergeben. Solange der Kunde die FOSS-Komponenten
+ausschließlich intern benutzt, hat der Kunde keine Lizenzpflichten gegenüber
+den Rechteinhabern dieser FOSS-Komponenten. Der Kunde kann an der verwendeten
+FOSS von den jeweiligen Rechteinhabern jedoch zusätzlich ein einfaches Nutzungsrecht
+unter den Bedingungen erwerben, die die dafür jeweils anwendbaren FOSS-Lizenzen
+vorsehen. Jede Nutzung von FOSS auf der Basis dieser FOSS-Lizenzen und außerhalb
+der in unseren Produkten vorgesehenen Verwendung geschieht auf eigenes Risiko des
+Kunden und ist nicht Gegenstand des Vertragsverhältnisses mit uns.
+
+2. Unsere Allgemeinen Geschäftsbedingungen gelten auch für die Produkte, die
+FOSS enthalten, beschränken jedoch nicht die in den FOSS-Lizenzen gewährt
+Nutzungsrechte und Nutzerfreiheiten. Die FOSS-Lizenzen gehen diesen Allgemeinen
+Geschäftsbedingungen insoweit vor.
+
+3. Es ist dem Kunden gestattet, Software-Komponenten, die von uns stammen,
+für den eigenen Gebrauch des Kunden zu bearbeiten und zur Behebung von Fehlern
+solcher Bearbeitungen ein Reverse-Engineering vorzunehmen, sofern diese
+Software-Komponenten mit Programmbibliotheken unter der GNU Lesser General
+Public License (LGPL) verlinkt sind. Die Weitergabe der bei dem
+Reverse-Engineering gewonnen Informationen und der bearbeiteten Software ist
+hingegen nicht gestattet.
+
+4. Die Gewährleistung für Mängel unserer Produkte, die auf einer Bearbeitung
+von FOSS beruhen, ist ausgeschlossen. Der Kunde trägt die Beweislast, dass
+ein Mangel unseres Produktes auch ohne die Bearbeitung der enthaltenen FOSS
+aufgetreten wäre.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
