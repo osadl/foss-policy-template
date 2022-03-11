@@ -4,82 +4,82 @@
 %
 % Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
 % Author: Carsten Emde, Caren Kresse
-% 
+%
 %###########################################################################
 
 Contribution permission
 
 
-Before any of our employees can contribute to a FOSS project, they must request 
-and obtain a contribution permission by completing one of the forms at the end 
-of this document. The first form grants a one-time permission for a specific 
-contribution while the second form grants a universal contribution permission 
-for a specific project. To grant a contribution permission, a signatory of our 
+Before any of our employees can contribute to a FOSS project, they must request
+and obtain a contribution permission by completing one of the forms at the end
+of this document. The first form grants a one-time permission for a specific
+contribution while the second form grants a universal contribution permission
+for a specific project. To grant a contribution permission, a signatory of our
 company must sign this form.
 ========================================
-Apart from the specified contribution permissions (one-time and general for a 
-specific project) it might also be considered to grant a general permission to a 
+Apart from the specified contribution permissions (one-time and general for a
+specific project) it might also be considered to grant a general permission to a
 specific contributor.
 ========================================
 
 Below, some explanations are given on the required information.
 
-- Developer: Full name of the developer to whom the right is granted to 
-contribute the specified software to the specified FOSS project under the 
+- Developer: Full name of the developer to whom the right is granted to
+contribute the specified software to the specified FOSS project under the
 specified license in the name of our company
 
-- Department: Full name and or abbreviation of the company department the 
+- Department: Full name and or abbreviation of the company department the
 developer belongs to
 
-- Software components to be contributed: Specific software components that are 
+- Software components to be contributed: Specific software components that are
 intended to be contributed; only required for a one-time contribution permission
 
 - Software project: The full name of the FOSS project
 
-- License(s): SPDX Identifier(s) of the license(s) under which the contributed 
+- License(s): SPDX Identifier(s) of the license(s) under which the contributed
 code will be published
 
-- Repository: URL of the repository or the shared Internet folder where the 
+- Repository: URL of the repository or the shared Internet folder where the
 software will be made available
 
-- Mailing list: URL and email address of the corresponding mailing list where 
+- Mailing list: URL and email address of the corresponding mailing list where
 code snippets, comments, ideas, proposals, reviews etc. are exchanged
 
-- Start of validity of the permission: Date; only required for a general 
+- Start of validity of the permission: Date; only required for a general
 contribution permission
 
-- End of validity of the permission: Date or ”until further notice”; only 
+- End of validity of the permission: Date or "until further notice"; only
 required for a general contribution permission
 
 - Internal review: Must be specified whether required or not and, if so, by whom
 
-- Signed-off-by: Name <email>: Name and email address to be used in the 
+- Signed-off-by: Name <email>: Name and email address to be used in the
 Signed-off-by: tag of a commit message.
 ========================================
-This is particularly important, since many FOSS projects require this tag and 
-understand that the person who signed it takes full responsibility that a 
-contribution permission was granted and that the code does not contain 
-procedures or works that are known to be protected by third-party rights. The 
-given name must be the name of a natural person, however, it may be a good idea 
-to provide an email address of the related department such as 
-software@company.tld to ensure that a knowledgeable person can be contacted in 
+This is particularly important, since many FOSS projects require this tag and
+understand that the person who signed it takes full responsibility that a
+contribution permission was granted and that the code does not contain
+procedures or works that are known to be protected by third-party rights. The
+given name must be the name of a natural person, however, it may be a good idea
+to provide an email address of the related department such as
+software@company.tld to ensure that a knowledgeable person can be contacted in
 the event that the developer has left the company.
 ========================================
 
-- Signatures: Person(s) authorized to sign documents on behalf of our company 
-must sign this contribution permission as we hold the exclusive rights of use of 
-the specified software to be contributed. To accept the permission the developer 
+- Signatures: Person(s) authorized to sign documents on behalf of our company
+must sign this contribution permission as we hold the exclusive rights of use of
+the specified software to be contributed. To accept the permission the developer
 must also sign.
 
 
 One-time contribution permission
 
-Hereby, permission is granted to the named developer to license the named 
-software components developed in the course of his or her employment in the name 
-of the company under the stated license and to share the same through the stated 
-repository and/or mailing list. Individual files must carry a copyright notice 
-and license notice according to the guidelines set by our FOSS policy. Existing 
-or new license notices must correspond to the license(s) stated in this 
+Hereby, permission is granted to the named developer to license the named
+software components developed in the course of his or her employment in the name
+of the company under the stated license and to share the same through the stated
+repository and/or mailing list. Individual files must carry a copyright notice
+and license notice according to the guidelines set by our FOSS policy. Existing
+or new license notices must correspond to the license(s) stated in this
 permission.
 
 Developer:
@@ -117,14 +117,14 @@ Place, date:
 Developer:
 
 
-3 General contribution permission
+3 General contribution permission
 
-Hereby, a universal permission is granted to the named developer to license 
-software components developed in the course of his or her employment in the name 
-of the company under the stated license and to share the same through the stated 
-repository and/or mailing list. Individual files must carry a copyright notice 
-and license notice according to the guidelines set by our FOSS policy. Existing 
-or new license notices must correspond to the license(s) stated in this 
+Hereby, a universal permission is granted to the named developer to license
+software components developed in the course of his or her employment in the name
+of the company under the stated license and to share the same through the stated
+repository and/or mailing list. Individual files must carry a copyright notice
+and license notice according to the guidelines set by our FOSS policy. Existing
+or new license notices must correspond to the license(s) stated in this
 permission.
 
 Developer:

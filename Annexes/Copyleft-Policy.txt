@@ -3,36 +3,36 @@
 % Annex to the OSADL Open Source Policy Template
 %
 % Copyright (c) 2019,2020 Open Source Automation Development Lab (OSADL) eG
-% Author: Carsten Emde, Caren Kresse 
-% 
+% Author: Carsten Emde, Caren Kresse
+%
 %###########################################################################
 
 Copyleft policy
 
-
-This document lists FOSS licenses that we consider to have a copyleft clause. 
-The extend of the copyleft clause is categorized as ”strong” (i.e. any 
-derivative work is affected) or ”weak” (i.e. separable linked components are not 
-affected). Section 2 describes how we handle the use of copyleft licenses in our 
+This document lists FOSS licenses that we consider to have a copyleft clause.
+The extend of the copyleft clause is categorized as "strong" (i.e. any
+derivative work is affected) or "weak" (i.e. separable linked components are not
+affected). Section 2 describes how we handle the use of copyleft licenses in our
 products.
 ========================================
-After review, this list of copyleft licenses may instead be included in the -> 
-”List of known licenses”.
+After review, this list of copyleft licenses may instead be included in the ->
+"List of known licenses".
 ========================================
 
 1 Copyleft licenses
 
-The vast majority of licenses clearly state whether they contain a so-called 
-copyleft clause (for explanations see -> ”What is copyleft?”). It is generally 
-agreed that this is the case for the licenses given in table Table 1. In 
-addition to the name of the license, the SPDX Identifier and the extend of the 
-copyleft is given. The latter may be ”strong” or ”weak” requiring that the 
-original license must always be used or indicating that linked, but separable 
-libraries may be licensed under a license of choice, respectively.
+The vast majority of licenses clearly state whether they contain a so-called
+copyleft clause (for explanations see -> "What is copyleft?"). It is generally
+agreed that this is the case for the licenses given in table Table 1. In
+addition to the name of the license, the SPDX Identifier and the extend of the
+copyleft is given. The latter may be "strong", requiring that the original
+license must always be used, or "weak", indicating that linked, but separable
+libraries may be licensed under a license of choice.
+
 ========================================
-Interpretations of the extend of strong copyleft clauses are heterogeneous. This 
-policy should therefore reflect the company’s individual interpretation. The 
-Supplement -> ”What is a derivative work” gives guidelines for such an 
+Interpretations of the extend of strong copyleft clauses are heterogeneous. This
+policy should therefore reflect the company's individual interpretation. The
+Supplement -> "What is a derivative work?" gives guidelines for such an
 interpretation.
 ========================================
 
@@ -41,7 +41,7 @@ License name (SPDX Identifier): Scope of copyleft
 GNU Affero General Public License v3.0 (AGPL-3.0): Strong
 Common Development and Distribution License 1.0 (CDDL-1.0): Weak
 Common Public License 1.0 (CPL-1.0): Strong
-Eclipse Public License 1.0 (EPL-1.0): Strong
+Eclipse Public License 1.0 (EPL-1.0): Strong
 Eclipse Public License 2.0 (EPL-2.0): Weak
 European Union Public License 1.1 (EUPL-1.1): Strong
 GNU General Public Liense v2.0 (GPL-2.0): Strong
@@ -59,13 +59,13 @@ Table 1: Copyleft licenses
 
 Questionable copyleft
 ========================================
-Unfortunately, some licenses are less clear with respect to their copyleft 
-status, since there are good arguments for various views. If software that is 
-licensed under such licenses, is going to be included in a product and 
-distributed along with it, a decision must be made on how to handle these 
-licenses. Table 2 lists the three most popular licenses with an unclear copyleft 
-status. For possible interpretations see -> ”OSADL Open Source License 
-Obligations Checklists”.
+Unfortunately, some licenses are less clear with respect to their copyleft
+status, since there are good arguments for various views. If software that is
+licensed under such licenses, is going to be included in a product and
+distributed along with it, a decision must be made on how to handle these
+licenses. Table 2 lists the three most popular licenses with an unclear copyleft
+status. For possible interpretations see -> "OSADL Open Source License
+Obligations Checklists".
 ========================================
 
 License name (SPDX Identifier): Scope of copyleft
@@ -88,28 +88,28 @@ Option 3: None
 Table 2: Licenses with an unclear copyleft status
 
 ========================================
-Table 1 may need to be extended if one or more of the licenses listed in Table 2 
+Table 1 may need to be extended if one or more of the licenses listed in Table 2
 are considered to be copyleft licenses.
 ========================================
 
 2 Using copyleft licenses in our products
 
 ========================================
-Since many standard libraries are licensed under a copyleft license, it may 
-appear impossible or at least very difficult to abandon copyleft licenses 
-altogether. However, some management may decide to do so and, in consequence, 
+Since many standard libraries are licensed under a copyleft license, it may
+appear impossible or at least very difficult to abandon copyleft licenses
+altogether. However, some management may decide to do so and, in consequence,
 this topic should be discussed and decided upon.
 ========================================
 
 ########################################
-Option 1: As a general rule, FOSS that is licensed under a copyleft license may 
+Option 1: As a general rule, FOSS that is licensed under a copyleft license may
 not be used in our products.
 ########################################
-Option 2: There is no general restriction on the use of FOSS that is licensed 
-under a copyleft license. However, individual projects may define per-project 
-rules on combining FOSS under copyleft licenses with proprietary software of our 
+Option 2: There is no general restriction on the use of FOSS that is licensed
+under a copyleft license. However, individual projects may define per-project
+rules on combining FOSS under copyleft licenses with proprietary software of our
 company.
 ########################################
 
-This is appropriately noted in the lower part of the -> ”Compatibility Matrix” 
-that is part of this FOSS policy.
+This is appropriately noted in the lower part of the -> "Compatibility Matrix"
+that is an Annex to this FOSS policy.
