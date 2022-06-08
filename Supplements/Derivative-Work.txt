@@ -935,7 +935,7 @@ separate memory area
 
 Mainstream interpretation of copyright law: Unknown
 View of FSF: Unknown
-Recommendation of OSADL: Yes
+Recommendation of OSADL: No
 
 - Software components that interact with each other via an interface other than
 a function call
